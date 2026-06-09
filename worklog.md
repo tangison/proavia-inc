@@ -26,6 +26,27 @@ Stage Summary:
 - GitHub repo: https://github.com/tangison/proavia-inc
 - Vercel project: https://proavia-inc.vercel.app
 - Production domain: https://proaviainc.com (verified live)
-- New logos: ProVialogo.webp (dark, 40KB), ProVialogo-light.webp (light, 54KB)
+- New logos: proavia-logo-light.webp (light bg, 54KB), proavia-logo-dark.webp (dark bg, 39KB)
 - Studio OS configured at /home/z/my-project/studio-os/ with ProAvia project context
 - All changes committed and pushed to main branch
+
+---
+Task ID: 10
+Agent: Super Z (main)
+Task: Swap logos so light logo is used on light backgrounds and dark logo on dark backgrounds
+
+Work Log:
+- Located uploaded logos: Onlight_background (for light backgrounds), Ondark_logo (for dark backgrounds)
+- Converted both to optimized WebP (90% quality, method 6)
+- Navigation header (white/glass bg): swapped to proavia-logo-light.webp
+- Footer (bg-white): swapped to proavia-logo-light.webp
+- Updated images constants: logo -> proavia-logo-light.webp, logoDark -> proavia-logo-dark.webp
+- Removed old ProVialogo.png, ProVialogo.webp, ProVialogo-light.png, ProVialogo-light.webp
+- Build verified clean
+- Committed and pushed to main (cbbece9)
+- Vercel auto-deploy triggered via GitHub integration
+
+Stage Summary:
+- Light logo (Onlight) correctly used on header + footer (both white backgrounds)
+- Dark logo (Ondark) available at /images/proavia-logo-dark.webp for dark background sections
+- Commit: cbbece9 on main branch
