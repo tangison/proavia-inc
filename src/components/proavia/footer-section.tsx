@@ -11,10 +11,11 @@ export default function FooterSection() {
           <div className="space-y-5 max-w-[360px]">
             <Image
               alt="ProAvia Travel & Tours"
-              width={320}
-              height={132}
+              width={180}
+              height={90}
               className="h-20 md:h-24 w-auto"
               src="/images/proavia-logo-light.webp"
+              loading="lazy"
             />
             <p className="text-sm opacity-50 leading-relaxed">
               Namibia, done right. Transfers, tours, and car hire from Walvis Bay.
@@ -138,24 +139,27 @@ export default function FooterSection() {
           </span>
           <Image
             alt="ATTA — African Travel and Tourism Association"
-            width={90}
-            height={45}
+            width={64}
+            height={64}
             className="h-8 md:h-9 w-auto opacity-40 hover:opacity-70 transition-opacity duration-300"
             src="/images/atta-logo.webp"
+            loading="lazy"
           />
           <Image
             alt="NIPDB — Namibia Investment Promotion and Development Board"
-            width={90}
-            height={45}
+            width={64}
+            height={64}
             className="h-8 md:h-9 w-auto opacity-40 hover:opacity-70 transition-opacity duration-300"
             src="/images/nipdb-logo.webp"
+            loading="lazy"
           />
           <Image
             alt="NTB — Namibia Tourism Board"
-            width={90}
-            height={45}
+            width={64}
+            height={64}
             className="h-8 md:h-9 w-auto opacity-40 hover:opacity-70 transition-opacity duration-300"
             src="/images/ntb-logo.webp"
+            loading="lazy"
           />
         </div>
 
@@ -164,7 +168,7 @@ export default function FooterSection() {
             © 2026 ProAvia Travel & Tours. All Rights Reserved.
           </span>
           <a
-            href="https://studio.tangison.com"
+            href="https://tangison.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[10px] tracking-[0.15em] uppercase opacity-25 hover:opacity-50 transition-opacity duration-300"

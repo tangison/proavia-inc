@@ -49,8 +49,9 @@ export default function AccommodationPage() {
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
                 alt="Luxury accommodation by ProAvia"
-                fill
-                className="object-cover"
+                width={1920}
+                height={640}
+                className="object-cover w-full h-full"
                 sizes="100vw"
                 src="/images/accommodation/proavia-service-hotel-accommodation.webp"
                 priority
@@ -90,7 +91,7 @@ export default function AccommodationPage() {
               <div key={room.title} className="double-bezel-outer proavia-card">
                 <div className="double-bezel-inner overflow-hidden">
                   <div className="relative aspect-[16/10]">
-                    <Image alt={room.title} fill className="object-cover" sizes="100vw" src={room.image} />
+                    <Image alt={room.title} width={400} height={300} className="object-cover w-full h-full" sizes="100vw" src={room.image} />
                   </div>
                   <div className="p-6 md:p-8">
                     <h3 className="text-xl font-serif text-ink mb-2">{room.title}</h3>
@@ -159,16 +160,18 @@ export default function AccommodationPage() {
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
+                      <label htmlFor="accommodation-name" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
                       <input
+                        id="accommodation-name"
                         type="text"
                         className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3"
                         placeholder="Your name"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Check-in Date</label>
+                      <label htmlFor="accommodation-checkin" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Check-in Date</label>
                       <input
+                        id="accommodation-checkin"
                         type="date"
                         className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]"
                       />
@@ -176,16 +179,17 @@ export default function AccommodationPage() {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Location</label>
-                      <select className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark]">
+                      <label htmlFor="accommodation-location" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Location</label>
+                      <select id="accommodation-location" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark]">
                         <option value="">Select location</option>
                         <option value="walvis-bay">Walvis Bay</option>
                         <option value="swakopmund">Swakopmund</option>
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Duration</label>
+                      <label htmlFor="accommodation-duration" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Duration</label>
                       <input
+                        id="accommodation-duration"
                         type="text"
                         className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3"
                         placeholder="e.g. 5 nights"

@@ -94,8 +94,8 @@ export default function Navigation() {
         <Link className="flex items-center shrink-0" href="/">
           <Image
             alt="ProAvia Travel & Tours"
-            width={160}
-            height={65}
+            width={180}
+            height={90}
             className="h-9 lg:h-10 w-auto"
             src="/images/proavia-logo-light.webp"
             priority

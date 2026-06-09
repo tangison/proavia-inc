@@ -28,22 +28,27 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "ProAvia Travel & Tours — Namibia, done right.",
+  metadataBase: new URL("https://proaviainc.com"),
+  title: "ProAvia Travel & Tours — Namibia, Done Right.",
   description:
-    "Premium transfers, curated coastal tours, and bespoke car hire services in Walvis Bay and across Namibia. Experience sophisticated exploration with ProAvia. +264 81 810 9185.",
+    "Premium Namibian travel experiences. Book tours, transfers, car hire, and accommodation in Walvis Bay and beyond.",
   keywords: "ProAvia,Namibia,transfers,tours,Walvis Bay,Sandwich Harbour,car hire,airport transfers,Windhoek,Swakopmund",
   authors: [{ name: "ProAvia Travel & Tours" }],
+  alternates: {
+    canonical: "https://proaviainc.com",
+  },
   openGraph: {
-    title: "ProAvia Travel & Tours — Namibia, done right.",
-    description: "Transfers, tours, and car hire from Walvis Bay.",
+    title: "ProAvia Travel & Tours — Namibia, Done Right.",
+    description: "Premium Namibian travel experiences. Book tours, transfers, car hire, and accommodation in Walvis Bay and beyond.",
     url: "https://proaviainc.com",
     locale: "en_NA",
     type: "website",
+    images: ["/images/destinations/destination-sandwich-harbour-ocean-view.webp"],
   },
   twitter: {
-    card: "summary",
-    title: "ProAvia Travel & Tours — Namibia, done right.",
-    description: "Transfers, tours, and car hire from Walvis Bay.",
+    card: "summary_large_image",
+    title: "ProAvia Travel & Tours — Namibia, Done Right.",
+    description: "Premium Namibian travel experiences. Book tours, transfers, car hire, and accommodation in Walvis Bay and beyond.",
   },
   icons: {
     icon: "/images/icon.webp",

@@ -12,9 +12,34 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const tour = getTourBySlug(slug);
   if (!tour) return { title: "Tour Not Found" };
+
+  // Keep title under 60 chars — use shortened name if needed
+  const suffix = " | ProAvia Travel & Tours";
+  const maxNameLen = 60 - suffix.length;
+  const titleName = tour.name.length > maxNameLen ? tour.name.slice(0, maxNameLen - 1).trimEnd() : tour.name;
+
+  // Keep description between 120–160 chars
+  let description = tour.tagline;
+  if (description.length > 160) {
+    description = description.slice(0, 157).trimEnd() + "...";
+  } else if (description.length < 120) {
+    description = tour.description.length >= 120 && tour.description.length <= 160
+      ? tour.description
+      : description;
+  }
+
   return {
-    title: `${tour.name} | ProAvia Travel & Tours`,
-    description: tour.tagline,
+    title: `${titleName}${suffix}`,
+    description,
+    alternates: {
+      canonical: `https://proaviainc.com/services/tours/${slug}`,
+    },
+    openGraph: {
+      title: `${titleName}${suffix}`,
+      description,
+      url: `https://proaviainc.com/services/tours/${slug}`,
+      images: tour.images.length > 0 ? [tour.images[0]] : [],
+    },
   };
 }
 
@@ -51,8 +76,9 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
                 alt={tour.name}
-                fill
-                className="object-cover"
+                width={1920}
+                height={640}
+                className="object-cover w-full h-full"
                 sizes="100vw"
                 src={tour.images[0]}
                 priority
@@ -100,7 +126,7 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                       <div key={i} className="double-bezel-outer">
                         <div className="double-bezel-inner overflow-hidden">
                           <div className="relative aspect-[4/3]">
-                            <Image alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" src={img.src} />
+                            <Image alt={img.alt} width={400} height={300} className="object-cover w-full h-full" sizes="(max-width: 768px) 50vw, 33vw" src={img.src} />
                           </div>
                         </div>
                       </div>

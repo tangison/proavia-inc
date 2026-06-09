@@ -109,8 +109,9 @@ Details: ${formData.message || "None"}`;
               <form onSubmit={handleSubmit} className="bg-white/5 border border-white/10 rounded-[2rem] p-6 md:p-8 lg:p-10 space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Service *</label>
+                    <label htmlFor="booking-service" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Service *</label>
                     <select
+                      id="booking-service"
                       required
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
@@ -134,8 +135,9 @@ Details: ${formData.message || "None"}`;
                     </select>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Preferred Date</label>
+                    <label htmlFor="booking-date" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Preferred Date</label>
                     <input
+                      id="booking-date"
                       type="date"
                       value={formData.date}
                       onChange={(e) => setFormData({ ...formData, date: e.target.value })}
@@ -145,8 +147,9 @@ Details: ${formData.message || "None"}`;
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Your Name *</label>
+                    <label htmlFor="booking-name" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Your Name *</label>
                     <input
+                      id="booking-name"
                       type="text"
                       required
                       value={formData.name}
@@ -156,8 +159,9 @@ Details: ${formData.message || "None"}`;
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Number of Passengers</label>
+                    <label htmlFor="booking-passengers" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Number of Passengers</label>
                     <input
+                      id="booking-passengers"
                       type="number"
                       min={1}
                       value={formData.passengers}
@@ -168,8 +172,9 @@ Details: ${formData.message || "None"}`;
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Pickup / Location</label>
+                  <label htmlFor="booking-pickup" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Pickup / Location</label>
                   <select
+                    id="booking-pickup"
                     value={formData.pickup}
                     onChange={(e) => setFormData({ ...formData, pickup: e.target.value })}
                     className="w-full h-12 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark] focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none"
@@ -183,8 +188,9 @@ Details: ${formData.message || "None"}`;
                   </select>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
+                  <label htmlFor="booking-message" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
                   <textarea
+                    id="booking-message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Tell us about your trip — destinations, group size, special requests..."
@@ -202,7 +208,7 @@ Details: ${formData.message || "None"}`;
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </span>
                 </button>
-                <p className="text-white/30 text-[11px] text-center">
+                <p className="text-white/50 text-[11px] text-center">
                   Your booking request will open WhatsApp with a pre-filled message. We respond within minutes.
                 </p>
               </form>

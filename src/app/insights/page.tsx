@@ -27,7 +27,7 @@ const articles = [
   {
     title: "Spitzkoppe: 700 Million Years in the Making",
     excerpt: "The geological and cultural story behind the Matterhorn of Namibia, from ancient rock art to modern adventure tourism.",
-    image: "/images/tours/spitzkoppe-adventure-1.png",
+    image: "/images/tours/spitzkoppe-adventure-1.webp",
     category: "Geology",
     date: "December 2024",
   },
@@ -65,7 +65,7 @@ export default function InsightsPage() {
                 <div className="double-bezel-outer h-full proavia-card transition-transform duration-500 group-hover:-translate-y-2">
                   <div className="double-bezel-inner h-full flex flex-col bg-white overflow-hidden relative">
                     <div className="relative h-64 w-full overflow-hidden">
-                      <Image alt={article.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="100vw" src={article.image} />
+                      <Image alt={article.title} width={400} height={300} className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" sizes="100vw" src={article.image} />
                       <div className="absolute top-4 left-4 z-20">
                         <span className="px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-[10px] uppercase tracking-widest font-bold text-ink shadow-sm">
                           {article.category}
@@ -73,8 +73,8 @@ export default function InsightsPage() {
                       </div>
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
-                      <span className="text-ink/30 text-[10px] tracking-widest uppercase font-medium mb-3">{article.date}</span>
-                      <h3 className="text-2xl font-serif text-ink mb-3 line-clamp-2">{article.title}</h3>
+                      <span className="text-ink/50 text-[10px] tracking-widest uppercase font-medium mb-3">{article.date}</span>
+                      <h2 className="text-2xl font-serif text-ink mb-3 line-clamp-2">{article.title}</h2>
                       <p className="text-sm text-ink/60 mb-6 line-clamp-3">{article.excerpt}</p>
                       <div className="mt-auto">
                         <span className="text-gold text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5 group-hover:gap-2.5 transition-all duration-300">

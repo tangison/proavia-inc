@@ -37,7 +37,7 @@ export default function VisaHandlingPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Visa handling services — ProAvia Travel & Tours" fill className="object-cover" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
+              <Image alt="Visa handling services — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -147,27 +147,27 @@ export default function VisaHandlingPage() {
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
-                      <input type="text" required name="name" placeholder="Your name" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="visa-name" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
+                      <input id="visa-name" type="text" required name="name" placeholder="Your name" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Nationality</label>
-                      <input type="text" name="nationality" placeholder="e.g. German, South African" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="visa-nationality" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Nationality</label>
+                      <input id="visa-nationality" type="text" name="nationality" placeholder="e.g. German, South African" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Destination</label>
-                      <input type="text" name="destination" placeholder="e.g. Namibia, Botswana" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="visa-destination" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Destination</label>
+                      <input id="visa-destination" type="text" name="destination" placeholder="e.g. Namibia, Botswana" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Travel Date</label>
-                      <input type="date" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]" />
+                      <label htmlFor="visa-date" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Travel Date</label>
+                      <input id="visa-date" type="date" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]" />
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
-                    <textarea name="message" placeholder="Purpose of travel, duration of stay, any prior visa applications..." rows={3} className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none" />
+                    <label htmlFor="visa-message" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
+                    <textarea id="visa-message" name="message" placeholder="Purpose of travel, duration of stay, any prior visa applications..." rows={3} className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none" />
                   </div>
                   <button type="submit" className="w-full py-3.5 bg-gold rounded-xl text-ink font-bold tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2.5 text-sm btn-magnetic cursor-pointer">
                     <Phone className="w-4 h-4" />

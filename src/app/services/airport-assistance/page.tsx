@@ -37,7 +37,7 @@ export default function AirportAssistancePage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Airport assistance — ProAvia Travel & Tours" fill className="object-cover" sizes="100vw" src="/images/transfers/proavia-transfer-shuttle-boarding.webp" priority />
+              <Image alt="Airport assistance — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/transfers/proavia-transfer-shuttle-boarding.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -147,22 +147,22 @@ export default function AirportAssistancePage() {
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
-                      <input type="text" required name="name" placeholder="Your name" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="airport-name" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
+                      <input id="airport-name" type="text" required name="name" placeholder="Your name" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Flight Number</label>
-                      <input type="text" name="flight" placeholder="e.g. SW 123" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="airport-flight" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Flight Number</label>
+                      <input id="airport-flight" type="text" name="flight" placeholder="e.g. SW 123" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Travel Date</label>
-                      <input type="date" name="date" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]" />
+                      <label htmlFor="airport-date" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Travel Date</label>
+                      <input id="airport-date" type="date" name="date" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Service Type</label>
-                      <select className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark] focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none">
+                      <label htmlFor="airport-service" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Service Type</label>
+                      <select id="airport-service" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark] focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none">
                         <option value="">Select service</option>
                         <option value="Meet & Greet">Meet & Greet</option>
                         <option value="Full Assistance">Full Assistance</option>
@@ -171,8 +171,8 @@ export default function AirportAssistancePage() {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
-                    <textarea name="message" placeholder="Number of passengers, luggage details, special requirements..." rows={3} className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none" />
+                    <label htmlFor="airport-message" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
+                    <textarea id="airport-message" name="message" placeholder="Number of passengers, luggage details, special requirements..." rows={3} className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none" />
                   </div>
                   <button type="submit" className="w-full py-3.5 bg-gold rounded-xl text-ink font-bold tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2.5 text-sm btn-magnetic cursor-pointer">
                     <Phone className="w-4 h-4" />

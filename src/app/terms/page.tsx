@@ -2,7 +2,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service | ProAvia Travel & Tours",
-  description: "Terms of service for ProAvia Travel & Tours.",
+  description: "Terms of service for ProAvia Travel & Tours. Read our booking, cancellation, refund, and liability policies.",
+  alternates: {
+    canonical: "https://proaviainc.com/terms",
+  },
+  openGraph: {
+    title: "Terms of Service | ProAvia Travel & Tours",
+    description: "Terms of service for ProAvia Travel & Tours. Read our booking, cancellation, refund, and liability policies.",
+    url: "https://proaviainc.com/terms",
+    images: ["/images/destinations/destination-sandwich-harbour-ocean-view.webp"],
+  },
 };
 
 export default function TermsPage() {

@@ -2,7 +2,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | ProAvia Travel & Tours",
-  description: "Privacy policy for ProAvia Travel & Tours.",
+  description: "Privacy policy for ProAvia Travel & Tours. Learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "https://proaviainc.com/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy | ProAvia Travel & Tours",
+    description: "Privacy policy for ProAvia Travel & Tours. Learn how we collect, use, and protect your personal information.",
+    url: "https://proaviainc.com/privacy",
+    images: ["/images/destinations/destination-sandwich-harbour-ocean-view.webp"],
+  },
 };
 
 export default function PrivacyPage() {

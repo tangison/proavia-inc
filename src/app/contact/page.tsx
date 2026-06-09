@@ -46,7 +46,7 @@ Message: ${formData.message || "None"}`;
                     <Phone className="w-4 h-4 text-gold" />
                   </span>
                   <div>
-                    <span className="text-ink/40 text-[10px] uppercase tracking-widest font-medium block">Phone / WhatsApp</span>
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Phone / WhatsApp</span>
                     <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300">+264 81 810 9185</span>
                   </div>
                 </a>
@@ -55,7 +55,7 @@ Message: ${formData.message || "None"}`;
                     <Mail className="w-4 h-4 text-gold" />
                   </span>
                   <div>
-                    <span className="text-ink/40 text-[10px] uppercase tracking-widest font-medium block">Email</span>
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Email</span>
                     <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300">proaviatravel@gmail.com</span>
                   </div>
                 </a>
@@ -64,7 +64,7 @@ Message: ${formData.message || "None"}`;
                     <MapPin className="w-4 h-4 text-gold" />
                   </span>
                   <div>
-                    <span className="text-ink/40 text-[10px] uppercase tracking-widest font-medium block">Address</span>
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Address</span>
                     <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300">154 Sam Nujoma Ave, Walvis Bay Urban, Erongo, Namibia</span>
                     <span className="text-gold/50 text-[10px] tracking-wider uppercase block mt-0.5">View on Google Maps</span>
                   </div>
@@ -74,9 +74,9 @@ Message: ${formData.message || "None"}`;
                     <Facebook className="w-4 h-4 text-ocean" />
                   </span>
                   <div>
-                    <span className="text-ink/40 text-[10px] uppercase tracking-widest font-medium block">Facebook</span>
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Facebook</span>
                     <span className="text-ink/80 text-sm group-hover:text-ocean transition-colors duration-300">Proavia Holdings Namibia</span>
-                    <span className="text-ink/35 text-[10px] tracking-wider uppercase block mt-0.5">Tour itineraries & updates</span>
+                    <span className="text-ink/50 text-[10px] tracking-wider uppercase block mt-0.5">Tour itineraries & updates</span>
                   </div>
                 </a>
               </div>
@@ -102,8 +102,9 @@ Message: ${formData.message || "None"}`;
                   <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-gold/60 mb-6 block">SEND A MESSAGE</span>
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-2">
-                      <label className="text-ink/50 text-[11px] uppercase tracking-widest font-medium">Your Name *</label>
+                      <label htmlFor="contact-name" className="text-ink/50 text-[11px] uppercase tracking-widest font-medium">Your Name *</label>
                       <input
+                        id="contact-name"
                         type="text"
                         required
                         value={formData.name}
@@ -113,8 +114,9 @@ Message: ${formData.message || "None"}`;
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-ink/50 text-[11px] uppercase tracking-widest font-medium">Regarding</label>
+                      <label htmlFor="contact-topic" className="text-ink/50 text-[11px] uppercase tracking-widest font-medium">Regarding</label>
                       <select
+                        id="contact-topic"
                         value={formData.topic}
                         onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
                         className="w-full h-12 rounded-xl bg-canvas-warm border border-black/5 px-3 text-sm outline-none focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px]"
@@ -128,8 +130,9 @@ Message: ${formData.message || "None"}`;
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-ink/50 text-[11px] uppercase tracking-widest font-medium">Message</label>
+                      <label htmlFor="contact-message" className="text-ink/50 text-[11px] uppercase tracking-widest font-medium">Message</label>
                       <textarea
+                        id="contact-message"
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="How can we help you?"
@@ -199,12 +202,12 @@ Message: ${formData.message || "None"}`;
       <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24 trustee-strip">
         <div className="max-w-[1000px] mx-auto">
           <div className="text-center mb-8">
-            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-ink/30">Accredited & Recognised</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-ink/50">Accredited & Recognised</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-            <Image alt="ATTA" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/atta-logo.webp" />
-            <Image alt="NIPDB" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/nipdb-logo.webp" />
-            <Image alt="NTB" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/ntb-logo.webp" />
+            <Image alt="ATTA" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/atta-logo.webp" loading="lazy" />
+            <Image alt="NIPDB" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/nipdb-logo.webp" loading="lazy" />
+            <Image alt="NTB" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/ntb-logo.webp" loading="lazy" />
           </div>
         </div>
       </section>

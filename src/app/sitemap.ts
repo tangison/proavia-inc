@@ -17,6 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/transfers",
     "/services/tours",
     "/services/car-hire",
+    "/services/flight-ticketing",
+    "/services/visa-handling",
+    "/services/airport-assistance",
+    "/services/shuttles",
   ];
 
   const tourPages = tours.map((tour) => `/services/tours/${tour.slug}`);

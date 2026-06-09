@@ -20,8 +20,9 @@ export default function ToursPage() {
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
                 alt="Where the Namib Desert meets the Atlantic"
-                fill
-                className="object-cover"
+                width={1920}
+                height={640}
+                className="object-cover w-full h-full"
                 sizes="100vw"
                 src="/images/destinations/destination-sandwich-harbour-coastal-dunes.webp"
                 priority
@@ -53,8 +54,9 @@ export default function ToursPage() {
                     <div className="relative h-64 w-full overflow-hidden">
                       <Image
                         alt={tour.name}
-                        fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        width={400}
+                        height={300}
+                        className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                         sizes="100vw"
                         src={tour.images[0]}
                       />

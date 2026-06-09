@@ -50,7 +50,7 @@ Details: ${formData.message || "None"}`;
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Explore Namibia at your own pace — ProAvia car hire" fill className="object-cover" sizes="100vw" src="/images/vehicles/vehicle-proavia-black-suv.webp" priority />
+              <Image alt="Explore Namibia at your own pace — ProAvia car hire" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vehicle-proavia-black-suv.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -146,31 +146,31 @@ Details: ${formData.message || "None"}`;
                 <form onSubmit={handleSubmit} className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
-                      <input type="text" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="Your name" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="carhire-name" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
+                      <input id="carhire-name" type="text" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="Your name" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Pickup Date</label>
-                      <input type="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })} className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]" />
+                      <label htmlFor="carhire-date" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Pickup Date</label>
+                      <input id="carhire-date" type="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })} className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Pickup Location</label>
-                      <select value={formData.pickup} onChange={(e) => setFormData({ ...formData, pickup: e.target.value })} className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark]">
+                      <label htmlFor="carhire-pickup" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Pickup Location</label>
+                      <select id="carhire-pickup" value={formData.pickup} onChange={(e) => setFormData({ ...formData, pickup: e.target.value })} className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark]">
                         <option value="">Select location</option>
                         <option value="Walvis Bay">Walvis Bay</option>
                         <option value="Windhoek">Windhoek</option>
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Duration</label>
-                      <input type="text" value={formData.duration} onChange={(e) => setFormData({ ...formData, duration: e.target.value })} placeholder="e.g. 5 days" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
+                      <label htmlFor="carhire-duration" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Duration</label>
+                      <input id="carhire-duration" type="text" value={formData.duration} onChange={(e) => setFormData({ ...formData, duration: e.target.value })} placeholder="e.g. 5 days" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3" />
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
-                    <textarea value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Vehicle preference, planned destinations, 4x4 required..." rows={3} className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none" />
+                    <label htmlFor="carhire-message" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
+                    <textarea id="carhire-message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Vehicle preference, planned destinations, 4x4 required..." rows={3} className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none" />
                   </div>
                   <button type="submit" className="w-full py-3.5 bg-gold rounded-xl text-ink font-bold tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2.5 text-sm btn-magnetic cursor-pointer">
                     <Phone className="w-4 h-4" />

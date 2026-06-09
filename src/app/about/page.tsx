@@ -15,8 +15,9 @@ export default function AboutPage() {
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
                 alt="The Walvis Bay Salt Shore — ProAvia's home territory"
-                fill
-                className="object-cover"
+                width={1920}
+                height={640}
+                className="object-cover w-full h-full"
                 sizes="100vw"
                 src="/images/destinations/destination-walvis-bay-salt-shore.webp"
                 priority
@@ -151,12 +152,12 @@ export default function AboutPage() {
       <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24 trustee-strip">
         <div className="max-w-[900px] mx-auto">
           <div className="text-center mb-8">
-            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-ink/30">Accredited & Recognised</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-ink/50">Accredited & Recognised</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-            <Image alt="ATTA — African Travel and Tourism Association" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/atta-logo.webp" />
-            <Image alt="NIPDB — Namibia Investment Promotion and Development Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/nipdb-logo.webp" />
-            <Image alt="NTB — Namibia Tourism Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/ntb-logo.webp" />
+            <Image alt="ATTA — African Travel and Tourism Association" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/atta-logo.webp" loading="lazy" />
+            <Image alt="NIPDB — Namibia Investment Promotion and Development Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/nipdb-logo.webp" loading="lazy" />
+            <Image alt="NTB — Namibia Tourism Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/ntb-logo.webp" loading="lazy" />
           </div>
         </div>
       </section>

@@ -188,7 +188,7 @@ export default function HomePage() {
           </div>
           <div className="lg:col-span-5">
             <div className="double-bezel-outer aspect-[4/5] w-full">
-              <div className="double-bezel-inner overflow-hidden relative group">
+              <div className="double-bezel-inner overflow-hidden relative group h-full">
                 {heroImages.map((img, i) => (
                   <div
                     key={i}
@@ -196,8 +196,9 @@ export default function HomePage() {
                   >
                     <Image
                       alt={img.alt}
-                      fill
-                      className="object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s]"
+                      width={1920}
+                      height={1080}
+                      className="object-cover w-full h-full grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s]"
                       sizes="100vw"
                       src={img.src}
                       priority={i === 0}
@@ -245,7 +246,7 @@ export default function HomePage() {
             className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mt-6 text-gold hover:text-gold/70 transition-colors duration-300"
             href="/about"
           >
-            Learn More
+            Discover Our Story
             <ArrowUpRight className="w-3.5 h-3.5" />
           </Link>
         </div>
@@ -273,7 +274,7 @@ export default function HomePage() {
                 <div className="double-bezel-outer h-full proavia-card">
                   <div className="double-bezel-inner overflow-hidden relative">
                     <div className="relative aspect-[4/3]">
-                      <Image alt={card.imageAlt} fill className="object-cover" sizes="100vw" src={card.image} />
+                      <Image alt={card.imageAlt} width={400} height={300} className="object-cover w-full h-full" sizes="100vw" src={card.image} />
                       <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
                       <div className="absolute bottom-4 left-4">
                         <span className="inline-flex items-center gap-1.5 bg-gold/90 text-ink text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-lg">
@@ -298,7 +299,7 @@ export default function HomePage() {
                         ))}
                       </div>
                       <span className="inline-flex items-center gap-3 text-xs font-bold tracking-widest uppercase mt-5 group/link">
-                        Learn More
+                        Explore {card.title}
                         <span className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center group-hover/link:bg-ink group-hover/link:text-white transition-all duration-300">
                           <ArrowUpRight className="w-3 h-3" />
                         </span>
