@@ -53,13 +53,16 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              ProAvia Travel & Tours is a diversified, premium Namibian-owned company based in Walvis Bay, Erongo. We provide bespoke airport transfers, Sandwich Harbour 4x4 expeditions, unrestricted car hire, and a curated residential collection — serving Walvis Bay, Swakopmund, and the greater Namibian landscape.
+              ProAvia Travel & Tours is a Namibian-owned company based in Walvis Bay, right in the heart of the Erongo Region. We started this business because we saw too many visitors getting stuck with unreliable transport, overpriced tours, and zero local knowledge. So we built the company we wished existed when we travelled — one that answers the phone, shows up on time, and actually knows the roads.
             </p>
             <p>
-              We are a female-owned enterprise with an impeccable 5.0 rating on Facebook. From orchestrating complex logistical transitions to providing sanctuary-level accommodation, our standard of service remains uncompromised.
+              We are a female-owned business and we carry that with pride. It matters in this industry. Our 5.0 rating on Facebook isn&apos;t bought or padded — it comes from hundreds of real travellers who trusted us with their Namibia trip and walked away happy. We don&apos;t take that trust lightly.
             </p>
             <p>
-              Beyond transfers and tours, ProAvia also provides flight ticketing, visa handling services, airport assistance, and scheduled shuttle services — making us a full-service travel partner for individuals, corporates, and government clients across Namibia.
+              What started as airport transfers has grown into a full-service travel operation. Today we run Sandwich Harbour 4x4 tours, car hire with unlimited kilometres, self-catering accommodation, flight ticketing, visa handling, airport assistance, and scheduled shuttles between Walvis Bay, Swakopmund, and Windhoek. If it involves getting around Namibia, we probably do it.
+            </p>
+            <p>
+              We are accredited by ATTA, NIPDB, and the Namibia Tourism Board — not because we like collecting badges, but because it holds us to a standard. Every service we offer is insured, every driver is professional, and every booking is confirmed on WhatsApp within minutes. That&apos;s not a promise. That&apos;s just how we work.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
@@ -123,7 +126,7 @@ export default function AboutPage() {
                 </span>
               </h3>
               <p className="text-white/50 text-lg mb-8 max-w-md mx-auto">
-                Secure your transfer, expedition, vehicle, or accommodation in moments. A single WhatsApp message activates our concierge.
+                Send us a message on WhatsApp and we&apos;ll get back to you within minutes. Transfer, tour, car, or accommodation — whatever you need, we&apos;re here.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

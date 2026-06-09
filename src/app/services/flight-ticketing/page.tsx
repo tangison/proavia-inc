@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Phone, ArrowUpRight, Plane, Globe, Clock, MessageCircle } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const features = [
   {
@@ -58,10 +59,13 @@ export default function FlightTicketingPage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              Whether you&apos;re flying domestically within Namibia or connecting regionally across Southern Africa, ProAvia manages your flight reservations from start to finish. We confirm availability, handle the booking, and send you your itinerary — all via WhatsApp.
+              Booking flights within Namibia or to neighbouring countries shouldn&apos;t be complicated, but it often is. Airlines change schedules, routes get discontinued, and trying to coordinate domestic connections with international arrivals can be a headache. We handle all of that for you.
             </p>
             <p>
-              No waiting on hold with airlines, no navigating complex booking systems. A single message to our team sets everything in motion, and we keep you informed at every step until your boarding pass is confirmed.
+              Send us your travel dates and where you need to go. We check availability across all domestic and regional carriers, find the flights that fit your schedule, book the seats, and send your itinerary straight to WhatsApp. No logging into portals, no confirmation emails buried in your inbox. One message, done.
+            </p>
+            <p>
+              We book domestic routes like Windhoek to Walvis Bay and Lüderitz, as well as regional connections to South Africa, Botswana, Zimbabwe, and Zambia. If you&apos;re not sure which route makes sense, ask us — we fly these routes regularly and know which ones are reliable and which ones to avoid.
             </p>
           </div>
         </div>
@@ -180,6 +184,7 @@ export default function FlightTicketingPage() {
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/services/flight-ticketing" />
     </>
   );
 }

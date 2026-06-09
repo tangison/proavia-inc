@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, Phone, ArrowUpRight, Clock, Users, CheckCircle2 } from "lucide-react";
 import { tours, getTourBySlug } from "@/data/tours";
 import { notFound } from "next/navigation";
+import RelatedServices from "@/components/proavia/related-services";
 
 export async function generateStaticParams() {
   return tours.map((tour) => ({ slug: tour.slug }));
@@ -188,6 +189,8 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
           </div>
         </div>
       </section>
+
+      <RelatedServices exclude="/services/tours" />
     </div>
   );
 }

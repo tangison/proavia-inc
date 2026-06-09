@@ -1,6 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { Phone, ArrowUpRight, Wifi, Car, Shield, UtensilsCrossed } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const rooms = [
   {
@@ -16,7 +20,7 @@ const rooms = [
   {
     image: "/images/accommodation/proavia-service-accommodation-kitchen-black-modern.webp",
     title: "Gourmet Kitchens",
-    description: "Fully equipped modern kitchens with premium appliances and everything you need.",
+    description: "Fully equipped modern kitchens with premium appliances and everything you need to cook your own meals.",
   },
   {
     image: "/images/accommodation/proavia-service-accommodation-shower-bathroom.webp",
@@ -26,13 +30,26 @@ const rooms = [
 ];
 
 const features = [
-  { icon: Wifi, title: "High-Speed WiFi", description: "Stay connected with fibre-optic internet throughout your stay." },
-  { icon: Car, title: "Secure Parking", description: "Dedicated, covered parking for your vehicle on every property." },
-  { icon: Shield, title: "24/7 Security", description: "Round-the-clock security and emergency support for peace of mind." },
-  { icon: UtensilsCrossed, title: "Self-Catering", description: "Fully equipped kitchens for independent dining at your own pace." },
+  { icon: Wifi, title: "High-Speed WiFi", description: "Fibre-optic internet throughout your stay. Stream, video call, or plan your next day's route without waiting." },
+  { icon: Car, title: "Secure Parking", description: "Dedicated, covered parking for your vehicle on every property. Your car stays safe while you sleep." },
+  { icon: Shield, title: "24/7 Security", description: "Round-the-clock security and emergency support. Peace of mind, whether you're out exploring or fast asleep." },
+  { icon: UtensilsCrossed, title: "Self-Catering", description: "Fully equipped kitchens so you can cook when you want and eat out when you don't. Your schedule, your choice." },
 ];
 
 export default function AccommodationPage() {
+  const [formData, setFormData] = useState({ name: "", checkin: "", location: "", duration: "", message: "" });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const msg = `Hello ProAvia, I'd like to book accommodation.
+Name: ${formData.name || "Not provided"}
+Check-in: ${formData.checkin || "TBD"}
+Location: ${formData.location || "TBD"}
+Duration: ${formData.duration || "TBD"}
+Details: ${formData.message || "None"}`;
+    window.open(`https://wa.me/264818109185?text=${encodeURIComponent(msg)}`, "_blank");
+  };
+
   return (
     <>
       <PageHeader
@@ -66,10 +83,13 @@ export default function AccommodationPage() {
       <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24">
         <div className="max-w-[900px] mx-auto space-y-5 text-ink/55 leading-relaxed text-lg">
           <p>
-            Our accommodation collection represents the finest residential properties in Walvis Bay and Swakopmund. Each property has been selected for its location, appointment, and capacity to serve as the perfect base for Namibian exploration.
+            Our accommodation collection represents the finest residential properties in Walvis Bay and Swakopmund. Each property has been hand-picked for its location, comfort, and ability to serve as a proper home base while you explore Namibia. These are not hotel rooms — they are fully furnished homes where you can unpack, cook your own meals, and settle in.
           </p>
           <p>
-            From modern apartments overlooking the lagoon to spacious family homes within walking distance of the beach, every property is fully equipped with premium appliances, high-speed WiFi, and the thoughtful touches that transform a stay into an experience.
+            From modern apartments overlooking the lagoon to spacious family homes within walking distance of the beach, every property comes with premium appliances, high-speed WiFi, and the kind of thoughtful details that make a difference when you&apos;re far from home. Fresh linen, quality cookware, reliable hot water — the basics that shouldn&apos;t be a question mark.
+          </p>
+          <p>
+            We manage each property ourselves. That means if something breaks, we fix it. If you need a late checkout, you talk to us directly. No call centres, no waiting for a manager who&apos;s never around. You deal with ProAvia from booking to checkout, and we keep things simple.
           </p>
         </div>
       </section>
@@ -142,7 +162,7 @@ export default function AccommodationPage() {
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Tell us your travel dates and preferred location. We&apos;ll match you with the perfect property.
+                  Tell us your travel dates and preferred location — Walvis Bay or Swakopmund. We&apos;ll match you with the right property and confirm everything on WhatsApp.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -157,15 +177,18 @@ export default function AccommodationPage() {
                 </div>
               </div>
               <div>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-5">
+                <form onSubmit={handleSubmit} className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="accommodation-name" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Name *</label>
                       <input
                         id="accommodation-name"
                         type="text"
-                        className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="Your name"
+                        className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3"
                       />
                     </div>
                     <div className="space-y-2">
@@ -173,6 +196,8 @@ export default function AccommodationPage() {
                       <input
                         id="accommodation-checkin"
                         type="date"
+                        value={formData.checkin}
+                        onChange={(e) => setFormData({ ...formData, checkin: e.target.value })}
                         className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 [color-scheme:dark]"
                       />
                     </div>
@@ -180,10 +205,15 @@ export default function AccommodationPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="accommodation-location" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Location</label>
-                      <select id="accommodation-location" className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark]">
+                      <select
+                        id="accommodation-location"
+                        value={formData.location}
+                        onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                        className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white px-3 [color-scheme:dark] focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none"
+                      >
                         <option value="">Select location</option>
-                        <option value="walvis-bay">Walvis Bay</option>
-                        <option value="swakopmund">Swakopmund</option>
+                        <option value="Walvis Bay">Walvis Bay</option>
+                        <option value="Swakopmund">Swakopmund</option>
                       </select>
                     </div>
                     <div className="space-y-2">
@@ -191,25 +221,39 @@ export default function AccommodationPage() {
                       <input
                         id="accommodation-duration"
                         type="text"
-                        className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3"
+                        value={formData.duration}
+                        onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
                         placeholder="e.g. 5 nights"
+                        className="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3"
                       />
                     </div>
                   </div>
+                  <div className="space-y-2">
+                    <label htmlFor="accommodation-message" className="text-white/50 text-[11px] uppercase tracking-widest font-medium">Additional Details</label>
+                    <textarea
+                      id="accommodation-message"
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      placeholder="Group size, special requests, budget range..."
+                      rows={3}
+                      className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[80px] resize-none"
+                    />
+                  </div>
                   <button
-                    type="button"
+                    type="submit"
                     className="w-full py-3.5 bg-gold rounded-xl text-ink font-bold tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2.5 text-sm btn-magnetic cursor-pointer"
                   >
                     <Phone className="w-4 h-4" />
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/accommodation" />
     </>
   );
 }

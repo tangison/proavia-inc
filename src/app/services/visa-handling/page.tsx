@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Phone, ArrowUpRight, FileText, ClipboardList, Eye, Globe } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const features = [
   {
@@ -58,10 +59,13 @@ export default function VisaHandlingPage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              The visa process can be complex and time-sensitive. Our team guides you through every step — from identifying the correct visa category to compiling your documentation and submitting on your behalf where applicable. We take the bureaucracy out of travel.
+              Visa applications are one of those things everyone puts off until the last minute. The requirements are confusing, the embassy websites are unhelpful, and one wrong form can set you back weeks. We take that problem off your hands completely.
             </p>
             <p>
-              Whether you are visiting Namibia or travelling onward to another destination, ProAvia ensures your visa application is complete, accurate, and submitted on time. One conversation with our team sets everything in motion.
+              Tell us your nationality and where you&apos;re going, and we&apos;ll figure out exactly what you need. We identify the right visa category, compile your documents, check everything before submission, and submit on your behalf where the embassy allows it. If there&apos;s a problem, we catch it before it becomes a rejected application.
+            </p>
+            <p>
+              We handle visas for travellers coming into Namibia as well as Namibian residents travelling abroad. Whether it&apos;s a tourist visa, business visa, or transit visa, we&apos;ve done it before and we know the process. You&apos;ll get status updates on WhatsApp so you&apos;re never left wondering where things stand.
             </p>
           </div>
         </div>
@@ -180,6 +184,7 @@ export default function VisaHandlingPage() {
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/services/visa-handling" />
     </>
   );
 }

@@ -57,6 +57,17 @@ export default function InsightsPage() {
         description="Expert guides, practical tips, and stories from the road — curated by the ProAvia team in Walvis Bay."
       />
 
+      <section className="pb-8 px-6 md:px-12 lg:px-24">
+        <div className="max-w-[900px] mx-auto space-y-5 text-ink/55 leading-relaxed">
+          <p>
+            We spend every day on these roads and at these destinations, so we figured we should write some of it down. These articles come straight from our team — practical advice, destination breakdowns, and honest takes on what&apos;s worth your time and what isn&apos;t. No filler, no recycled content from travel blogs.
+          </p>
+          <p>
+            Whether you&apos;re planning your first trip to Namibia or you&apos;ve been here before and want to dig deeper, these guides are written to help you make real decisions. We update them regularly as routes, prices, and conditions change.
+          </p>
+        </div>
+      </section>
+
       <section className="pb-24 md:pb-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

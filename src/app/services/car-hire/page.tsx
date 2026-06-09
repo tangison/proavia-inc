@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Phone, ArrowUpRight, Infinity, Car, MapPin, Building2 } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const features = [
   {
@@ -70,10 +71,13 @@ Details: ${formData.message || "None"}`;
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              Namibia is a landscape of profound scale. Our car hire service is designed to bridge the vast distances between the Namib&apos;s most iconic destinations, from the high dunes of Sossusvlei to the wildlife sanctuaries of Etosha.
+              Namibia is big. Really big. The distances between destinations are measured in hundreds of kilometres, and the best places aren&apos;t always on a paved road. Our car hire is built for that reality — unlimited kilometres, 4x4 options for the gravel roads, and pickup points in both Walvis Bay and Windhoek so you can start your trip wherever makes sense.
             </p>
             <p>
-              Choose your starting point — Walvis Bay or Windhoek — and select from a fleet that balances rugged durability with contemporary comfort. Our 4x4 vehicles are the definitive choice for the gravel roads and remote riverbeds that define the true Namibian experience.
+              We don&apos;t do small print traps. The price you see includes unlimited kilometres, insurance, and 24/7 roadside assistance. If you get a flat tyre on the road to Sossusvlei, you call us and we sort it out. We know these roads because we drive them ourselves, and we&apos;ll give you honest advice about which vehicle you actually need for your route.
+            </p>
+            <p>
+              Choose a sedan if you&apos;re sticking to the highways. Choose a 4x4 if you&apos;re heading into Damaraland, the Skeleton Coast, or anywhere that requires a proper vehicle. We&apos;ll never talk you into a bigger car than you need, but we&apos;ll also make sure you don&apos;t end up stuck somewhere you shouldn&apos;t be.
             </p>
           </div>
         </div>
@@ -183,6 +187,7 @@ Details: ${formData.message || "None"}`;
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/services/car-hire" />
     </>
   );
 }

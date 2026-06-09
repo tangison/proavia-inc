@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Phone, ArrowUpRight, UserCheck, Luggage, Crown, Clock } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const features = [
   {
@@ -58,10 +59,13 @@ export default function AirportAssistancePage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              Our airport assistance service goes further than just getting you to the terminal. From check-in coordination to luggage handling and VIP meet-and-greet, we ensure your airport experience is as seamless as every other aspect of your journey with ProAvia.
+              Sometimes a transfer isn&apos;t enough. Maybe it&apos;s your first time in Namibia and you&apos;re not sure where to go after customs. Maybe you&apos;re travelling with a delegation that needs to move through the airport quickly. Or maybe you just don&apos;t want to carry your own bags. That&apos;s what this service is for.
             </p>
             <p>
-              Whether you are a first-time visitor navigating an unfamiliar airport, a corporate executive on a tight schedule, or a government delegate requiring discreet, professional service, our team adapts to your needs. We are there before you arrive and stay until you are through.
+              Our airport assistance goes beyond the ride. We meet you at the gate or arrivals, help with check-in if you&apos;re departing, handle your luggage, and make sure you get where you need to be without the usual airport stress. For VIP clients and government delegates, we offer discreet meet-and-greet service that gets you through the airport without the crowds.
+            </p>
+            <p>
+              This is a popular add-on for corporate groups, first-time visitors, and anyone who values their time at the airport more than navigating it alone. We&apos;re available around the clock because flights and schedules don&apos;t always cooperate with business hours.
             </p>
           </div>
         </div>
@@ -185,6 +189,7 @@ export default function AirportAssistancePage() {
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/services/airport-assistance" />
     </>
   );
 }

@@ -39,7 +39,7 @@ Message: ${formData.message || "None"}`;
                   </span>
                 </h2>
               </div>
-              <p className="text-ink/50 text-sm leading-relaxed">WhatsApp is the fastest way to reach us. We respond within minutes, not hours.</p>
+              <p className="text-ink/50 text-sm leading-relaxed">WhatsApp is the fastest way to reach us. We respond within minutes, not hours. No automated replies, no holding queues — a real person on the other end who can answer your questions and get things sorted right away.</p>
               <div className="space-y-4">
                 <a href="tel:+264818109185" className="flex items-center gap-4 group">
                   <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">

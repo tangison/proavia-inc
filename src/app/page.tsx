@@ -240,7 +240,7 @@ export default function HomePage() {
             </span>
           </h2>
           <p className="text-ink/55 text-lg leading-relaxed max-w-[700px]">
-            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we specialise in bespoke travel logistics — from airport transfers and tours to flight ticketing, visa handling, and shuttle services. Our team responds within minutes, not hours.
+            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we specialise in bespoke travel logistics — from airport transfers and tours to flight ticketing, visa handling, and shuttle services. We answer within minutes, not hours, and we run every service ourselves — no subcontractors, no surprises.
           </p>
           <Link
             className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mt-6 text-gold hover:text-gold/70 transition-colors duration-300"
@@ -261,7 +261,7 @@ export default function HomePage() {
               Essential <span className="italic text-gold" style={{ fontFamily: "var(--font-instrument-serif), serif" }}>Logistics</span>
             </h2>
             <p className="text-ink/40 text-lg mt-4 max-w-lg">
-              Transfers, tours, and car hire. The three things you need to explore Namibia, handled by a team based right here in Walvis Bay.
+              Everything you need to explore Namibia, handled by a team that actually lives here. Transfers, tours, car hire, accommodation, flights, visas — we sort it all from our base in Walvis Bay.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -331,7 +331,7 @@ export default function HomePage() {
                 </span>
               </h3>
               <p className="text-white/50 text-lg mb-8 max-w-md mx-auto">
-                Secure your transfer, expedition, vehicle, or accommodation in moments. A single WhatsApp message activates our concierge.
+                A single WhatsApp message gets things moving. Transfer, tour, car, or accommodation — tell us what you need and we&apos;ll sort it out from there.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

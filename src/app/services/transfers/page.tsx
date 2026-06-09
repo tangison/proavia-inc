@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Phone, ArrowUpRight, Clock, Shield, MapPin, HandshakeIcon } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const features = [
   {
@@ -72,10 +73,13 @@ Details: ${formData.message || "None"}`;
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              Upon arrival at Hosea Kutako International or Walvis Bay Airport, you will be met by a dedicated ProAvia representative. Our private transfers eliminate the uncertainty of airport logistics, offering a refined, direct passage to your destination in Windhoek, Walvis Bay, or Swakopmund.
+              When you land at Hosea Kutako International or Walvis Bay Airport, the last thing you want is to figure out transport on the spot. Our private transfers sort that out before you even board your flight. Your driver is waiting inside arrivals with your name, and from there it&apos;s a straight drive to your hotel, guesthouse, or accommodation — no detours, no shared shuttles, no waiting for other passengers.
             </p>
             <p>
-              We prioritize your privacy and time. With no shared rides or unnecessary delays, our service is tailored to the discerning traveller who demands both efficiency and comfort.
+              We operate 24 hours a day because flights don&apos;t always land at convenient times. Early morning, late at night, delayed by two hours — it doesn&apos;t matter. Your driver tracks your flight and adjusts accordingly. You won&apos;t be standing outside an empty airport wondering where your ride is.
+            </p>
+            <p>
+              All our vehicles are insured and maintained, and our drivers know the routes between Windhoek, Walvis Bay, and Swakopmund like the back of their hand. It&apos;s a simple service, but we take it seriously because it&apos;s often the first impression you get of Namibia.
             </p>
           </div>
         </div>
@@ -186,6 +190,8 @@ Details: ${formData.message || "None"}`;
           </div>
         </div>
       </section>
+
+      <RelatedServices exclude="/services/transfers" />
     </>
   );
 }

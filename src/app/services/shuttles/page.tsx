@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Phone, ArrowUpRight, MapPin, Route, Calendar, Car } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 
 const features = [
   {
@@ -58,10 +59,13 @@ export default function ShuttlesPage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              ProAvia operates scheduled and on-demand shuttle services connecting Walvis Bay, Swakopmund, and Windhoek. Whether you need a seat on a scheduled run or a dedicated vehicle for your group, we provide a dependable, comfortable connection between Namibia&apos;s key destinations.
+              Not everyone needs a private transfer, and not every trip calls for a rental car. Our shuttle service fills the gap — scheduled runs and on-demand rides between Walvis Bay, Swakopmund, and Windhoek that are reliable, affordable, and actually comfortable.
             </p>
             <p>
-              Our shuttles are ideal for solo travellers, small groups, and corporate teams alike. Book a seat on an existing route or request a private run — either way, you travel in a maintained, insured vehicle with a professional driver who knows the road.
+              The Walvis Bay to Swakopmund route is the one most travellers need, and we run it regularly. It&apos;s a short drive along the coast, and our shuttles get you there without the hassle of arranging a taxi or waiting for an unpredictable bus. For the longer trip between Walvis Bay and Windhoek, we offer comfortable vehicles with space for luggage and a driver who knows the road.
+            </p>
+            <p>
+              You can book a seat on a scheduled run or request a private shuttle for your group. Either way, you&apos;re travelling in an insured, well-maintained vehicle driven by a professional. No sketchy minibuses, no bargaining with drivers who don&apos;t know the route.
             </p>
           </div>
         </div>
@@ -186,6 +190,7 @@ export default function ShuttlesPage() {
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/services/shuttles" />
     </>
   );
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import RelatedServices from "@/components/proavia/related-services";
 import { tours } from "@/data/tours";
 
 export default function ToursPage() {
@@ -35,7 +36,7 @@ export default function ToursPage() {
                   </span>
                 </h2>
                 <p className="text-white/80 max-w-2xl text-lg font-light leading-relaxed">
-                  From traversing 100-metre sand dunes to sailing alongside migrating whales, our premium tours are crafted for the discerning traveler. Discover the raw beauty of Namibia with our specialized 4x4 fleet and expert local guides.
+                  Every tour on this list is one we actually run ourselves. No third-party operators, no subcontracted guides you&apos;ve never met. Our team leads every expedition, which means we control the quality from start to finish.
                 </p>
               </div>
             </div>
@@ -89,6 +90,7 @@ export default function ToursPage() {
           </div>
         </div>
       </section>
+      <RelatedServices exclude="/services/tours" />
     </div>
   );
 }
