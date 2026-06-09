@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: "Transfers, tours, and car hire from Walvis Bay.",
   },
   icons: {
-    icon: "/images/icon.png",
+    icon: "/images/icon.webp",
   },
 };
 

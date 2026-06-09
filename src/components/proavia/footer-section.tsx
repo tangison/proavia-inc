@@ -12,9 +12,9 @@ export default function FooterSection() {
             <Image
               alt="ProAvia Travel & Tours"
               width={320}
-              height={96}
+              height={132}
               className="h-20 md:h-24 w-auto"
-              src="/images/ProVialogo.png"
+              src="/images/ProVialogo.webp"
             />
             <p className="text-sm opacity-50 leading-relaxed">
               Namibia, done right. Transfers, tours, and car hire from Walvis Bay.
@@ -164,12 +164,12 @@ export default function FooterSection() {
             © 2026 ProAvia Travel & Tours. All Rights Reserved.
           </span>
           <a
-            href="https://gemsweb.xyz"
+            href="https://tangison.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[10px] tracking-[0.15em] uppercase opacity-25 hover:opacity-50 transition-opacity duration-300"
           >
-            Designed by Gemsweb Digital
+            Designed by Tangison Studio
           </a>
         </div>
       </div>

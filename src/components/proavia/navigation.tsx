@@ -95,9 +95,9 @@ export default function Navigation() {
           <Image
             alt="ProAvia Travel & Tours"
             width={160}
-            height={48}
+            height={65}
             className="h-9 lg:h-10 w-auto"
-            src="/images/ProVialogo.png"
+            src="/images/ProVialogo.webp"
             priority
           />
         </Link>
