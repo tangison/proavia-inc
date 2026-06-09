@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0a0a;
+  --color-gold: #c9a84c;
+  --color-canvas: #f8f6f1;
+  --color-canvas-warm: #f2efe8;
+  --color-sand: #f0ece2;
+  --color-ocean: #2b6cb0;
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+}
+
+/* Editorial headline */
+.editorial-headline {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+/* Double bezel card */
+.double-bezel-outer {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 2.5rem;
+  background: white;
+}
+
+.double-bezel-inner {
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 2.25rem;
+}
+
+/* Proavia card */
+.proavia-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.proavia-card:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Button magnetic */
+.btn-magnetic {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-magnetic:hover {
+  transform: scale(1.02);
+}
+
+.btn-magnetic:active {
+  transform: scale(0.98);
+}
+
+/* Noise overlay */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Loading bar animation */
+@keyframes loading-bar {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+.proavia-loading-bar {
+  animation: loading-bar 1.5s ease-in-out infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Trustee strip */
+.trustee-strip {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.02));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Select dark mode for forms */
+[color-scheme\:dark] {
+  color-scheme: dark;
+}
