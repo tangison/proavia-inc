@@ -164,7 +164,7 @@ export default function FooterSection() {
             © 2026 ProAvia Travel & Tours. All Rights Reserved.
           </span>
           <a
-            href="https://tangison.com"
+            href="https://studio.tangison.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[10px] tracking-[0.15em] uppercase opacity-25 hover:opacity-50 transition-opacity duration-300"
