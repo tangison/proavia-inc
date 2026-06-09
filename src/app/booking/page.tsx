@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, ArrowUpRight, Plane, Compass, Car } from "lucide-react";
+import { Phone, ArrowUpRight, Plane, Compass, Car, FileCheck, ShieldCheck, Bus } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
 
 const quickBookItems = [
@@ -22,6 +22,30 @@ const quickBookItems = [
     icon: Car,
     title: "Car Hire",
     description: "Reliable vehicles with unlimited km — Walvis Bay or Windhoek pickup",
+  },
+  {
+    href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%27d%20like%20to%20book%20a%20flight.",
+    icon: Plane,
+    title: "Flight Ticketing",
+    description: "Domestic and regional flight bookings handled end-to-end",
+  },
+  {
+    href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%20need%20assistance%20with%20a%20visa.",
+    icon: FileCheck,
+    title: "Visa Handling",
+    description: "We manage your application from documentation to submission",
+  },
+  {
+    href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%20need%20airport%20assistance.",
+    icon: ShieldCheck,
+    title: "Airport Assistance",
+    description: "Check-in support, luggage handling, and VIP meet & greet",
+  },
+  {
+    href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%27d%20like%20to%20book%20a%20shuttle.",
+    icon: Bus,
+    title: "Shuttle Services",
+    description: "Scheduled and on-demand shuttles between key Namibian cities",
   },
 ];
 
@@ -103,6 +127,10 @@ Details: ${formData.message || "None"}`;
                       <option value="Classic Namibia Safari">Classic Namibia Safari</option>
                       <option value="Car Hire">Car Hire</option>
                       <option value="Accommodation">Accommodation</option>
+                      <option value="Flight Ticketing">Flight Ticketing & Reservations</option>
+                      <option value="Visa Handling">Visa Handling</option>
+                      <option value="Airport Assistance">Airport Assistance</option>
+                      <option value="Shuttle Services">Shuttle Services</option>
                     </select>
                   </div>
                   <div className="space-y-2">
@@ -198,7 +226,7 @@ Details: ${formData.message || "None"}`;
               Tap a service below to start a WhatsApp conversation instantly. No form required.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {quickBookItems.map((item) => (
               <a key={item.title} href={item.href} target="_blank" rel="noopener noreferrer" className="group block">
                 <div className="double-bezel-outer h-full proavia-card">

@@ -57,6 +57,9 @@ export default function AboutPage() {
             <p>
               We are a female-owned enterprise with an impeccable 5.0 rating on Facebook. From orchestrating complex logistical transitions to providing sanctuary-level accommodation, our standard of service remains uncompromised.
             </p>
+            <p>
+              Beyond transfers and tours, ProAvia also provides flight ticketing, visa handling services, airport assistance, and scheduled shuttle services — making us a full-service travel partner for individuals, corporates, and government clients across Namibia.
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
             <div className="double-bezel-outer proavia-card">

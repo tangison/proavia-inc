@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Car, Compass, Phone, Star } from "lucide-react";
+import { ArrowUpRight, Car, Compass, Phone, Star, Plane, FileCheck, ShieldCheck, Bus } from "lucide-react";
 
 const heroImages = [
   { src: "/images/destinations/destination-sandwich-harbour-ocean-view.webp", alt: "Sandwich Harbour", label: "Sandwich Harbour", region: "Erongo Region" },
@@ -56,6 +56,50 @@ const serviceCards = [
     italic: "Accommodation",
     description: "Curated residential properties in Walvis Bay and Swakopmund. Fully equipped, elegantly appointed, and positioned for exploration.",
     badges: ["Self-Catering", "Prime Locations", "Premium Amenities", "Daily Servicing"],
+  },
+  {
+    href: "/services/flight-ticketing",
+    image: "/images/airports/proavia-airport-airlink-plane.webp",
+    imageAlt: "Flight Ticketing",
+    tag: "flight ticketing",
+    tagIcon: Plane,
+    title: "Flight Ticketing",
+    italic: "& Reservations",
+    description: "Domestic and regional flight bookings handled end-to-end. We secure your seats so your journey starts before you reach the airport.",
+    badges: ["Domestic Flights", "Regional Routes", "Fast Confirmation", "WhatsApp Booking"],
+  },
+  {
+    href: "/services/visa-handling",
+    image: "/images/airports/proavia-airport-walvis-bay-exterior.webp",
+    imageAlt: "Visa Handling",
+    tag: "visa handling",
+    tagIcon: FileCheck,
+    title: "Visa Handling",
+    italic: "Services",
+    description: "Navigating the visa process is time-consuming. We manage your application from documentation to submission — stress-free.",
+    badges: ["Application Support", "Documentation", "All Nationalities", "Expert Guidance"],
+  },
+  {
+    href: "/services/airport-assistance",
+    image: "/images/transfers/proavia-transfer-shuttle-boarding.webp",
+    imageAlt: "Airport Assistance",
+    tag: "airport assistance",
+    tagIcon: ShieldCheck,
+    title: "Airport",
+    italic: "Assistance",
+    description: "Beyond the transfer. Our team assists with check-in, luggage handling, and airport navigation — ideal for first-time arrivals or government delegates.",
+    badges: ["Check-in Support", "Luggage Handling", "VIP Meet & Greet", "24/7 Available"],
+  },
+  {
+    href: "/services/shuttles",
+    image: "/images/vehicles/fleet-volkswagen-in-sosslvei.webp",
+    imageAlt: "Shuttle Services",
+    tag: "shuttle services",
+    tagIcon: Bus,
+    title: "Shuttle",
+    italic: "Services",
+    description: "Scheduled and on-demand shuttle runs between Walvis Bay, Swakopmund, and Windhoek. Reliable, shared, and affordable.",
+    badges: ["Walvis Bay", "Swakopmund", "Windhoek", "Scheduled Runs"],
   },
 ];
 
@@ -181,6 +225,29 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Who We Are */}
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-24">
+        <div className="max-w-[900px] mx-auto">
+          <span className="text-[10px] uppercase tracking-[0.4em] font-bold block text-gold mb-4">WHO WE ARE</span>
+          <h2 className="editorial-headline text-4xl md:text-5xl text-ink mb-6">
+            A proud Namibian{" "}
+            <span className="italic text-gold" style={{ fontFamily: "var(--font-instrument-serif), serif" }}>
+              company
+            </span>
+          </h2>
+          <p className="text-ink/55 text-lg leading-relaxed max-w-[700px]">
+            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we specialise in bespoke travel logistics — from airport transfers and tours to flight ticketing, visa handling, and shuttle services. Our team responds within minutes, not hours.
+          </p>
+          <Link
+            className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mt-6 text-gold hover:text-gold/70 transition-colors duration-300"
+            href="/about"
+          >
+            Learn More
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </Link>
         </div>
       </section>
 
