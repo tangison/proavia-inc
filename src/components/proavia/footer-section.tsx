@@ -14,7 +14,7 @@ export default function FooterSection() {
               width={320}
               height={132}
               className="h-20 md:h-24 w-auto"
-              src="/images/ProVialogo.webp"
+              src="/images/proavia-logo-light.webp"
             />
             <p className="text-sm opacity-50 leading-relaxed">
               Namibia, done right. Transfers, tours, and car hire from Walvis Bay.

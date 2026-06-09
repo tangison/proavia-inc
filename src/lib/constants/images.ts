@@ -1,8 +1,8 @@
 export const IMAGES = {
-  logo: "/images/ProVialogo.webp",
-  logoLight: "/images/ProVialogo-light.webp",
-  logoPng: "/images/ProVialogo.png",
-  logoLightPng: "/images/ProVialogo-light.png",
+  logo: "/images/proavia-logo-light.webp",
+  logoDark: "/images/proavia-logo-dark.webp",
+  logoPng: "/images/proavia-logo-light.png",
+  logoDarkPng: "/images/proavia-logo-dark.png",
   icon: "/images/icon.webp",
   attaLogo: "/images/atta-logo.webp",
   nipdbLogo: "/images/nipdb-logo.webp",

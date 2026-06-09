@@ -97,7 +97,7 @@ export default function Navigation() {
             width={160}
             height={65}
             className="h-9 lg:h-10 w-auto"
-            src="/images/ProVialogo.webp"
+            src="/images/proavia-logo-light.webp"
             priority
           />
         </Link>
