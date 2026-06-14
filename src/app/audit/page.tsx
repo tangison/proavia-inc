@@ -398,7 +398,7 @@ export default function AuditPage() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-ink/5 flex items-center gap-3">
                   <a
-                    href="https://tangison.com"
+                    href="https://studio.tangison.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-medium text-gold hover:text-gold/80 transition-colors flex items-center gap-1.5"

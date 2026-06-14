@@ -2,21 +2,14 @@ import Image from "next/image";
 import PageHeader from "@/components/proavia/page-header";
 
 const galleryImages = [
-  // Retained original gallery images (not in removal list)
+  // Retained original gallery images
   { src: "/images/experiences/experience-tour-photo-1.webp", alt: "Desert adventure" },
   { src: "/images/experiences/experience-tour-photo-2.webp", alt: "Coastal scenery" },
   { src: "/images/experiences/experience-tour-photo-3.webp", alt: "4x4 dune driving" },
   { src: "/images/experiences/experience-tour-photo-6.webp", alt: "Sandwich Harbour" },
-  { src: "/images/experiences/experience-tour-photo-10.webp", alt: "Dune adventure" },
   { src: "/images/experiences/experience-tour-photo-11.webp", alt: "Coastal tour" },
   { src: "/images/experiences/experience-tour-photo-12.webp", alt: "Catamaran cruise" },
-  { src: "/images/experiences/proavia-tour-safari-elephant.webp", alt: "Elephant safari" },
-  { src: "/images/experiences/proavia-tour-safari-giraffe.webp", alt: "Giraffe safari" },
-  { src: "/images/experiences/proavia-tour-desert-suv.webp", alt: "Desert SUV" },
-  { src: "/images/experiences/proavia-tour-pink-lake-experience.webp", alt: "Pink lake" },
-  { src: "/images/experiences/proavia-tour-marine-catamaran.webp", alt: "Marine catamaran" },
-  { src: "/images/experiences/proavia-tour-wildlife-elephant-zebras.webp", alt: "Wildlife elephants and zebras" },
-  // New client images
+  // Client images
   { src: "/images/experiences/client-deadvlei-woman-white-dress.webp", alt: "Woman in white dress at Deadvlei" },
   { src: "/images/experiences/client-cape-fur-seals-colony.webp", alt: "Cape fur seals colony" },
   { src: "/images/experiences/client-sossusvlei-dune-ridge-group.webp", alt: "Group on Sossusvlei dune ridge" },
