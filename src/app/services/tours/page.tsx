@@ -20,12 +20,12 @@ export default function ToursPage() {
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
-                alt="Where the Namib Desert meets the Atlantic"
+                alt="Aerial view of Sandwich Harbour dunes meeting the Atlantic"
                 width={1920}
                 height={640}
                 className="object-cover w-full h-full"
                 sizes="100vw"
-                src="/images/destinations/destination-sandwich-harbour-coastal-dunes.webp"
+                src="/images/experiences/client-sandwich-harbour-dunes-aerial.webp"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/20 to-transparent flex flex-col justify-end p-8 md:p-16">

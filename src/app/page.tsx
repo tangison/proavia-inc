@@ -7,9 +7,9 @@ import { ArrowUpRight, Car, Compass, Phone, Star, Plane, FileCheck, ShieldCheck,
 
 const heroImages = [
   { src: "/images/destinations/destination-sandwich-harbour-ocean-view.webp", alt: "Sandwich Harbour", label: "Sandwich Harbour", region: "Erongo Region" },
-  { src: "/images/experiences/proavia-tour-safari-elephant.webp", alt: "Namibian Safari", label: "", region: "" },
-  { src: "/images/experiences/proavia-tour-pink-lake-experience.webp", alt: "Pink Salt Lakes", label: "", region: "" },
-  { src: "/images/experiences/experience-tour-photo-3.webp", alt: "Coastal Safaris", label: "", region: "" },
+  { src: "/images/experiences/client-sandwich-harbour-woman-dunes-ocean.webp", alt: "Sandwich Harbour Desert Meets Ocean", label: "", region: "" },
+  { src: "/images/experiences/client-pink-lake-man-hat.webp", alt: "Pink Salt Lakes Experience", label: "", region: "" },
+  { src: "/images/experiences/client-sossusvlei-dune-ridge-group.webp", alt: "Sossusvlei Dune Tour", label: "", region: "" },
 ];
 
 const serviceCards = [
@@ -48,8 +48,8 @@ const serviceCards = [
   },
   {
     href: "/accommodation",
-    image: "/images/accommodation/proavia-service-hotel-accommodation.webp",
-    imageAlt: "Luxury Accommodation",
+    image: "/images/experiences/client-luxury-tent-bathtub-desert.webp",
+    imageAlt: "Luxury Desert Accommodation",
     tag: "accommodation",
     tagIcon: Star,
     title: "Luxury",

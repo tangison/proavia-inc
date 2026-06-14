@@ -65,12 +65,12 @@ Details: ${formData.message || "None"}`;
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
-                alt="Luxury accommodation by ProAvia"
+                alt="Luxury desert tent accommodation with bathtub view"
                 width={1920}
                 height={640}
                 className="object-cover w-full h-full"
                 sizes="100vw"
-                src="/images/accommodation/proavia-service-hotel-accommodation.webp"
+                src="/images/experiences/client-luxury-tent-bed-view.webp"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
