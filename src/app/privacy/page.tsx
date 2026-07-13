@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { companyContact } from "@/lib/constants/contact";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | ProAvia Travel & Tours",
@@ -61,16 +62,16 @@ export default function PrivacyPage() {
 
           <h2 className="text-2xl font-serif text-ink mt-8">6. Your Rights</h2>
           <p>
-            You have the right to access, correct, or delete your personal information. Contact us at proaviatravel@gmail.com to exercise these rights.
+            You have the right to access, correct, or delete your personal information. Contact us at {companyContact.email.display} to exercise these rights.
           </p>
 
           <h2 className="text-2xl font-serif text-ink mt-8">7. Contact</h2>
           <p>
             For privacy-related enquiries, contact us at{" "}
-            <a href="mailto:proaviatravel@gmail.com" className="text-gold hover:text-gold/80 transition-colors">
-              proaviatravel@gmail.com
+            <a href={companyContact.email.href} className="text-gold hover:text-gold/80 transition-colors">
+              {companyContact.email.display}
             </a>{" "}
-            or call +264 81 810 9185.
+            or call {companyContact.officePhone.display} (office) or {companyContact.mobile.display} (mobile).
           </p>
         </div>
       </div>

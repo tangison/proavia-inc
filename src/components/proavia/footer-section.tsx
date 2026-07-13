@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 import { tours } from "@/data/tours";
+import { companyContact } from "@/lib/constants/contact";
 
 export default function FooterSection() {
   return (
@@ -31,10 +32,10 @@ export default function FooterSection() {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/264818109185"
+                href={companyContact.mobile.whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-black/8 flex items-center justify-center opacity-50 hover:opacity-100 hover:border-gold/30 hover:text-gold transition-all duration-300"
+                className="w-9 h-9 rounded-full border border-black/8 flex items-center justify-center opacity-50 hover:opacity-100 hover:border-gold/30 hover:text-gold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2"
                 aria-label="WhatsApp"
               >
                 <Phone className="w-4 h-4" />
@@ -99,34 +100,56 @@ export default function FooterSection() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-2.5">
                   <Phone className="w-3 h-3 text-gold flex-shrink-0 mt-1" />
-                  <a
-                    href="https://wa.me/264818109185"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
-                  >
-                    +264 81 810 9185
-                  </a>
+                  <div className="flex flex-col gap-0.5">
+                    <a
+                      href={companyContact.officePhone.href}
+                      className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <span className="text-[9px] uppercase tracking-widest opacity-60 block">{companyContact.officePhone.label}</span>
+                      {companyContact.officePhone.display}
+                    </a>
+                    <a
+                      href={companyContact.mobile.whatsappHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <span className="text-[9px] uppercase tracking-widest opacity-60 block">{companyContact.mobile.label}</span>
+                      {companyContact.mobile.display}
+                    </a>
+                  </div>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <Mail className="w-3 h-3 text-gold flex-shrink-0 mt-1" />
                   <a
-                    href="mailto:proaviatravel@gmail.com"
+                    href={companyContact.email.href}
                     className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
                   >
-                    proaviatravel@gmail.com
+                    {companyContact.email.display}
                   </a>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-3 h-3 text-gold flex-shrink-0 mt-1" />
-                  <a
-                    href="https://maps.app.goo.gl/V2TnUoufwFc9ypJx7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
-                  >
-                    154 Sam Nujoma Ave, Walvis Bay Urban, Erongo
-                  </a>
+                  <div className="flex flex-col gap-1.5">
+                    <a
+                      href={companyContact.locations.walvisBay.mapsHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <span className="text-[9px] uppercase tracking-widest opacity-60 block">{companyContact.locations.walvisBay.classification}</span>
+                      {companyContact.locations.walvisBay.address}
+                    </a>
+                    <a
+                      href={companyContact.locations.windhoek.mapsHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm opacity-55 hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <span className="text-[9px] uppercase tracking-widest opacity-60 block">{companyContact.locations.windhoek.classification}</span>
+                      {companyContact.locations.windhoek.address}
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>

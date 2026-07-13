@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Phone, Mail, MapPin, Facebook, Clock, Globe, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import PageHeader from "@/components/proavia/page-header";
+import { companyContact, buildWhatsAppLink } from "@/lib/constants/contact";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", topic: "", message: "" });
@@ -14,7 +15,7 @@ export default function ContactPage() {
 Name: ${formData.name || "Not provided"}
 Regarding: ${formData.topic || "General"}
 Message: ${formData.message || "None"}`;
-    window.open(`https://wa.me/264818109185?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(buildWhatsAppLink(msg), "_blank");
   };
 
   return (
@@ -40,52 +41,80 @@ Message: ${formData.message || "None"}`;
                 </h2>
               </div>
               <p className="text-ink/50 text-sm leading-relaxed">WhatsApp is the fastest way to reach us. We respond within minutes, not hours. No automated replies, no holding queues — a real person on the other end who can answer your questions and get things sorted right away.</p>
+
               <div className="space-y-4">
-                <a href="tel:+264818109185" className="flex items-center gap-4 group">
+              {/* Two phone numbers — side by side on desktop, stacked on mobile */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href={companyContact.officePhone.href} className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
                   <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">
                     <Phone className="w-4 h-4 text-gold" />
                   </span>
-                  <div>
-                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Phone / WhatsApp</span>
-                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300">+264 81 810 9185</span>
+                  <div className="min-w-0">
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">{companyContact.officePhone.label}</span>
+                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300 block">{companyContact.officePhone.display}</span>
                   </div>
                 </a>
-                <a href="mailto:proaviatravel@gmail.com" className="flex items-center gap-4 group">
+                <a href={companyContact.mobile.telephoneHref} className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
                   <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">
-                    <Mail className="w-4 h-4 text-gold" />
+                    <Phone className="w-4 h-4 text-gold" />
                   </span>
-                  <div>
-                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Email</span>
-                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300">proaviatravel@gmail.com</span>
-                  </div>
-                </a>
-                <a href="https://maps.app.goo.gl/V2TnUoufwFc9ypJx7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                  <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">
-                    <MapPin className="w-4 h-4 text-gold" />
-                  </span>
-                  <div>
-                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Address</span>
-                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300">154 Sam Nujoma Ave, Walvis Bay Urban, Erongo, Namibia</span>
-                    <span className="text-gold/50 text-[10px] tracking-wider uppercase block mt-0.5">View on Google Maps</span>
-                  </div>
-                </a>
-                <a href="https://www.facebook.com/ProaviaHoldingsNamibia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                  <span className="w-11 h-11 rounded-full bg-ocean/10 flex items-center justify-center shrink-0 group-hover:bg-ocean/20 transition-colors duration-300">
-                    <Facebook className="w-4 h-4 text-ocean" />
-                  </span>
-                  <div>
-                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Facebook</span>
-                    <span className="text-ink/80 text-sm group-hover:text-ocean transition-colors duration-300">Proavia Holdings Namibia</span>
-                    <span className="text-ink/50 text-[10px] tracking-wider uppercase block mt-0.5">Tour itineraries & updates</span>
+                  <div className="min-w-0">
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">{companyContact.mobile.label}</span>
+                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300 block">{companyContact.mobile.display}</span>
                   </div>
                 </a>
               </div>
+
+              <a href={companyContact.email.href} className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
+                <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">
+                  <Mail className="w-4 h-4 text-gold" />
+                </span>
+                <div className="min-w-0">
+                  <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Email</span>
+                  <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300 block">{companyContact.email.display}</span>
+                </div>
+              </a>
+
+              {/* Two office locations — side by side on desktop, stacked on mobile */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href={companyContact.locations.walvisBay.mapsHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
+                  <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300 mt-0.5">
+                    <MapPin className="w-4 h-4 text-gold" />
+                  </span>
+                  <div className="min-w-0">
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">{companyContact.locations.walvisBay.label} · {companyContact.locations.walvisBay.classification}</span>
+                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300 block leading-snug">{companyContact.locations.walvisBay.address}</span>
+                    <span className="text-gold/50 text-[10px] tracking-wider uppercase block mt-0.5">View on Google Maps</span>
+                  </div>
+                </a>
+                <a href={companyContact.locations.windhoek.mapsHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
+                  <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300 mt-0.5">
+                    <MapPin className="w-4 h-4 text-gold" />
+                  </span>
+                  <div className="min-w-0">
+                    <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">{companyContact.locations.windhoek.label} · {companyContact.locations.windhoek.classification}</span>
+                    <span className="text-ink/80 text-sm group-hover:text-gold transition-colors duration-300 block leading-snug">{companyContact.locations.windhoek.address}</span>
+                    <span className="text-gold/50 text-[10px] tracking-wider uppercase block mt-0.5">View on Google Maps</span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://www.facebook.com/ProaviaHoldingsNamibia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
+                <span className="w-11 h-11 rounded-full bg-ocean/10 flex items-center justify-center shrink-0 group-hover:bg-ocean/20 transition-colors duration-300">
+                  <Facebook className="w-4 h-4 text-ocean" />
+                </span>
+                <div className="min-w-0">
+                  <span className="text-ink/50 text-[10px] uppercase tracking-widest font-medium block">Facebook</span>
+                  <span className="text-ink/80 text-sm group-hover:text-ocean transition-colors duration-300 block">Proavia Holdings Namibia</span>
+                  <span className="text-ink/50 text-[10px] tracking-wider uppercase block mt-0.5">Tour itineraries & updates</span>
+                </div>
+              </a>
+              </div>
               <div className="pt-4">
                 <a
-                  href="https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%27d%20like%20to%20get%20in%20touch."
+                  href={buildWhatsAppLink("Hello ProAvia, I'd like to get in touch.")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-ink text-white pl-6 pr-3 py-3.5 rounded-full text-[13px] font-semibold tracking-tight btn-magnetic group"
+                  className="inline-flex items-center gap-3 bg-ink text-white pl-6 pr-3 py-3.5 rounded-full text-[13px] font-semibold tracking-tight btn-magnetic group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2"
                 >
                   <Phone className="w-4 h-4" />
                   Chat on WhatsApp

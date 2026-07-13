@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Search, Facebook, Phone, X } from "lucide-react";
+import { companyContact } from "@/lib/constants/contact";
 
 // ─── DATA ─────────────────────────────────────────────
 
@@ -528,10 +529,10 @@ export default function Navigation() {
                   Book Now
                 </Link>
                 <a
-                  href="https://wa.me/264818109185"
+                  href={companyContact.mobile.whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-3 bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-white/20 font-bold tracking-widest uppercase rounded-xl text-sm transition-all duration-200 flex items-center gap-2"
+                  className="px-5 py-3 bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-white/20 font-bold tracking-widest uppercase rounded-xl text-sm transition-all duration-200 flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40"
                 >
                   WhatsApp
                 </a>
@@ -546,7 +547,20 @@ export default function Navigation() {
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
-                <span className="text-[10px] text-white/20 tracking-wider">+264 81 810 9185</span>
+                <div className="flex flex-col text-right leading-tight">
+                  <a
+                    href={companyContact.officePhone.href}
+                    className="text-[10px] text-white/40 hover:text-white tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 rounded"
+                  >
+                    {companyContact.officePhone.display}
+                  </a>
+                  <a
+                    href={companyContact.mobile.telephoneHref}
+                    className="text-[10px] text-white/40 hover:text-white tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 rounded"
+                  >
+                    {companyContact.mobile.display}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

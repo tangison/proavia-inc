@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star, Users, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import { companyContact } from "@/lib/constants/contact";
 
 export default function AboutPage() {
   return (
@@ -94,15 +95,30 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="pt-6 text-ink/35 text-sm flex items-center gap-2">
-            <MapPin className="w-3.5 h-3.5" />
+          <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <a
-              href="https://maps.app.goo.gl/V2TnUoufwFc9ypJx7"
+              href={companyContact.locations.walvisBay.mapsHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gold transition-colors"
+              className="text-ink/60 hover:text-gold transition-colors flex items-start gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-lg"
             >
-              154 Sam Nujoma Ave, Walvis Bay Urban, Erongo, Namibia
+              <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+              <span>
+                <span className="block text-[9px] uppercase tracking-widest opacity-60 mb-0.5">{companyContact.locations.walvisBay.classification}</span>
+                {companyContact.locations.walvisBay.address}
+              </span>
+            </a>
+            <a
+              href={companyContact.locations.windhoek.mapsHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink/60 hover:text-gold transition-colors flex items-start gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-lg"
+            >
+              <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+              <span>
+                <span className="block text-[9px] uppercase tracking-widest opacity-60 mb-0.5">{companyContact.locations.windhoek.classification}</span>
+                {companyContact.locations.windhoek.address}
+              </span>
             </a>
           </div>
         </div>

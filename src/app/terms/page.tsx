@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { companyContact } from "@/lib/constants/contact";
 
 export const metadata: Metadata = {
   title: "Terms of Service | ProAvia Travel & Tours",
@@ -75,10 +76,10 @@ export default function TermsPage() {
           <h2 className="text-2xl font-serif text-ink mt-8">9. Contact</h2>
           <p>
             For questions about these terms, contact us at{" "}
-            <a href="mailto:proaviatravel@gmail.com" className="text-gold hover:text-gold/80 transition-colors">
-              proaviatravel@gmail.com
+            <a href={companyContact.email.href} className="text-gold hover:text-gold/80 transition-colors">
+              {companyContact.email.display}
             </a>{" "}
-            or call +264 81 810 9185.
+            or call {companyContact.officePhone.display} (office) or {companyContact.mobile.display} (mobile).
           </p>
         </div>
       </div>
