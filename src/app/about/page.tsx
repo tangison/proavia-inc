@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Star, Users, MapPin, Phone, ArrowUpRight } from "lucide-react";
+import { Star, Users, MapPin, Phone, ArrowUpRight, Clock } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
 import { companyContact } from "@/lib/constants/contact";
 
@@ -15,7 +15,7 @@ export default function AboutPage() {
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
-                alt="The Walvis Bay Salt Shore — ProAvia's home territory"
+                alt="The Walvis Bay Salt Shore, ProAvia's home territory"
                 width={1920}
                 height={640}
                 className="object-cover w-full h-full"
@@ -54,16 +54,16 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              ProAvia Travel & Tours is a Namibian-owned company based in Walvis Bay, right in the heart of the Erongo Region. We started this business because we saw too many visitors getting stuck with unreliable transport, overpriced tours, and zero local knowledge. So we built the company we wished existed when we travelled — one that answers the phone, shows up on time, and actually knows the roads.
+              ProAvia Travel & Tours is a Namibian-owned company based in Walvis Bay, right in the heart of the Erongo Region. We started this business because we saw too many visitors getting stuck with unreliable transport, overpriced tours, and zero local knowledge. So we built the company we wished existed when we travelled, one that answers the phone, shows up on time, and actually knows the roads.
             </p>
             <p>
-              We are a female-owned business and we carry that with pride. It matters in this industry. Our 5.0 rating on Facebook isn&apos;t bought or padded — it comes from hundreds of real travellers who trusted us with their Namibia trip and walked away happy. We don&apos;t take that trust lightly.
+              We are a female-owned business and we carry that with pride. It matters in this industry. Our 5.0 rating on Facebook isn&apos;t bought or padded. It comes from hundreds of real travellers who trusted us with their Namibia trip and walked away happy. We don&apos;t take that trust lightly.
             </p>
             <p>
               What started as airport transfers has grown into a full-service travel operation. Today we run Sandwich Harbour 4x4 tours, car hire with unlimited kilometres, self-catering accommodation, flight ticketing, visa handling, airport assistance, and scheduled shuttles between Walvis Bay, Swakopmund, and Windhoek. If it involves getting around Namibia, we probably do it.
             </p>
             <p>
-              We are accredited by ATTA, NIPDB, and the Namibia Tourism Board — not because we like collecting badges, but because it holds us to a standard. Every service we offer is insured, every driver is professional, and every booking is confirmed on WhatsApp within minutes. That&apos;s not a promise. That&apos;s just how we work.
+              We are accredited by ATTA, NIPDB, and the Namibia Tourism Board, not because we like collecting badges, but because it holds us to a standard. Every service we offer is insured, every driver is professional, and every booking is confirmed on WhatsApp within minutes. That&apos;s not a promise. That&apos;s just how we work.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
@@ -121,6 +121,20 @@ export default function AboutPage() {
               </span>
             </a>
           </div>
+          {/* Operating hours summary. Full schedule on /contact. */}
+          <div className="pt-6 mt-2 border-t border-ink/5">
+            <div className="flex items-center gap-2 text-[10px] font-bold tracking-widest uppercase opacity-50 mb-3">
+              <Clock className="w-3.5 h-3.5" /> Operating Hours
+            </div>
+            <ul className="text-sm text-ink/60 leading-relaxed space-y-1">
+              <li>{companyContact.operatingHours.weekdays.label}: {companyContact.operatingHours.weekdays.display}</li>
+              <li>{companyContact.operatingHours.saturday.label}: {companyContact.operatingHours.saturday.display}</li>
+              <li>{companyContact.operatingHours.sunday.label}: {companyContact.operatingHours.sunday.display}</li>
+              <li>{companyContact.operatingHours.publicHolidays.label}: {companyContact.operatingHours.publicHolidays.display}</li>
+            </ul>
+            <p className="text-ink/40 text-xs mt-3 leading-relaxed">{companyContact.operatingHours.emergencyNote}</p>
+            <Link href="/contact#operating-hours" className="text-gold/70 hover:text-gold text-[10px] tracking-widest uppercase mt-2 inline-block">Full hours</Link>
+          </div>
         </div>
       </section>
 
@@ -142,7 +156,7 @@ export default function AboutPage() {
                 </span>
               </h3>
               <p className="text-white/50 text-lg mb-8 max-w-md mx-auto">
-                Send us a message on WhatsApp and we&apos;ll get back to you within minutes. Transfer, tour, car, or accommodation — whatever you need, we&apos;re here.
+                Send us a message on WhatsApp and we&apos;ll get back to you within minutes. Transfer, tour, car, or accommodation: whatever you need, we&apos;re here.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -174,9 +188,9 @@ export default function AboutPage() {
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-ink/50">Accredited & Recognised</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-            <Image alt="ATTA — African Travel and Tourism Association" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/atta-logo.webp" loading="lazy" />
-            <Image alt="NIPDB — Namibia Investment Promotion and Development Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/nipdb-logo.webp" loading="lazy" />
-            <Image alt="NTB — Namibia Tourism Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/ntb-logo.webp" loading="lazy" />
+            <Image alt="ATTA, African Travel and Tourism Association" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/atta-logo.webp" loading="lazy" />
+            <Image alt="NIPDB, Namibia Investment Promotion and Development Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/nipdb-logo.webp" loading="lazy" />
+            <Image alt="NTB, Namibia Tourism Board" width={120} height={60} className="h-10 md:h-12 w-auto opacity-50 hover:opacity-80 transition-opacity duration-300" src="/images/ntb-logo.webp" loading="lazy" />
           </div>
         </div>
       </section>

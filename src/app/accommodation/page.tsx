@@ -83,10 +83,10 @@ Details: ${formData.message || "None"}`;
       <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24">
         <div className="max-w-[900px] mx-auto space-y-5 text-ink/55 leading-relaxed text-lg">
           <p>
-            Our accommodation collection represents the finest residential properties in Walvis Bay and Swakopmund. Each property has been hand-picked for its location, comfort, and ability to serve as a proper home base while you explore Namibia. These are not hotel rooms — they are fully furnished homes where you can unpack, cook your own meals, and settle in.
+            Our accommodation collection represents the finest residential properties in Walvis Bay and Swakopmund. Each property has been hand-picked for its location, comfort, and ability to serve as a proper home base while you explore Namibia. These are not hotel rooms. They are fully furnished homes where you can unpack, cook your own meals, and settle in.
           </p>
           <p>
-            From modern apartments overlooking the lagoon to spacious family homes within walking distance of the beach, every property comes with premium appliances, high-speed WiFi, and the kind of thoughtful details that make a difference when you&apos;re far from home. Fresh linen, quality cookware, reliable hot water — the basics that shouldn&apos;t be a question mark.
+            From modern apartments overlooking the lagoon to spacious family homes within walking distance of the beach, every property comes with premium appliances, high-speed WiFi, and the kind of thoughtful details that make a difference when you&apos;re far from home. Fresh linen, quality cookware, reliable hot water, the basics that shouldn&apos;t be a question mark.
           </p>
           <p>
             We manage each property ourselves. That means if something breaks, we fix it. If you need a late checkout, you talk to us directly. No call centres, no waiting for a manager who&apos;s never around. You deal with ProAvia from booking to checkout, and we keep things simple.
@@ -162,7 +162,7 @@ Details: ${formData.message || "None"}`;
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Tell us your travel dates and preferred location — Walvis Bay or Swakopmund. We&apos;ll match you with the right property and confirm everything on WhatsApp.
+                  Tell us your travel dates and preferred location (Walvis Bay or Swakopmund). We&apos;ll match you with the right property and confirm everything on WhatsApp.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -247,6 +247,19 @@ Details: ${formData.message || "None"}`;
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Accommodation */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Accommodation</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Check-in and check-out conditions may vary by property.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Occupancy, security deposits, house rules and cancellation terms will be included in the quotation or confirmation.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

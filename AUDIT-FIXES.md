@@ -1,4 +1,4 @@
-# ProAvia Travel — Audit Fix Summary
+# ProAvia Travel, Audit Fix Summary
 
 ## 1. Sitemap Domain Mismatch ✅ FIXED
 - **File**: `src/app/sitemap.ts`

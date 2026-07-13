@@ -14,7 +14,7 @@ const features = [
   {
     icon: Luggage,
     title: "Luggage Handling",
-    description: "Assistance with your luggage from vehicle to check-in desk. No struggling with bags — we handle the heavy lifting so you travel light.",
+    description: "Assistance with your luggage from vehicle to check-in desk. No struggling with bags. We handle the heavy lifting so you travel light.",
   },
   {
     icon: Crown,
@@ -38,7 +38,7 @@ export default function AirportAssistancePage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Airport assistance — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/transfers/proavia-transfer-shuttle-boarding.webp" priority />
+              <Image alt="Airport assistance, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/transfers/proavia-transfer-shuttle-boarding.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -183,6 +183,20 @@ export default function AirportAssistancePage() {
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Airport Assistance */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Airport Assistance</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Service availability depends on airport operating hours and staff scheduling.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers must provide accurate flight details and passenger information.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Any third-party airport or VIP lounge fees may be passed through at cost.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

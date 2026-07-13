@@ -24,7 +24,7 @@ Message: ${formData.message || "None"}`;
         label="CONTACT"
         title="Get intouch."
         italicWord="touch."
-        description="WhatsApp, call, or email — whichever suits you. We respond within minutes on WhatsApp."
+        description="WhatsApp, call, or email, whichever suits you. We respond within minutes on WhatsApp."
       />
 
       <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24">
@@ -40,10 +40,10 @@ Message: ${formData.message || "None"}`;
                   </span>
                 </h2>
               </div>
-              <p className="text-ink/50 text-sm leading-relaxed">WhatsApp is the fastest way to reach us. We respond within minutes, not hours. No automated replies, no holding queues — a real person on the other end who can answer your questions and get things sorted right away.</p>
+              <p className="text-ink/50 text-sm leading-relaxed">WhatsApp is the fastest way to reach us. We respond within minutes, not hours. No automated replies, no holding queues, just a real person on the other end who can answer your questions and get things sorted right away.</p>
 
               <div className="space-y-4">
-              {/* Two phone numbers — side by side on desktop, stacked on mobile */}
+              {/* Two phone numbers, side by side on desktop, stacked on mobile */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <a href={companyContact.officePhone.href} className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
                   <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">
@@ -75,7 +75,7 @@ Message: ${formData.message || "None"}`;
                 </div>
               </a>
 
-              {/* Two office locations — side by side on desktop, stacked on mobile */}
+              {/* Two office locations, side by side on desktop, stacked on mobile */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <a href={companyContact.locations.walvisBay.mapsHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 rounded-xl">
                   <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300 mt-0.5">
@@ -192,14 +192,19 @@ Message: ${formData.message || "None"}`;
       <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24 bg-canvas-warm">
         <div className="max-w-[1000px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="double-bezel-outer h-full proavia-card">
+            <div className="double-bezel-outer h-full proavia-card" id="operating-hours">
               <div className="double-bezel-inner p-6 md:p-8 flex flex-col h-full">
                 <span className="w-10 h-10 rounded-full bg-ocean/10 flex items-center justify-center mb-4">
                   <Clock className="w-5 h-5 text-ocean" />
                 </span>
-                <h3 className="text-lg font-serif text-ink mb-2">Business Hours</h3>
-                <p className="text-ink/50 text-sm leading-relaxed">Mon – Fri: 08:00 – 17:00<br />Sat: 09:00 – 13:00<br />Sun: Emergency only</p>
-                <p className="text-ink/35 text-[11px] mt-3">WhatsApp available 24/7 — we respond within minutes</p>
+                <h3 className="text-lg font-serif text-ink mb-2">Operating Hours</h3>
+                <p className="text-ink/50 text-sm leading-relaxed">
+                  {companyContact.operatingHours.weekdays.label}: {companyContact.operatingHours.weekdays.display}<br />
+                  {companyContact.operatingHours.saturday.label}: {companyContact.operatingHours.saturday.display}<br />
+                  {companyContact.operatingHours.sunday.label}: {companyContact.operatingHours.sunday.display}<br />
+                  {companyContact.operatingHours.publicHolidays.label}: {companyContact.operatingHours.publicHolidays.display}
+                </p>
+                <p className="text-ink/35 text-[11px] mt-3">{companyContact.operatingHours.emergencyNote}</p>
               </div>
             </div>
             <div className="double-bezel-outer h-full proavia-card">
@@ -217,7 +222,7 @@ Message: ${formData.message || "None"}`;
                   <Phone className="w-5 h-5 text-gold" />
                 </span>
                 <h3 className="text-lg font-serif text-ink mb-2">Ready to Book?</h3>
-                <p className="text-ink/50 text-sm leading-relaxed mb-4">Use our booking form for service-specific requests with all the details — dates, flight numbers, pickup locations.</p>
+                <p className="text-ink/50 text-sm leading-relaxed mb-4">Use our booking form for service-specific requests with all the details: dates, flight numbers, pickup locations.</p>
                 <a className="text-gold text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5 hover:gap-2.5 transition-all duration-300" href="/booking">
                   Book now <ArrowUpRight className="w-3 h-3" />
                 </a>

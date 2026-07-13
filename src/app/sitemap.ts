@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/accommodation",
     "/audit",
     "/booking",
+    "/cancellation-policy",
     "/contact",
     "/gallery",
     "/insights",

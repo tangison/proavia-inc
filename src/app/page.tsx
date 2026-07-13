@@ -21,7 +21,7 @@ const serviceCards = [
     tagIcon: Car,
     title: "Airport & City",
     italic: "Transfers",
-    description: "Your driver meets you inside arrivals at Hosea Kutako or Walvis Bay airport. Private vehicle, direct to your door — no shared rides, no waiting.",
+    description: "Your driver meets you inside arrivals at Hosea Kutako or Walvis Bay airport. Private vehicle, direct to your door, no shared rides, no waiting.",
     badges: ["Meet & Greet", "24/7 Availability", "Door-to-Door", "Insured Fleet"],
   },
   {
@@ -32,7 +32,7 @@ const serviceCards = [
     tagIcon: Compass,
     title: "Sandwich Harbour",
     italic: "Tours",
-    description: "Drive through the dunes where the Namib meets the Atlantic. A 4x4 tour to one of the most isolated lagoons on Earth — a UNESCO World Heritage Site candidate.",
+    description: "Drive through the dunes where the Namib meets the Atlantic. A 4x4 tour to one of the most isolated lagoons on Earth, a UNESCO World Heritage Site candidate.",
     badges: ["4x4 Adventure", "Dune Driving", "Photo Stops", "Expert Guides"],
   },
   {
@@ -76,7 +76,7 @@ const serviceCards = [
     tagIcon: FileCheck,
     title: "Visa Handling",
     italic: "Services",
-    description: "Navigating the visa process is time-consuming. We manage your application from documentation to submission — stress-free.",
+    description: "Navigating the visa process is time-consuming. We manage your application from documentation to submission, stress-free.",
     badges: ["Application Support", "Documentation", "All Nationalities", "Expert Guidance"],
   },
   {
@@ -87,7 +87,7 @@ const serviceCards = [
     tagIcon: ShieldCheck,
     title: "Airport",
     italic: "Assistance",
-    description: "Beyond the transfer. Our team assists with check-in, luggage handling, and airport navigation — ideal for first-time arrivals or government delegates.",
+    description: "Beyond the transfer. Our team assists with check-in, luggage handling, and airport navigation, ideal for first-time arrivals or government delegates.",
     badges: ["Check-in Support", "Luggage Handling", "VIP Meet & Greet", "24/7 Available"],
   },
   {
@@ -240,7 +240,7 @@ export default function HomePage() {
             </span>
           </h2>
           <p className="text-ink/55 text-lg leading-relaxed max-w-[700px]">
-            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we specialise in bespoke travel logistics — from airport transfers and tours to flight ticketing, visa handling, and shuttle services. We answer within minutes, not hours, and we run every service ourselves — no subcontractors, no surprises.
+            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we specialise in bespoke travel logistics, from airport transfers and tours to flight ticketing, visa handling, and shuttle services. We answer within minutes, not hours, and we run every service ourselves, no subcontractors, no surprises.
           </p>
           <Link
             className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mt-6 text-gold hover:text-gold/70 transition-colors duration-300"
@@ -261,7 +261,7 @@ export default function HomePage() {
               Essential <span className="italic text-gold" style={{ fontFamily: "var(--font-instrument-serif), serif" }}>Logistics</span>
             </h2>
             <p className="text-ink/40 text-lg mt-4 max-w-lg">
-              Everything you need to explore Namibia, handled by a team that actually lives here. Transfers, tours, car hire, accommodation, flights, visas — we sort it all from our base in Walvis Bay.
+              Everything you need to explore Namibia, handled by a team that actually lives here. Transfers, tours, car hire, accommodation, flights, visas. We sort it all from our base in Walvis Bay.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -331,7 +331,7 @@ export default function HomePage() {
                 </span>
               </h3>
               <p className="text-white/50 text-lg mb-8 max-w-md mx-auto">
-                A single WhatsApp message gets things moving. Transfer, tour, car, or accommodation — tell us what you need and we&apos;ll sort it out from there.
+                A single WhatsApp message gets things moving. Transfer, tour, car, or accommodation: tell us what you need and we&apos;ll sort it out from there.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

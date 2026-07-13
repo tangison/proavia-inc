@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Phone, ArrowUpRight, Plane, Compass, Car, FileCheck, ShieldCheck, Bus } from "lucide-react";
 import PageHeader from "@/components/proavia/page-header";
+import { companyContact } from "@/lib/constants/contact";
 
 const quickBookItems = [
   {
@@ -21,7 +23,7 @@ const quickBookItems = [
     href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%27d%20like%20to%20hire%20a%20vehicle.",
     icon: Car,
     title: "Car Hire",
-    description: "Reliable vehicles with unlimited km — Walvis Bay or Windhoek pickup",
+    description: "Reliable vehicles with unlimited km, Walvis Bay or Windhoek pickup",
   },
   {
     href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%27d%20like%20to%20book%20a%20flight.",
@@ -102,7 +104,10 @@ Details: ${formData.message || "None"}`;
                   </span>
                 </h2>
                 <p className="text-white/40 text-sm">
-                  Fill in the details below. Your booking request opens WhatsApp with a structured message — we respond within minutes.
+                  Fill in the details below. Your booking request opens WhatsApp with a structured message. We respond within minutes.
+                </p>
+                <p className="text-white/40 text-xs mt-3 leading-relaxed">
+                  Office hours: {companyContact.operatingHours.weekdays.label} {companyContact.operatingHours.weekdays.display}, {companyContact.operatingHours.saturday.label} {companyContact.operatingHours.saturday.display}, {companyContact.operatingHours.sunday.label} {companyContact.operatingHours.sunday.display}. {companyContact.operatingHours.emergencyNote}
                 </p>
               </div>
 
@@ -193,7 +198,7 @@ Details: ${formData.message || "None"}`;
                     id="booking-message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us about your trip — destinations, group size, special requests..."
+                    placeholder="Tell us about your trip: destinations, group size, special requests..."
                     rows={4}
                     className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/25 focus-visible:border-gold/50 focus-visible:ring-gold/20 focus-visible:ring-[3px] outline-none px-3 py-2 min-h-[120px] resize-none"
                   />
@@ -211,6 +216,17 @@ Details: ${formData.message || "None"}`;
                 <p className="text-white/50 text-[11px] text-center">
                   Your booking request will open WhatsApp with a pre-filled message. We respond within minutes.
                 </p>
+                <div className="mt-4 pt-4 border-t border-white/5 space-y-3">
+                  <p className="text-white/50 text-[11px] leading-relaxed text-center">
+                    Submitting this form sends a booking request. Your booking is confirmed only after you receive written confirmation from ProAvia.
+                  </p>
+                  <p className="text-white/40 text-[10px] leading-relaxed text-center">
+                    By submitting this request, you confirm that the information provided is accurate and that you have reviewed the{" "}
+                    <Link href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</Link>,{" "}
+                    <Link href="/privacy" className="text-gold/80 hover:text-gold underline underline-offset-2">Privacy Policy</Link>, and{" "}
+                    <Link href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</Link>.
+                  </p>
+                </div>
               </form>
             </div>
           </div>

@@ -213,7 +213,7 @@ export default function Navigation() {
               </span>
             </Link>
 
-            {/* Menu Toggle — Two-line icon */}
+            {/* Menu Toggle, two-line icon */}
             <button
               className={`w-10 h-10 flex items-center justify-center transition-all duration-200 rounded-xl ${
                 menuOpen
@@ -274,7 +274,7 @@ export default function Navigation() {
                     </span>
                   </div>
 
-                  {/* Main navigation links — editorial size */}
+                  {/* Main navigation links, editorial size */}
                   <nav className="space-y-1">
                     {/* Services dropdown */}
                     <div>
@@ -291,7 +291,7 @@ export default function Navigation() {
                           className={`w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 ${servicesOpen ? "rotate-180 text-gold" : "text-white/30"}`}
                         />
                       </button>
-                      {/* Services dropdown — image grid */}
+                      {/* Services dropdown, image grid */}
                       <div
                         className={`overflow-hidden transition-all duration-500 ${
                           servicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
@@ -345,7 +345,7 @@ export default function Navigation() {
                           className={`w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 ${toursOpen ? "rotate-180 text-gold" : "text-white/30"}`}
                         />
                       </button>
-                      {/* Tours dropdown — image grid with prices */}
+                      {/* Tours dropdown, image grid with prices */}
                       <div
                         className={`overflow-hidden transition-all duration-500 ${
                           toursOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
@@ -478,7 +478,7 @@ export default function Navigation() {
                   </div>
                 </div>
 
-                {/* RIGHT COLUMN — Contextual hero image (desktop only) */}
+                {/* RIGHT COLUMN, contextual hero image (desktop only) */}
                 <div className="hidden lg:block lg:col-span-5">
                   <div
                     className={`sticky top-32 transition-all duration-700 ${

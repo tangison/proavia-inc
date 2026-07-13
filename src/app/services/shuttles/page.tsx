@@ -14,7 +14,7 @@ const features = [
   {
     icon: Route,
     title: "Walvis Bay to Windhoek",
-    description: "Intercity shuttle connecting the coast to the capital. A comfortable ride through Namibia's scenic interior — no driving required.",
+    description: "Intercity shuttle connecting the coast to the capital. A comfortable ride through Namibia's scenic interior, no driving required.",
   },
   {
     icon: Calendar,
@@ -24,7 +24,7 @@ const features = [
   {
     icon: Car,
     title: "Comfortable Vehicles",
-    description: "Insured, maintained fleet operated by professional drivers. Your safety and comfort are non-negotiable — every seat, every run.",
+    description: "Insured, maintained fleet operated by professional drivers. Your safety and comfort are non-negotiable, every seat, every run.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ShuttlesPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Shuttle services — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/fleet-volkswagen-in-sosslvei.webp" priority />
+              <Image alt="Shuttle services, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/fleet-volkswagen-in-sosslvei.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function ShuttlesPage() {
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              Not everyone needs a private transfer, and not every trip calls for a rental car. Our shuttle service fills the gap — scheduled runs and on-demand rides between Walvis Bay, Swakopmund, and Windhoek that are reliable, affordable, and actually comfortable.
+              Not everyone needs a private transfer, and not every trip calls for a rental car. Our shuttle service fills the gap: scheduled runs and on-demand rides between Walvis Bay, Swakopmund, and Windhoek that are reliable, affordable, and actually comfortable.
             </p>
             <p>
               The Walvis Bay to Swakopmund route is the one most travellers need, and we run it regularly. It&apos;s a short drive along the coast, and our shuttles get you there without the hassle of arranging a taxi or waiting for an unpredictable bus. For the longer trip between Walvis Bay and Windhoek, we offer comfortable vehicles with space for luggage and a driver who knows the road.
@@ -118,7 +118,7 @@ export default function ShuttlesPage() {
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Tell us your route and travel date. We&apos;ll confirm your seat on the next available shuttle — or arrange a dedicated run for your group.
+                  Tell us your route and travel date. We&apos;ll confirm your seat on the next available shuttle, or arrange a dedicated run for your group.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -184,6 +184,20 @@ export default function ShuttlesPage() {
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Transfers and Shuttles */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Transfers and Shuttles</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers must provide accurate pickup information.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers should notify ProAvia of flight delays or itinerary changes.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Waiting-time or no-show conditions may be included in the quotation.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

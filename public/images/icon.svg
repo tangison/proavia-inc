@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ProAvia Travel & Tours — App Icon Source Vector
+
+  Design: Deep-navy rounded square (#0f2746) with a gold (#c9a84c) "P"
+  set in a clean serif (matches the brand's Playfair Display wordmark).
+  Optimised for legibility at 16px and above. Transparent outside the
+  rounded square. Vector source; raster sizes are generated from this.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ProAvia">
+  <defs>
+    <!-- Subtle inner highlight on the navy field, keeps the surface from looking flat at large sizes. -->
+    <linearGradient id="navy-field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#143559"/>
+      <stop offset="100%" stop-color="#0c2241"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded-square background. Corner radius ~18% of side, comfortable at 16px. -->
+  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#navy-field)"/>
+
+  <!--
+    Gold "P" — drawn as a single path so it renders identically in every
+    browser without depending on a webfont. Geometry approximates the
+    Playfair Display capital P used in the ProAvia wordmark: a strong
+    vertical stem with a full, slightly compressed bowl.
+  -->
+  <path
+    d="
+      M 196 132
+      L 196 392
+      L 240 392
+      L 240 286
+      L 290 286
+      C 343 286, 384 250, 384 209
+      C 384 168, 343 132, 290 132
+      L 196 132
+      Z
+      M 240 168
+      L 290 168
+      C 319 168, 340 187, 340 209
+      C 340 231, 319 250, 290 250
+      L 240 250
+      L 240 168
+      Z
+    "
+    fill="#c9a84c"
+  />
+</svg>

@@ -52,7 +52,7 @@ Details: ${formData.message || "None"}`;
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Airport transfer shuttle — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vehicle-walvis-bay-airport-shuttle.webp" priority />
+              <Image alt="Airport transfer shuttle, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vehicle-walvis-bay-airport-shuttle.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -73,10 +73,10 @@ Details: ${formData.message || "None"}`;
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              When you land at Hosea Kutako International or Walvis Bay Airport, the last thing you want is to figure out transport on the spot. Our private transfers sort that out before you even board your flight. Your driver is waiting inside arrivals with your name, and from there it&apos;s a straight drive to your hotel, guesthouse, or accommodation — no detours, no shared shuttles, no waiting for other passengers.
+              When you land at Hosea Kutako International or Walvis Bay Airport, the last thing you want is to figure out transport on the spot. Our private transfers sort that out before you even board your flight. Your driver is waiting inside arrivals with your name, and from there it&apos;s a straight drive to your hotel, guesthouse, or accommodation, no detours, no shared shuttles, no waiting for other passengers.
             </p>
             <p>
-              We operate 24 hours a day because flights don&apos;t always land at convenient times. Early morning, late at night, delayed by two hours — it doesn&apos;t matter. Your driver tracks your flight and adjusts accordingly. You won&apos;t be standing outside an empty airport wondering where your ride is.
+              We operate 24 hours a day because flights don&apos;t always land at convenient times. Early morning, late at night, delayed by two hours: it doesn&apos;t matter. Your driver tracks your flight and adjusts accordingly. You won&apos;t be standing outside an empty airport wondering where your ride is.
             </p>
             <p>
               All our vehicles are insured and maintained, and our drivers know the routes between Windhoek, Walvis Bay, and Swakopmund like the back of their hand. It&apos;s a simple service, but we take it seriously because it&apos;s often the first impression you get of Namibia.
@@ -132,7 +132,7 @@ Details: ${formData.message || "None"}`;
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Fill in your details and we&apos;ll confirm your transfer on WhatsApp within minutes. We operate 24/7 — late flights and early arrivals are our normal.
+                  Fill in your details and we&apos;ll confirm your transfer on WhatsApp within minutes. We operate 24/7, late flights and early arrivals are our normal.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -184,6 +184,20 @@ Details: ${formData.message || "None"}`;
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Transfers and Shuttles */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Transfers and Shuttles</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers must provide accurate pickup information.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers should notify ProAvia of flight delays or itinerary changes.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Waiting-time or no-show conditions may be included in the quotation.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

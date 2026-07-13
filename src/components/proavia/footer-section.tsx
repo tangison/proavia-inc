@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Clock } from "lucide-react";
 import { tours } from "@/data/tours";
 import { companyContact } from "@/lib/constants/contact";
 
@@ -48,8 +48,21 @@ export default function FooterSection() {
               className="inline-flex items-center gap-2 text-xs font-medium text-gold/70 hover:text-gold transition-colors duration-300"
             >
               <Facebook className="w-3.5 h-3.5" />
-              Follow us for tour itineraries & updates
+              Follow us for tour itineraries and updates
             </a>
+            {/* Compact operating hours. Full schedule on /contact. */}
+            <div className="pt-2">
+              <div className="flex items-center gap-2 text-[10px] font-bold tracking-widest uppercase opacity-40 mb-2">
+                <Clock className="w-3 h-3" /> Operating Hours
+              </div>
+              <ul className="text-xs opacity-55 leading-relaxed space-y-0.5">
+                <li>{companyContact.operatingHours.weekdays.label}: {companyContact.operatingHours.weekdays.display}</li>
+                <li>{companyContact.operatingHours.saturday.label}: {companyContact.operatingHours.saturday.display}</li>
+                <li>{companyContact.operatingHours.sunday.label}: {companyContact.operatingHours.sunday.display}</li>
+              </ul>
+              <p className="text-[10px] opacity-45 mt-1.5">{companyContact.operatingHours.emergency.display}.</p>
+              <a href="/contact#operating-hours" className="text-[10px] tracking-widest uppercase text-gold/70 hover:text-gold transition-colors mt-2 inline-block">Full hours</a>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
@@ -71,9 +84,22 @@ export default function FooterSection() {
                     Contact
                   </a>
                 </li>
+              </ul>
+              <h4 className="text-[10px] font-bold tracking-widest uppercase opacity-35 pt-2">Legal</h4>
+              <ul className="text-sm space-y-2.5 font-medium">
+                <li>
+                  <a className="opacity-55 hover:opacity-100 transition-opacity duration-300" href="/terms">
+                    Terms and Conditions
+                  </a>
+                </li>
+                <li>
+                  <a className="opacity-55 hover:opacity-100 transition-opacity duration-300" href="/cancellation-policy">
+                    Cancellation and Refund Policy
+                  </a>
+                </li>
                 <li>
                   <a className="opacity-55 hover:opacity-100 transition-opacity duration-300" href="/privacy">
-                    Privacy
+                    Privacy Policy
                   </a>
                 </li>
               </ul>
@@ -161,7 +187,7 @@ export default function FooterSection() {
             Accredited & Recognised
           </span>
           <Image
-            alt="ATTA — African Travel and Tourism Association"
+            alt="ATTA, African Travel and Tourism Association"
             width={64}
             height={64}
             className="h-8 md:h-9 w-auto opacity-40 hover:opacity-70 transition-opacity duration-300"
@@ -169,7 +195,7 @@ export default function FooterSection() {
             loading="lazy"
           />
           <Image
-            alt="NIPDB — Namibia Investment Promotion and Development Board"
+            alt="NIPDB, Namibia Investment Promotion and Development Board"
             width={64}
             height={64}
             className="h-8 md:h-9 w-auto opacity-40 hover:opacity-70 transition-opacity duration-300"
@@ -177,7 +203,7 @@ export default function FooterSection() {
             loading="lazy"
           />
           <Image
-            alt="NTB — Namibia Tourism Board"
+            alt="NTB, Namibia Tourism Board"
             width={64}
             height={64}
             className="h-8 md:h-9 w-auto opacity-40 hover:opacity-70 transition-opacity duration-300"

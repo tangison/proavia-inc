@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Site Audit | ProAvia Travel & Tours",
-  description: "Comprehensive website audit report for ProAvia Travel & Tours — covering SEO, performance, accessibility, security, and content quality.",
+  description: "Comprehensive website audit report for ProAvia Travel & Tours, covering SEO, performance, accessibility, security, and content quality.",
   alternates: {
     canonical: "https://proaviainc.com/audit",
   },
@@ -94,7 +94,7 @@ export default function AuditPage() {
               Report
             </h1>
             <p className="mt-6 text-lg md:text-xl text-ink/50 max-w-[560px] leading-relaxed">
-              A comprehensive audit of ProAvia Travel & Tours across 230+ rules in 21 categories — covering SEO, performance, accessibility, security, and content quality. Audited by Tangison Studio using SquirrelScan.
+              A comprehensive audit of ProAvia Travel & Tours across 230+ rules in 21 categories, covering SEO, performance, accessibility, security, and content quality. Audited by Tangison Studio using SquirrelScan.
             </p>
             <div className="mt-4 flex items-center gap-4 text-ink/40 text-xs">
               <span>Audited: 9 June 2026</span>
@@ -120,7 +120,7 @@ export default function AuditPage() {
             <div className="relative z-10">
               <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-gold block mb-4">Overall Health Score</span>
               <span className="text-8xl md:text-9xl font-serif text-gold block leading-none">59</span>
-              <span className="text-lg text-white/40 block mt-2">Grade F — Needs Improvement</span>
+              <span className="text-lg text-white/40 block mt-2">Grade F, Needs Improvement</span>
               <p className="text-white/40 text-sm mt-4 max-w-lg mx-auto">
                 2001 rules passed, 283 warnings, 28 errors across 23 pages. Critical issues in image optimisation, accessibility, and SEO metadata have been identified and addressed.
               </p>
@@ -183,7 +183,7 @@ export default function AuditPage() {
                 <IssueRow
                   severity="fixed"
                   rule="images/image-file-size"
-                  description="3 images exceeded 1MB (tour PNGs at 1.2–1.6MB each). Converted all 31 tour PNGs to WebP — saved 55.5MB (93.5% reduction)."
+                  description="3 images exceeded 1MB (tour PNGs at 1.2–1.6MB each). Converted all 31 tour PNGs to WebP, saving 55.5MB (93.5% reduction)."
                   status="Resolved"
                 />
                 <IssueRow
@@ -390,7 +390,7 @@ export default function AuditPage() {
                     At Tangison Studio, we believe that launching a website without a comprehensive audit is like opening a hotel without checking the rooms. Every project we deliver undergoes a rigorous 230+ rule audit covering SEO, performance, accessibility, security, and content quality before it goes live.
                   </p>
                   <p>
-                    This audit page is our commitment to transparency. Clients can see exactly what was found, what was fixed, and what remains as a known consideration. We don&apos;t hide issues — we surface them, resolve them, and document the outcome.
+                    This audit page is our commitment to transparency. Clients can see exactly what was found, what was fixed, and what remains as a known consideration. We don&apos;t hide issues. We surface them, resolve them, and document the outcome.
                   </p>
                   <p>
                     A site is only considered complete when scores reach 95+ (Grade A) with full coverage. We iterate: fix, re-audit, and present before-and-after comparisons until the standard is met.

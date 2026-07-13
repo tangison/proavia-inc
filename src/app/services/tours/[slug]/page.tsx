@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tour = getTourBySlug(slug);
   if (!tour) return { title: "Tour Not Found" };
 
-  // Keep title under 60 chars — use shortened name if needed
+  // Keep title under 60 chars, use shortened name if needed
   const suffix = " | ProAvia Travel & Tours";
   const maxNameLen = 60 - suffix.length;
   const titleName = tour.name.length > maxNameLen ? tour.name.slice(0, maxNameLen - 1).trimEnd() : tour.name;
@@ -182,7 +182,20 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                     Book This Tour
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
-                  <p className="text-ink/30 text-[11px] text-center mt-3">Opens WhatsApp — we respond within minutes</p>
+                  <p className="text-ink/30 text-[11px] text-center mt-3">Opens WhatsApp, we respond within minutes</p>
+                  {/* ServiceDisclosure: Tour Participation */}
+                  <div className="mt-6 pt-6 border-t border-ink/5">
+                    <p className="text-ink/60 text-[11px] font-bold tracking-widest uppercase mb-3">Tour Participation</p>
+                    <ul className="space-y-1.5">
+                      <li className="text-ink/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Booking is subject to availability.</span></li>
+                      <li className="text-ink/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Routes may change due to weather, road or safety conditions.</span></li>
+                      <li className="text-ink/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers must disclose relevant mobility, health, dietary or accessibility requirements before confirmation.</span></li>
+                      <li className="text-ink/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Customers must follow reasonable safety instructions from guides and drivers.</span></li>
+                    </ul>
+                    <p className="text-ink/40 text-[10px] mt-3">
+                      See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

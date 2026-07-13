@@ -5,14 +5,14 @@ import PageHeader from "@/components/proavia/page-header";
 const articles = [
   {
     title: "The Complete Guide to Sandwich Harbour",
-    excerpt: "Everything you need to know about visiting one of Namibia's most iconic destinations — from best times to visit to what to bring.",
+    excerpt: "Everything you need to know about visiting one of Namibia's most iconic destinations, from best times to visit to what to bring.",
     image: "/images/destinations/destination-sandwich-harbour-ocean-view.webp",
     category: "Destination Guide",
     date: "March 2025",
   },
   {
     title: "Namibia's Marine Big 5: What You'll See on the Catamaran",
-    excerpt: "From playful dolphins to the mysterious Mola Mola — a guide to the marine wildlife you'll encounter on our Atlantic cruises.",
+    excerpt: "From playful dolphins to the mysterious Mola Mola, a guide to the marine wildlife you'll encounter on our Atlantic cruises.",
     image: "/images/experiences/proavia-tour-marine-catamaran.webp",
     category: "Wildlife",
     date: "February 2025",
@@ -33,14 +33,14 @@ const articles = [
   },
   {
     title: "Airport Transfers: What to Expect at Hosea Kutako",
-    excerpt: "A practical guide to arriving in Namibia — from customs and baggage to your ProAvia transfer waiting in arrivals.",
+    excerpt: "A practical guide to arriving in Namibia, from customs and baggage to your ProAvia transfer waiting in arrivals.",
     image: "/images/airports/proavia-airport-walvis-bay-exterior.webp",
     category: "Travel Tips",
     date: "November 2024",
   },
   {
     title: "Classic Namibia Safari: Day by Day Itinerary",
-    excerpt: "A detailed breakdown of our signature 7-day safari — from Walvis Bay to Etosha, and everything in between.",
+    excerpt: "A detailed breakdown of our signature 7-day safari, from Walvis Bay to Etosha, and everything in between.",
     image: "/images/experiences/proavia-tour-safari-elephant.webp",
     category: "Safari Guide",
     date: "October 2024",
@@ -54,13 +54,13 @@ export default function InsightsPage() {
         label="INSIGHTS"
         title="TravelInsights"
         italicWord="Insights"
-        description="Expert guides, practical tips, and stories from the road — curated by the ProAvia team in Walvis Bay."
+        description="Expert guides, practical tips, and stories from the road, curated by the ProAvia team in Walvis Bay."
       />
 
       <section className="pb-8 px-6 md:px-12 lg:px-24">
         <div className="max-w-[900px] mx-auto space-y-5 text-ink/55 leading-relaxed">
           <p>
-            We spend every day on these roads and at these destinations, so we figured we should write some of it down. These articles come straight from our team — practical advice, destination breakdowns, and honest takes on what&apos;s worth your time and what isn&apos;t. No filler, no recycled content from travel blogs.
+            We spend every day on these roads and at these destinations, so we figured we should write some of it down. These articles come straight from our team: practical advice, destination breakdowns, and honest takes on what&apos;s worth your time and what isn&apos;t. No filler, no recycled content from travel blogs.
           </p>
           <p>
             Whether you&apos;re planning your first trip to Namibia or you&apos;ve been here before and want to dig deeper, these guides are written to help you make real decisions. We update them regularly as routes, prices, and conditions change.

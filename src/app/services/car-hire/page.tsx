@@ -20,7 +20,7 @@ const features = [
   {
     icon: MapPin,
     title: "Coastal Collection",
-    description: "Acquire your vehicle in Walvis Bay — perfectly positioned for those arriving on the coast or beginning their journey where the desert meets the sea.",
+    description: "Acquire your vehicle in Walvis Bay, perfectly positioned for those arriving on the coast or beginning their journey where the desert meets the sea.",
   },
   {
     icon: Building2,
@@ -51,7 +51,7 @@ Details: ${formData.message || "None"}`;
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Explore Namibia at your own pace — ProAvia car hire" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vehicle-proavia-black-suv.webp" priority />
+              <Image alt="Explore Namibia at your own pace, ProAvia car hire" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vehicle-proavia-black-suv.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -71,7 +71,7 @@ Details: ${formData.message || "None"}`;
           </div>
           <div className="space-y-5 text-ink/55 leading-relaxed text-lg">
             <p>
-              Namibia is big. Really big. The distances between destinations are measured in hundreds of kilometres, and the best places aren&apos;t always on a paved road. Our car hire is built for that reality — unlimited kilometres, 4x4 options for the gravel roads, and pickup points in both Walvis Bay and Windhoek so you can start your trip wherever makes sense.
+              Namibia is big. Really big. The distances between destinations are measured in hundreds of kilometres, and the best places aren&apos;t always on a paved road. Our car hire is built for that reality: unlimited kilometres, 4x4 options for the gravel roads, and pickup points in both Walvis Bay and Windhoek so you can start your trip wherever makes sense.
             </p>
             <p>
               We don&apos;t do small print traps. The price you see includes unlimited kilometres, insurance, and 24/7 roadside assistance. If you get a flat tyre on the road to Sossusvlei, you call us and we sort it out. We know these roads because we drive them ourselves, and we&apos;ll give you honest advice about which vehicle you actually need for your route.
@@ -129,7 +129,7 @@ Details: ${formData.message || "None"}`;
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Tell us your travel dates and preferred pickup location. We&apos;ll match you with the right vehicle — 4x4 for the gravel roads, sedan for the highways.
+                  Tell us your travel dates and preferred pickup location. We&apos;ll match you with the right vehicle: 4x4 for the gravel roads, sedan for the highways.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -181,6 +181,20 @@ Details: ${formData.message || "None"}`;
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Car Hire */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Car Hire</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Driver eligibility and document requirements apply.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Deposits, insurance excess, fuel rules, vehicle-use restrictions and cancellation terms must be disclosed in the quotation or rental agreement.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Vehicle availability is not confirmed until written confirmation.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

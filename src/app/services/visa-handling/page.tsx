@@ -9,7 +9,7 @@ const features = [
   {
     icon: FileText,
     title: "Application Guidance",
-    description: "We identify the correct visa type for your nationality and destination. No guesswork, no wasted applications — just the right path forward.",
+    description: "We identify the correct visa type for your nationality and destination. No guesswork, no wasted applications, just the right path forward.",
   },
   {
     icon: ClipboardList,
@@ -19,7 +19,7 @@ const features = [
   {
     icon: Eye,
     title: "Status Follow-Up",
-    description: "We monitor your application and update you at every stage. No chasing embassies — we do that for you.",
+    description: "We monitor your application and update you at every stage. No chasing embassies, we do that for you.",
   },
   {
     icon: Globe,
@@ -38,7 +38,7 @@ export default function VisaHandlingPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Visa handling services — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
+              <Image alt="Visa handling services, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function VisaHandlingPage() {
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Tell us your nationality and destination. We&apos;ll identify the correct visa, compile your documents, and handle the submission — all while keeping you updated on WhatsApp.
+                  Tell us your nationality and destination. We&apos;ll identify the correct visa, compile your documents, and handle the submission, all while keeping you updated on WhatsApp.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -178,6 +178,21 @@ export default function VisaHandlingPage() {
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Visa Assistance */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Visa Assistance</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>ProAvia provides administrative assistance only.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Visa decisions are made by the responsible authority.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Visa approval cannot be guaranteed.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>The customer is responsible for providing complete and accurate documents.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

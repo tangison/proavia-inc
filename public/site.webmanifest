@@ -1,0 +1,29 @@
+{
+  "name": "ProAvia Travel & Tours",
+  "short_name": "ProAvia",
+  "description": "Premium Namibian travel experiences. Book tours, transfers, car hire, and accommodation in Walvis Bay and beyond.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f2746",
+  "theme_color": "#0f2746",
+  "icons": [
+    {
+      "src": "/images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

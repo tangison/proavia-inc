@@ -58,7 +58,7 @@ export default function GalleryPage() {
       <section className="pb-8 px-6 md:px-12 lg:px-24">
         <div className="max-w-[900px] mx-auto space-y-5 text-ink/55 leading-relaxed">
           <p>
-            These are real photos from real trips. Our guides take these on the road — dune sunsets in Sandwich Harbour, dolphins alongside the catamaran, elephant herds in Etosha, and the quiet moments in between. No stock photography, no filters that change the landscape into something it isn&apos;t. What you see here is what you&apos;ll see out there.
+            These are real photos from real trips. Our guides take these on the road: dune sunsets in Sandwich Harbour, dolphins alongside the catamaran, elephant herds in Etosha, and the quiet moments in between. No stock photography, no filters that change the landscape into something it isn&apos;t. What you see here is what you&apos;ll see out there.
           </p>
           <p>
             Scroll through and get a feel for what a ProAvia trip looks like. When you&apos;re ready to see it in person, we&apos;ll be here.

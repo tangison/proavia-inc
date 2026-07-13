@@ -20,9 +20,9 @@ export const tours: Tour[] = [
     name: "Sandwich Harbour Expedition",
     tagline: "Where the World's Oldest Desert Meets the Atlantic Ocean",
     description:
-      "Drive through the dunes where the Namib meets the Atlantic. A 4x4 tour to one of the most isolated lagoons on Earth — a UNESCO World Heritage Site candidate.",
+      "Drive through the dunes where the Namib meets the Atlantic. A 4x4 tour to one of the most isolated lagoons on Earth, a UNESCO World Heritage Site candidate.",
     longDescription:
-      "Where the towering sand dunes of the Namib Desert plunge into the Atlantic Ocean, Sandwich Harbour stands as one of Earth's most dramatic convergence points. Our expert-guided 4x4 expedition traverses the Walvis Bay Lagoon, skirts the pink salt pans, and scales 100-metre dunes to reach this UNESCO World Heritage Site candidate. This is not merely a tour — it is an immersion into one of the planet's most surreal landscapes, where desert and ocean have negotiated an uneasy truce for millennia.",
+      "Where the towering sand dunes of the Namib Desert plunge into the Atlantic Ocean, Sandwich Harbour stands as one of Earth's most dramatic convergence points. Our expert-guided 4x4 expedition traverses the Walvis Bay Lagoon, skirts the pink salt pans, and scales 100-metre dunes to reach this UNESCO World Heritage Site candidate. This is not merely a tour, it is an immersion into one of the planet's most surreal landscapes, where desert and ocean have negotiated an uneasy truce for millennia.",
     duration: "Half Day (~4-5 hours)",
     price: 179,
     priceLabel: "per person",
@@ -30,7 +30,7 @@ export const tours: Tour[] = [
     highlights: [
       "Drive through the world's oldest desert where dunes meet the Atlantic",
       "Scale 100-metre sand dunes with expert 4x4 drivers",
-      "Visit the Walvis Bay Lagoon — RAMSAR Wetland of International Importance",
+      "Visit the Walvis Bay Lagoon, a RAMSAR Wetland of International Importance",
       "Witness the surreal pink salt pans from panoramic viewpoints",
       "Enjoy fresh oysters and sparkling wine atop the dunes",
     ],
@@ -52,11 +52,11 @@ export const tours: Tour[] = [
   {
     slug: "catamaran-dolphin-cruise",
     name: "Atlantic Catamaran Cruise",
-    tagline: "Namibia's Marine Big 5 — Dolphins, Seals, Whales, Mola Mola & Leatherback Turtles",
+    tagline: "Namibia's Marine Big 5: Dolphins, Seals, Whales, Mola Mola & Leatherback Turtles",
     description:
       "Sail the Atlantic aboard a luxury catamaran. Encounter dolphins, seals, whales, and pelicans on Namibia's premier marine experience.",
     longDescription:
-      "Set sail from Walvis Bay harbour aboard a luxury catamaran and enter the rich Benguela Current ecosystem. This premier marine safari brings you face-to-face with Namibia's Marine Big 5: playful Heaviside's and bottlenose dolphins, thousands of Cape fur seals, seasonal whale sightings, the mysterious Mola Mola (sunfish), and the rare leatherback turtle. Fresh oysters and sparkling wine are served on board as you glide past Pelican Point — a refined expedition on the Atlantic.",
+      "Set sail from Walvis Bay harbour aboard a luxury catamaran and enter the rich Benguela Current ecosystem. This premier marine safari brings you face-to-face with Namibia's Marine Big 5: playful Heaviside's and bottlenose dolphins, thousands of Cape fur seals, seasonal whale sightings, the mysterious Mola Mola (sunfish), and the rare leatherback turtle. Fresh oysters and sparkling wine are served on board as you glide past Pelican Point, a refined expedition on the Atlantic.",
     duration: "Half Day (~3.5-4 hours)",
     price: 69,
     priceLabel: "per person",
@@ -84,19 +84,19 @@ export const tours: Tour[] = [
   {
     slug: "spitzkoppe-adventure",
     name: "Spitzkoppe Adventure Drive",
-    tagline: "The Matterhorn of Namibia — Ancient Granite, 2000-Year-Old Rock Art & Desert Silence",
+    tagline: "The Matterhorn of Namibia: Ancient Granite, 2000-Year-Old Rock Art & Desert Silence",
     description:
       "Journey to the Matterhorn of Namibia. Discover 2000-year-old Bushman rock art, ancient granite peaks, and desert silence at Spitzkoppe.",
     longDescription:
-      "Rising sharply from the desert floor, the Spitzkoppe massif — known as the Matterhorn of Namibia — has drawn explorers and artists for millennia. Our adventure drive takes you through dramatic desert landscapes to discover 2000-year-old Bushman rock art, navigate ancient granite formations, and experience the profound silence of one of Namibia's most spiritually resonant landscapes. This is where geology meets mythology.",
+      "Rising sharply from the desert floor, the Spitzkoppe massif, known as the Matterhorn of Namibia, has drawn explorers and artists for millennia. Our adventure drive takes you through dramatic desert landscapes to discover 2000-year-old Bushman rock art, navigate ancient granite formations, and experience the profound silence of one of Namibia's most spiritually resonant landscapes. This is where geology meets mythology.",
     duration: "Full Day (~8-10 hours)",
     price: 139,
     priceLabel: "per person",
     category: "Desert & Cultural Adventure",
     highlights: [
-      "Explore the Matterhorn of Namibia — 700-million-year-old granite",
+      "Explore the Matterhorn of Namibia, 700-million-year-old granite",
       "Discover 2000-year-old Bushman rock art",
-      "Walk through the rock arch — a natural granite bridge",
+      "Walk through the rock arch, a natural granite bridge",
       "Experience profound desert silence",
       "Cultural insights from local Damara guides",
     ],
@@ -120,9 +120,9 @@ export const tours: Tour[] = [
     name: "Skeleton Coast Expedition",
     tagline: "Shipwrecks, Seals & the World's Most Haunting Coastline",
     description:
-      "Explore shipwrecks and vast seal colonies along the world's most haunting coastline — the Skeleton Coast of Namibia.",
+      "Explore shipwrecks and vast seal colonies along the world's most haunting coastline, the Skeleton Coast of Namibia.",
     longDescription:
-      "The Skeleton Coast — where the bones of ships and whales litter a shoreline shrouded in perpetual fog. Our expedition navigates this haunting coastline, visiting the remains of shipwrecks that stretch back centuries, vast Cape fur seal colonies at Cape Cross, and the stark beauty of one of Earth's most desolate landscapes. This is nature at its most indifferent, and its most magnificent.",
+      "The Skeleton Coast, where the bones of ships and whales litter a shoreline shrouded in perpetual fog. Our expedition navigates this haunting coastline, visiting the remains of shipwrecks that stretch back centuries, vast Cape fur seal colonies at Cape Cross, and the stark beauty of one of Earth's most desolate landscapes. This is nature at its most indifferent, and its most magnificent.",
     duration: "Full Day (~8-10 hours)",
     price: 79,
     priceLabel: "per person",
@@ -131,7 +131,7 @@ export const tours: Tour[] = [
       "Visit century-old shipwrecks along the coast",
       "Witness the massive Cape Cross seal colony (up to 200,000 seals)",
       "Drive the legendary Skeleton Coast",
-      "See the Zeila shipwreck — one of the coast's most photographed",
+      "See the Zeila shipwreck, one of the coast's most photographed",
       "Experience the fog-shrouded coastline",
     ],
     included: [
@@ -154,16 +154,16 @@ export const tours: Tour[] = [
     name: "Moon Valley & Welwitschia Plains",
     tagline: "500 Million Years of Desert History in a Single Day",
     description:
-      "Walk through Moon Valley's otherworldly landscape and encounter the ancient Welwitschia mirabilis — a living fossil over 2,000 years old.",
+      "Walk through Moon Valley's otherworldly landscape and encounter the ancient Welwitschia mirabilis, a living fossil over 2,000 years old.",
     longDescription:
-      "The Moon Valley landscape — so named for its extraterrestrial appearance — is the result of 500 million years of geological erosion. Our expedition traverses this surreal terrain to reach the Welwitschia Plains, home to the Welwitschia mirabilis: a living fossil that can survive for over 2,000 years in one of Earth's harshest environments. Along the way, discover the Swakop River canyon, the intriguing Liebfrauenhöhle cave, and landscapes that have served as stand-ins for other planets in major motion pictures.",
+      "The Moon Valley landscape, so named for its extraterrestrial appearance, is the result of 500 million years of geological erosion. Our expedition traverses this surreal terrain to reach the Welwitschia Plains, home to the Welwitschia mirabilis: a living fossil that can survive for over 2,000 years in one of Earth's harshest environments. Along the way, discover the Swakop River canyon, the intriguing Liebfrauenhöhle cave, and landscapes that have served as stand-ins for other planets in major motion pictures.",
     duration: "Half Day (~4-5 hours)",
     price: 169,
     priceLabel: "per person",
     category: "Desert Geology & Natural Wonders",
     highlights: [
       "Walk through Moon Valley's 500-million-year-old landscape",
-      "See the 2,000-year-old Welwitschia mirabilis — a living fossil",
+      "See the 2,000-year-old Welwitschia mirabilis, a living fossil",
       "Visit the Swakop River canyon",
       "Discover landscapes used in Hollywood films",
       "Expert geological commentary throughout",
@@ -190,7 +190,7 @@ export const tours: Tour[] = [
     description:
       "Discover Swakopmund's German colonial heritage, vibrant culture, and coastal charm on this guided town tour.",
     longDescription:
-      "Swakopmund — Namibia's adventure capital — is a town where German colonial architecture meets Atlantic coastal charm. Our heritage tour reveals the stories behind the ornate Jugendstil buildings, the historic Mole seawall, and the iconic Jetty. From the bustling craft markets to the serene lighthouse, this tour provides an intimate portrait of a town that has been a coastal sanctuary since 1892.",
+      "Swakopmund, Namibia's adventure capital, is a town where German colonial architecture meets Atlantic coastal charm. Our heritage tour reveals the stories behind the ornate Jugendstil buildings, the historic Mole seawall, and the iconic Jetty. From the bustling craft markets to the serene lighthouse, this tour provides an intimate portrait of a town that has been a coastal sanctuary since 1892.",
     duration: "Half Day (~3-4 hours)",
     price: 59,
     priceLabel: "per person",
@@ -215,12 +215,12 @@ export const tours: Tour[] = [
   },
   {
     slug: "classic-namibia-safari",
-    name: "Classic Namibia — The Full Journey",
-    tagline: "From Walvis Bay to Etosha — Namibia's Greatest Hits in One Unforgettable Safari",
+    name: "Classic Namibia, The Full Journey",
+    tagline: "From Walvis Bay to Etosha, Namibia's Greatest Hits in One Unforgettable Safari",
     description:
-      "Experience Namibia's greatest destinations in one epic multi-day safari — from the coast to Etosha, Sossusvlei to Damaraland.",
+      "Experience Namibia's greatest destinations in one epic multi-day safari, from the coast to Etosha, Sossusvlei to Damaraland.",
     longDescription:
-      "Our signature multi-day safari weaves together Namibia's most iconic destinations into a single, unforgettable journey. From the coastal dunes of Walvis Bay and Sandwich Harbour to the towering red dunes of Sossusvlei, the ancient rock art of Damaraland, and the wildlife-rich plains of Etosha — this is Namibia, done right. Every detail is handled: luxury accommodation, expert guides, and seamless logistics that allow you to focus entirely on the experience.",
+      "Our signature multi-day safari weaves together Namibia's most iconic destinations into a single, unforgettable journey. From the coastal dunes of Walvis Bay and Sandwich Harbour to the towering red dunes of Sossusvlei, the ancient rock art of Damaraland, and the wildlife-rich plains of Etosha, this is Namibia, done right. Every detail is handled: luxury accommodation, expert guides, and seamless logistics that allow you to focus entirely on the experience.",
     duration: "7-10 Days (Customisable)",
     price: 2490,
     priceLabel: "per person (7-day)",
@@ -250,12 +250,12 @@ export const tours: Tour[] = [
   },
   {
     slug: "sandwich-harbour-catamaran-combo",
-    name: "Ultimate Walvis Bay Day — Catamaran + Sandwich Harbour",
-    tagline: "Two Unmissable Experiences, One Extraordinary Day — Atlantic & Desert Combined",
+    name: "Ultimate Walvis Bay Day, Catamaran + Sandwich Harbour",
+    tagline: "Two Unmissable Experiences, One Extraordinary Day: Atlantic & Desert Combined",
     description:
       "The ultimate Walvis Bay day: a morning catamaran cruise followed by an afternoon Sandwich Harbour 4x4 expedition.",
     longDescription:
-      "For those who refuse to choose, our Ultimate Walvis Bay Day combines two of Namibia's most celebrated experiences into one extraordinary day. Begin with a morning catamaran cruise — dolphins, seals, oysters, and the Atlantic breeze — before transitioning to an afternoon 4x4 expedition to Sandwich Harbour, where the world's oldest desert meets the ocean. A light lunch connects the two experiences, and by sunset you'll have seen Walvis Bay from both its perspectives: the sea and the sand.",
+      "For those who refuse to choose, our Ultimate Walvis Bay Day combines two of Namibia's most celebrated experiences into one extraordinary day. Begin with a morning catamaran cruise (dolphins, seals, oysters, and the Atlantic breeze) before transitioning to an afternoon 4x4 expedition to Sandwich Harbour, where the world's oldest desert meets the ocean. A light lunch connects the two experiences, and by sunset you'll have seen Walvis Bay from both its perspectives: the sea and the sand.",
     duration: "Full Day (~8-10 hours)",
     price: 229,
     priceLabel: "per person",

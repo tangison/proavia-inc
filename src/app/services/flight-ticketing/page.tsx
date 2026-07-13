@@ -19,7 +19,7 @@ const features = [
   {
     icon: Clock,
     title: "Fast Confirmation",
-    description: "Reservations confirmed within the hour. We work quickly so you don't have to wait — your itinerary is our priority.",
+    description: "Reservations confirmed within the hour. We work quickly so you don't have to wait. Your itinerary is our priority.",
   },
   {
     icon: MessageCircle,
@@ -38,7 +38,7 @@ export default function FlightTicketingPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Flight ticketing and reservations — ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-airlink-plane.webp" priority />
+              <Image alt="Flight ticketing and reservations, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-airlink-plane.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function FlightTicketingPage() {
               Send us your travel dates and where you need to go. We check availability across all domestic and regional carriers, find the flights that fit your schedule, book the seats, and send your itinerary straight to WhatsApp. No logging into portals, no confirmation emails buried in your inbox. One message, done.
             </p>
             <p>
-              We book domestic routes like Windhoek to Walvis Bay and Lüderitz, as well as regional connections to South Africa, Botswana, Zimbabwe, and Zambia. If you&apos;re not sure which route makes sense, ask us — we fly these routes regularly and know which ones are reliable and which ones to avoid.
+              We book domestic routes like Windhoek to Walvis Bay and Lüderitz, as well as regional connections to South Africa, Botswana, Zimbabwe, and Zambia. If you&apos;re not sure which route makes sense, ask us, we fly these routes regularly and know which ones are reliable and which ones to avoid.
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function FlightTicketingPage() {
                   </span>
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  Send us your travel dates and preferred route. We&apos;ll confirm availability and have your itinerary to you within the hour — all on WhatsApp.
+                  Send us your travel dates and preferred route. We&apos;ll confirm availability and have your itinerary to you within the hour, all on WhatsApp.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -178,6 +178,21 @@ export default function FlightTicketingPage() {
                     Book via WhatsApp
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
+                {/* ServiceDisclosure: Flight Ticketing */}
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <p className="text-white/60 text-[11px] font-bold tracking-widest uppercase mb-3">Flight Ticketing</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Airlines control schedules, baggage rules, changes and refunds.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Passenger names must match official travel documents.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>Airline fare rules will be communicated during quotation or booking.</span></li>
+                    <li className="text-white/50 text-[11px] leading-relaxed flex items-start gap-2"><span className="text-gold/60 shrink-0">•</span><span>ProAvia cannot guarantee visa approval or airline schedule stability.</span></li>
+                  </ul>
+                  <p className="text-white/40 text-[10px] mt-3">
+                    See our <a href="/terms" className="text-gold/80 hover:text-gold underline underline-offset-2">Terms and Conditions</a> and <a href="/cancellation-policy" className="text-gold/80 hover:text-gold underline underline-offset-2">Cancellation and Refund Policy</a> for the full details.
+                  </p>
+                </div>
+
+                
                 </form>
               </div>
             </div>

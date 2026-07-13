@@ -1,4 +1,4 @@
-# ProAvia Travel & Tours — Namibia, done right.
+# ProAvia Travel & Tours | Namibia, done right.
 
 Production website for ProAvia Travel & Tours, a Namibian travel company offering premium transfers, curated coastal tours, bespoke car hire, and luxury accommodation in Walvis Bay. Built and maintained by [Tangison Studio](https://tangison.com).
 
@@ -8,11 +8,11 @@ Production website for ProAvia Travel & Tours, a Namibian travel company offerin
 
 ## Tech Stack
 
-- **Next.js 15** — App Router, static generation, server components
-- **TypeScript 5** — Full type safety across the codebase
-- **Tailwind CSS 4** — Utility-first styling
-- **shadcn/ui** — Accessible component library on Radix UI
-- **Lucide React** — Icon library
+- **Next.js 15**, App Router, static generation, server components
+- **TypeScript 5**, full type safety across the codebase
+- **Tailwind CSS 4**, utility-first styling
+- **shadcn/ui**, accessible component library on Radix UI
+- **Lucide React**, icon library
 
 ---
 
@@ -85,4 +85,4 @@ Production domain: [proaviainc.com](https://proaviainc.com)
 
 ---
 
-<!-- Tangison Studio — tangison.com -->
+<!-- Tangison Studio, tangison.com -->
