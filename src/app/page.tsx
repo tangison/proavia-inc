@@ -15,8 +15,8 @@ const heroImages = [
 const serviceCards = [
   {
     href: "/services/transfers",
-    image: "/images/vehicles/vehicle-proavia-black-suv.webp",
-    imageAlt: "Airport & City",
+    image: "/images/vehicles/vw-tiguan-transfer-fleet.webp",
+    imageAlt: "White Volkswagen Tiguan parked in an urban setting",
     tag: "transfers",
     tagIcon: Car,
     title: "Airport & City",
@@ -37,8 +37,8 @@ const serviceCards = [
   },
   {
     href: "/services/car-hire",
-    image: "/images/vehicles/vehicle-windhoek-airport-transfer.webp",
-    imageAlt: "Car",
+    image: "/images/vehicles/vw-polo-car-hire-fleet.webp",
+    imageAlt: "White Volkswagen Polo parked in front of a modern glass building",
     tag: "car hire",
     tagIcon: Car,
     title: "Car",
@@ -48,8 +48,8 @@ const serviceCards = [
   },
   {
     href: "/accommodation",
-    image: "/images/experiences/client-luxury-tent-bathtub-desert.webp",
-    imageAlt: "Luxury Desert Accommodation",
+    image: "/images/accommodation/premium-ocean-view-apartment-hero.webp",
+    imageAlt: "Luxury modern living room with ocean and city skyline view in a premium coastal apartment",
     tag: "accommodation",
     tagIcon: Star,
     title: "Luxury",
@@ -81,8 +81,8 @@ const serviceCards = [
   },
   {
     href: "/services/airport-assistance",
-    image: "/images/transfers/proavia-transfer-shuttle-boarding.webp",
-    imageAlt: "Airport Assistance",
+    image: "/images/transfers/airport-meet-and-greet.webp",
+    imageAlt: "Two professionals meeting in a modern airport terminal",
     tag: "airport assistance",
     tagIcon: ShieldCheck,
     title: "Airport",

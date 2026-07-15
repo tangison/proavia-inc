@@ -19,9 +19,10 @@ export const IMAGES = {
     namibDesertPinkSeating: "/images/destinations/destination-namib-desert-pink-seating.webp",
   },
   vehicles: {
-    blackSuv: "/images/vehicles/vehicle-proavia-black-suv.webp",
-    windhoekTransfer: "/images/vehicles/vehicle-windhoek-airport-transfer.webp",
-    walvisBayShuttle: "/images/vehicles/vehicle-walvis-bay-airport-shuttle.webp",
+    // Replaced weak/old fleet photos with clean real photography (no ProAvia branding on these — only genuine user-supplied photos may carry branding).
+    transferFleet: "/images/vehicles/vw-tiguan-transfer-fleet.webp",
+    carHireFleet: "/images/vehicles/vw-polo-car-hire-fleet.webp",
+    shuttleFleet: "/images/vehicles/toyota-quantum-shuttle-fleet.webp",
     volkswagenSossusvlei: "/images/vehicles/fleet-volkswagen-in-sosslvei.webp",
     volkswagenVehicle: "/images/vehicles/fleet-volskwagen-vehicle.webp",
   },
@@ -80,8 +81,8 @@ export const IMAGES = {
   },
   transfers: {
     luggageLoading: "/images/transfers/proavia-transfer-luggage-loading.webp",
-    shuttleBoarding: "/images/transfers/proavia-transfer-shuttle-boarding.webp",
-    passengersBoarding: "/images/transfers/proavia-transfer-passengers-boarding.webp",
+    meetAndGreet: "/images/transfers/airport-meet-and-greet.webp",
+    airportPickup: "/images/transfers/airport-pickup-minivan.webp",
     luggageTrunk: "/images/transfers/proavia-transfer-luggage-trunk-ready.webp",
     shuttleOperation: "/images/transfers/proavia-transfer-shuttle-operation.webp",
     vansParked: "/images/transfers/proavia-transfer-vans-parked.webp",

@@ -52,7 +52,7 @@ Details: ${formData.message || "None"}`;
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Airport transfer shuttle, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vehicle-walvis-bay-airport-shuttle.webp" priority />
+              <Image alt="White Volkswagen Tiguan parked in an urban setting for airport transfers" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vw-tiguan-transfer-fleet.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>

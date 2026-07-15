@@ -9,13 +9,13 @@ import { companyContact } from "@/lib/constants/contact";
 // ─── DATA ─────────────────────────────────────────────
 
 const serviceLinks = [
-  { href: "/services/transfers", label: "Airport Transfers", image: "/images/vehicles/vehicle-proavia-black-suv.webp", tagline: "Private, door-to-door transfers" },
+  { href: "/services/transfers", label: "Airport Transfers", image: "/images/vehicles/vw-tiguan-transfer-fleet.webp", tagline: "Private, door-to-door transfers" },
   { href: "/services/tours", label: "Tours & Expeditions", image: "/images/experiences/client-sandwich-harbour-dunes-aerial.webp", tagline: "Expert-guided adventures" },
-  { href: "/services/car-hire", label: "Car Hire", image: "/images/vehicles/vehicle-windhoek-airport-transfer.webp", tagline: "Unlimited km, 4x4 available" },
+  { href: "/services/car-hire", label: "Car Hire", image: "/images/vehicles/vw-polo-car-hire-fleet.webp", tagline: "Unlimited km, 4x4 available" },
   { href: "/services/flight-ticketing", label: "Flight Ticketing", image: "/images/airports/proavia-airport-airlink-plane.webp", tagline: "Domestic & regional bookings" },
   { href: "/services/visa-handling", label: "Visa Handling", image: "/images/airports/proavia-airport-walvis-bay-exterior.webp", tagline: "Application & documentation" },
-  { href: "/services/airport-assistance", label: "Airport Assistance", image: "/images/transfers/proavia-transfer-shuttle-boarding.webp", tagline: "VIP meet & greet" },
-  { href: "/services/shuttles", label: "Shuttle Services", image: "/images/vehicles/fleet-volkswagen-in-sosslvei.webp", tagline: "Scheduled & on-demand" },
+  { href: "/services/airport-assistance", label: "Airport Assistance", image: "/images/transfers/airport-meet-and-greet.webp", tagline: "VIP meet & greet" },
+  { href: "/services/shuttles", label: "Shuttle Services", image: "/images/vehicles/toyota-quantum-shuttle-fleet.webp", tagline: "Scheduled & on-demand" },
 ];
 
 const tourLinks = [
@@ -30,7 +30,7 @@ const tourLinks = [
 ];
 
 const navLinks = [
-  { href: "/accommodation", label: "Accommodation", image: "/images/experiences/client-luxury-tent-bathtub-desert.webp", tagline: "Curated residential properties" },
+  { href: "/accommodation", label: "Accommodation", image: "/images/accommodation/premium-ocean-view-apartment-hero.webp", tagline: "Curated residential properties" },
   { href: "/about", label: "About", image: "/images/destinations/destination-walvis-bay-salt-shore.webp", tagline: "A proud Namibian company" },
   { href: "/gallery", label: "Gallery", image: "/images/experiences/client-dunes-women-group-colourful.webp", tagline: "Real photos from real trips" },
   { href: "/insights", label: "Insights", image: "/images/experiences/client-desert-dinner-sunset-women.webp", tagline: "Stories from the road" },
@@ -48,7 +48,7 @@ const searchableItems = [
 const heroImageMap: Record<string, string> = {
   services: "/images/experiences/client-sossusvlei-guide-tourists-dune.webp",
   tours: "/images/experiences/client-sandwich-harbour-dunes-aerial.webp",
-  accommodation: "/images/experiences/client-luxury-tent-bathtub-desert.webp",
+  accommodation: "/images/accommodation/premium-ocean-view-apartment-hero.webp",
   about: "/images/destinations/destination-walvis-bay-salt-shore.webp",
   gallery: "/images/experiences/client-dunes-women-group-colourful.webp",
   insights: "/images/experiences/client-desert-dinner-sunset-women.webp",

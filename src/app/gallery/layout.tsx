@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Explore our gallery of Namibian experiences, from Sandwich Harbour dunes to marine wildlife encounters.",
     url: "https://proaviainc.com/gallery",
-    images: ["/images/experiences/experience-tour-photo-1.webp"],
+    images: ["/images/experiences/client-sandwich-harbour-dunes-aerial.webp"],
   },
 };
 

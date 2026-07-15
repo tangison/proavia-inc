@@ -8,22 +8,22 @@ import RelatedServices from "@/components/proavia/related-services";
 
 const rooms = [
   {
-    image: "/images/accommodation/proavia-service-hotel-room-modern.webp",
+    image: "/images/accommodation/premium-hotel-bedroom-suite.webp",
     title: "Modern Suites",
     description: "Contemporary living spaces with premium furnishings and ocean-influenced design.",
   },
   {
-    image: "/images/accommodation/proavia-service-accommodation-living-room-tv.webp",
+    image: "/images/accommodation/modern-apartment-living-room.webp",
     title: "Living Areas",
     description: "Spacious lounge areas with smart entertainment systems and curated décor.",
   },
   {
-    image: "/images/accommodation/proavia-service-accommodation-kitchen-black-modern.webp",
+    image: "/images/accommodation/modern-self-catering-kitchen.webp",
     title: "Gourmet Kitchens",
     description: "Fully equipped modern kitchens with premium appliances and everything you need to cook your own meals.",
   },
   {
-    image: "/images/accommodation/proavia-service-accommodation-shower-bathroom.webp",
+    image: "/images/accommodation/luxury-hotel-bathroom-rainfall-shower.webp",
     title: "Luxury Bathrooms",
     description: "Designer bathrooms with premium fixtures, rainfall showers, and heated towel rails.",
   },
@@ -65,12 +65,12 @@ Details: ${formData.message || "None"}`;
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
-                alt="Luxury desert tent accommodation with bathtub view"
+                alt="Luxury modern living room with ocean and city skyline view in a premium coastal apartment"
                 width={1920}
                 height={640}
                 className="object-cover w-full h-full"
                 sizes="100vw"
-                src="/images/experiences/client-luxury-tent-bed-view.webp"
+                src="/images/accommodation/premium-ocean-view-apartment-hero.webp"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />

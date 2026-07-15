@@ -20,7 +20,7 @@ const articles = [
   {
     title: "Self-Drive vs Guided: Exploring Namibia by Car",
     excerpt: "We compare self-drive car hire with guided tours to help you choose the right Namibian adventure for your travel style.",
-    image: "/images/vehicles/vehicle-proavia-black-suv.webp",
+    image: "/images/vehicles/vw-tiguan-transfer-fleet.webp",
     category: "Travel Tips",
     date: "January 2025",
   },

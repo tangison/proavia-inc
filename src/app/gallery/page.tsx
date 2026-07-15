@@ -2,14 +2,7 @@ import Image from "next/image";
 import PageHeader from "@/components/proavia/page-header";
 
 const galleryImages = [
-  // Retained original gallery images
-  { src: "/images/experiences/experience-tour-photo-1.webp", alt: "Desert adventure" },
-  { src: "/images/experiences/experience-tour-photo-2.webp", alt: "Coastal scenery" },
-  { src: "/images/experiences/experience-tour-photo-3.webp", alt: "4x4 dune driving" },
-  { src: "/images/experiences/experience-tour-photo-6.webp", alt: "Sandwich Harbour" },
-  { src: "/images/experiences/experience-tour-photo-11.webp", alt: "Coastal tour" },
-  { src: "/images/experiences/experience-tour-photo-12.webp", alt: "Catamaran cruise" },
-  // Client images
+  // Curated client and destination photography. Weak/snapshot images removed.
   { src: "/images/experiences/client-deadvlei-woman-white-dress.webp", alt: "Woman in white dress at Deadvlei" },
   { src: "/images/experiences/client-cape-fur-seals-colony.webp", alt: "Cape fur seals colony" },
   { src: "/images/experiences/client-sossusvlei-dune-ridge-group.webp", alt: "Group on Sossusvlei dune ridge" },
@@ -36,7 +29,6 @@ const galleryImages = [
   { src: "/images/experiences/client-spitzkoppe-lodge-coffee-deck.webp", alt: "Coffee deck at Spitzkoppe lodge" },
   { src: "/images/experiences/client-safari-lodge-interior.webp", alt: "Safari lodge interior" },
   { src: "/images/experiences/client-luxury-tent-bathtub-desert.webp", alt: "Luxury tent bathtub with desert view" },
-  { src: "/images/experiences/client-luxury-tent-bed-view.webp", alt: "Luxury tent bed with desert view" },
   { src: "/images/experiences/client-infinity-pool-meditation-desert.webp", alt: "Infinity pool meditation in the desert" },
   { src: "/images/experiences/client-namib-dune-woman-sitting.webp", alt: "Woman sitting on a Namib dune" },
   { src: "/images/experiences/client-etosha-lodge-exterior-sunset.webp", alt: "Etosha lodge exterior at sunset" },

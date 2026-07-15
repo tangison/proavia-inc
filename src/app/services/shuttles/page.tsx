@@ -38,7 +38,7 @@ export default function ShuttlesPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Shuttle services, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/fleet-volkswagen-in-sosslvei.webp" priority />
+              <Image alt="Silver Toyota Quantum minivan in a city setting, used for scheduled shuttle services" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/toyota-quantum-shuttle-fleet.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>

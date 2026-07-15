@@ -38,7 +38,7 @@ export default function AirportAssistancePage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Airport assistance, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/transfers/proavia-transfer-shuttle-boarding.webp" priority />
+              <Image alt="Two professionals meeting in a modern airport terminal for meet-and-greet assistance" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/transfers/airport-meet-and-greet.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>
