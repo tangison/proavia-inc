@@ -92,8 +92,8 @@ const serviceCards = [
   },
   {
     href: "/services/shuttles",
-    image: "/images/vehicles/fleet-volkswagen-in-sosslvei.webp",
-    imageAlt: "Shuttle Services",
+    image: "/images/vehicles/proavia-fleet-toyota-minivan-airport.webp",
+    imageAlt: "White ProAvia-branded Toyota minivan parked at a Namibian airport terminal",
     tag: "shuttle services",
     tagIcon: Bus,
     title: "Shuttle",
