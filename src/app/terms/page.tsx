@@ -45,7 +45,7 @@ export default function TermsPage() {
           <h2 className="text-2xl font-serif text-ink mt-10">2. Scope of services</h2>
           <p>
             ProAvia provides airport transfers, guided tours, vehicle rental, accommodation booking, flight
-            ticketing, visa handling assistance, airport assistance, and scheduled shuttle services in
+            ticketing, visa and immigration assistance, airport assistance, and scheduled shuttle services in
             Namibia. We act as an intermediary for many third-party services, including airlines, lodges,
             vehicle rental companies, and tour operators. The exact scope of each service is described in the
             relevant quotation.

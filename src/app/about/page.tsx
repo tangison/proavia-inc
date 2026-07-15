@@ -7,7 +7,7 @@ import { companyContact } from "@/lib/constants/contact";
 export default function AboutPage() {
   return (
     <>
-      <PageHeader label="ABOUT PROAVIA" title="Based inWalvis Bay" italicWord="Walvis Bay" description="ProAvia Travel & Tours is a premium Namibian-owned company in Erongo. We provide bespoke airport transfers, Sandwich Harbour tours, 4x4 car hire, and luxury residential accommodation across Namibia." />
+      <PageHeader label="ABOUT PROAVIA" title="Based inWalvis Bay" italicWord="Walvis Bay" description="ProAvia Travel & Tours is a premium Namibian-owned company in Erongo. We provide airport transfers, Sandwich Harbour tours, 4x4 car hire, and luxury residential accommodation across Namibia." />
 
       {/* Hero Image */}
       <section className="pb-16 md:pb-24 px-6 md:px-12 lg:px-24">
@@ -60,7 +60,7 @@ export default function AboutPage() {
               We are a female-owned business and we carry that with pride. It matters in this industry. Our 5.0 rating on Facebook isn&apos;t bought or padded. It comes from hundreds of real travellers who trusted us with their Namibia trip and walked away happy. We don&apos;t take that trust lightly.
             </p>
             <p>
-              What started as airport transfers has grown into a full-service travel operation. Today we run Sandwich Harbour 4x4 tours, car hire with unlimited kilometres, self-catering accommodation, flight ticketing, visa handling, airport assistance, and scheduled shuttles between Walvis Bay, Swakopmund, and Windhoek. If it involves getting around Namibia, we probably do it.
+              What started as airport transfers has grown into a full-service travel operation. Today we run Sandwich Harbour 4x4 tours, car hire with unlimited kilometres, self-catering accommodation, flight ticketing, visa and immigration services, airport assistance, and scheduled shuttles between Walvis Bay, Swakopmund, and Windhoek. If it involves getting around Namibia, we probably do it.
             </p>
             <p>
               We are accredited by ATTA, NIPDB, and the Namibia Tourism Board, not because we like collecting badges, but because it holds us to a standard. Every service we offer is insured, every driver is professional, and every booking is confirmed on WhatsApp within minutes. That&apos;s not a promise. That&apos;s just how we work.

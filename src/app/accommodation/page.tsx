@@ -56,7 +56,7 @@ Details: ${formData.message || "None"}`;
         label="ACCOMMODATION"
         title="LuxuryAccommodation"
         italicWord="Accommodation"
-        description="Curated residential properties in Walvis Bay and Swakopmund. Fully equipped, elegantly appointed, and positioned for exploration."
+        description="Hand-picked residential properties in Walvis Bay and Swakopmund. Fully equipped, well-located, and ready for your stay."
       />
 
       {/* Hero Image */}

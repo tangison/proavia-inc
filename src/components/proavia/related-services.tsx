@@ -14,7 +14,7 @@ export default function RelatedServices({ exclude }: { exclude: string }) {
     { href: "/services/car-hire", title: "Car Hire", description: "Unlimited kilometres, 4x4 available, Walvis Bay or Windhoek pickup" },
     { href: "/accommodation", title: "Accommodation", description: "Self-catering properties in Walvis Bay and Swakopmund" },
     { href: "/services/flight-ticketing", title: "Flight Ticketing", description: "Domestic and regional flight bookings handled end-to-end" },
-    { href: "/services/visa-handling", title: "Visa Handling", description: "Application support, documentation, and submission on your behalf" },
+    { href: "/services/visa-handling", title: "Visa and Immigration", description: "Application support, documentation, and submission on your behalf" },
     { href: "/services/airport-assistance", title: "Airport Assistance", description: "Check-in support, luggage handling, and VIP meet & greet" },
     { href: "/services/shuttles", title: "Shuttle Services", description: "Scheduled and on-demand runs between key Namibian cities" },
   ];

@@ -31,14 +31,14 @@ const features = [
 export default function VisaHandlingPage() {
   return (
     <>
-      <PageHeader label="VISA HANDLING" title="Visa HandlingServices" italicWord="Services" />
+      <PageHeader label="VISA AND IMMIGRATION" title="Visa and ImmigrationServices" italicWord="Services" />
 
       {/* Hero Image */}
       <section className="pb-16 md:pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Visa handling services, ProAvia Travel & Tours" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
+              <Image alt="Walvis Bay International Airport, where ProAvia assists with visa and immigration services" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>

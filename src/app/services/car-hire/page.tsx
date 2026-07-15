@@ -25,7 +25,7 @@ const features = [
   {
     icon: Building2,
     title: "Capital Pickup",
-    description: "Available for collection in Windhoek. A seamless start from Namibia's capital, allowing for an immediate transition into the wild.",
+    description: "Available for collection in Windhoek. A straightforward start from Namibia's capital, whether you're heading to the coast, the desert, or further north.",
   },
 ];
 

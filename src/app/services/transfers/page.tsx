@@ -9,23 +9,23 @@ import RelatedServices from "@/components/proavia/related-services";
 const features = [
   {
     icon: HandshakeIcon,
-    title: "Bespoke Reception",
-    description: "Your dedicated driver awaits within the arrivals hall at Hosea Kutako or Walvis Bay, name board in hand, ready to facilitate your onward journey.",
+    title: "Personal Meet and Greet",
+    description: "Your driver waits inside the arrivals hall at Hosea Kutako or Walvis Bay airport, name board in hand, ready to take you to your vehicle.",
   },
   {
     icon: Clock,
-    title: "Absolute Availability",
-    description: "Our concierge-level transfer service operates around the clock. Whether you land at dawn or dusk, we are there.",
+    title: "24/7 Availability",
+    description: "Flights land at all hours. Our transfer service runs around the clock, so whether you land at dawn or late at night, we are there.",
   },
   {
     icon: MapPin,
-    title: "Sanctuary-to-Sanctuary",
-    description: "From the terminal to your retreat. Whether it's a coastal lodge or a city-center residence, we provide a seamless, private transition.",
+    title: "Door to Door",
+    description: "From the terminal to your hotel, guesthouse, or apartment. Whether it's a coastal lodge in Walvis Bay or a residence in Windhoek, we take you directly there.",
   },
   {
     icon: Shield,
-    title: "Vetted Excellence",
-    description: "Our meticulously maintained fleet is fully insured and operated by professional drivers who possess an intimate knowledge of the Namibian landscape.",
+    title: "Insured Fleet",
+    description: "Our vehicles are maintained, insured, and driven by professional drivers who know the Namibian roads well.",
   },
 ];
 

@@ -34,7 +34,7 @@ const quickBookItems = [
   {
     href: "https://wa.me/264818109185?text=Hello%20ProAvia%2C%20I%20need%20assistance%20with%20a%20visa.",
     icon: FileCheck,
-    title: "Visa Handling",
+    title: "Visa and Immigration",
     description: "We manage your application from documentation to submission",
   },
   {
@@ -134,7 +134,7 @@ Details: ${formData.message || "None"}`;
                       <option value="Car Hire">Car Hire</option>
                       <option value="Accommodation">Accommodation</option>
                       <option value="Flight Ticketing">Flight Ticketing & Reservations</option>
-                      <option value="Visa Handling">Visa Handling</option>
+                      <option value="Visa and Immigration">Visa and Immigration</option>
                       <option value="Airport Assistance">Airport Assistance</option>
                       <option value="Shuttle Services">Shuttle Services</option>
                     </select>

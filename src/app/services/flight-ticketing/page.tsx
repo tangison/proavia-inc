@@ -14,7 +14,7 @@ const features = [
   {
     icon: Globe,
     title: "Regional Routes",
-    description: "Southern Africa connections including South Africa, Botswana, Zimbabwe, and Zambia. Cross-border travel made seamless.",
+    description: "Southern Africa connections including South Africa, Botswana, Zimbabwe, and Zambia. Cross-border travel sorted.",
   },
   {
     icon: Clock,

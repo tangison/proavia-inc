@@ -216,11 +216,11 @@ export const tours: Tour[] = [
   {
     slug: "classic-namibia-safari",
     name: "Classic Namibia, The Full Journey",
-    tagline: "From Walvis Bay to Etosha, Namibia's Greatest Hits in One Unforgettable Safari",
+    tagline: "From Walvis Bay to Etosha, Namibia's Best in One Safari",
     description:
       "Experience Namibia's greatest destinations in one epic multi-day safari, from the coast to Etosha, Sossusvlei to Damaraland.",
     longDescription:
-      "Our signature multi-day safari weaves together Namibia's most iconic destinations into a single, unforgettable journey. From the coastal dunes of Walvis Bay and Sandwich Harbour to the towering red dunes of Sossusvlei, the ancient rock art of Damaraland, and the wildlife-rich plains of Etosha, this is Namibia, done right. Every detail is handled: luxury accommodation, expert guides, and seamless logistics that allow you to focus entirely on the experience.",
+      "Our signature multi-day safari covers Namibia's best-known destinations in one trip. From the coastal dunes of Walvis Bay and Sandwich Harbour to the red dunes of Sossusvlei, the ancient rock art of Damaraland, and the wildlife of Etosha, this is Namibia done properly. Every detail is handled: accommodation, expert guides, and transport, so you can focus on the experience.",
     duration: "7-10 Days (Customisable)",
     price: 2490,
     priceLabel: "per person (7-day)",
@@ -251,11 +251,11 @@ export const tours: Tour[] = [
   {
     slug: "sandwich-harbour-catamaran-combo",
     name: "Ultimate Walvis Bay Day, Catamaran + Sandwich Harbour",
-    tagline: "Two Unmissable Experiences, One Extraordinary Day: Atlantic & Desert Combined",
+    tagline: "Two Unmissable Experiences, One Day: Atlantic and Desert Combined",
     description:
       "The ultimate Walvis Bay day: a morning catamaran cruise followed by an afternoon Sandwich Harbour 4x4 expedition.",
     longDescription:
-      "For those who refuse to choose, our Ultimate Walvis Bay Day combines two of Namibia's most celebrated experiences into one extraordinary day. Begin with a morning catamaran cruise (dolphins, seals, oysters, and the Atlantic breeze) before transitioning to an afternoon 4x4 expedition to Sandwich Harbour, where the world's oldest desert meets the ocean. A light lunch connects the two experiences, and by sunset you'll have seen Walvis Bay from both its perspectives: the sea and the sand.",
+      "For those who refuse to choose, our Ultimate Walvis Bay Day combines two of Namibia's most celebrated experiences into one day. Begin with a morning catamaran cruise (dolphins, seals, oysters, and the Atlantic breeze) before transitioning to an afternoon 4x4 expedition to Sandwich Harbour, where the world's oldest desert meets the ocean. A light lunch connects the two experiences, and by sunset you'll have seen Walvis Bay from both its perspectives: the sea and the sand.",
     duration: "Full Day (~8-10 hours)",
     price: 229,
     priceLabel: "per person",

@@ -9,7 +9,7 @@ const features = [
   {
     icon: MapPin,
     title: "Walvis Bay to Swakopmund",
-    description: "Regular runs between the two coastal towns. Quick, comfortable, and on time. The journey you take most, made effortless.",
+    description: "Regular runs between the two coastal towns. Quick, comfortable, and on time.",
   },
   {
     icon: Route,

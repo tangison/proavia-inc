@@ -54,7 +54,7 @@ const serviceCards = [
     tagIcon: Star,
     title: "Luxury",
     italic: "Accommodation",
-    description: "Curated residential properties in Walvis Bay and Swakopmund. Fully equipped, elegantly appointed, and positioned for exploration.",
+    description: "Hand-picked residential properties in Walvis Bay and Swakopmund. Fully equipped, well-located, and ready for your stay.",
     badges: ["Self-Catering", "Prime Locations", "Premium Amenities", "Daily Servicing"],
   },
   {
@@ -71,12 +71,12 @@ const serviceCards = [
   {
     href: "/services/visa-handling",
     image: "/images/airports/proavia-airport-walvis-bay-exterior.webp",
-    imageAlt: "Visa Handling",
-    tag: "visa handling",
+    imageAlt: "Walvis Bay International Airport, where ProAvia assists with visa and immigration services",
+    tag: "visa and immigration",
     tagIcon: FileCheck,
-    title: "Visa Handling",
-    italic: "Services",
-    description: "Navigating the visa process is time-consuming. We manage your application from documentation to submission, stress-free.",
+    title: "Visa and",
+    italic: "Immigration",
+    description: "Navigating the visa process is time-consuming. We manage your application from documentation to submission.",
     badges: ["Application Support", "Documentation", "All Nationalities", "Expert Guidance"],
   },
   {
@@ -240,7 +240,7 @@ export default function HomePage() {
             </span>
           </h2>
           <p className="text-ink/55 text-lg leading-relaxed max-w-[700px]">
-            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we specialise in bespoke travel logistics, from airport transfers and tours to flight ticketing, visa handling, and shuttle services. We answer within minutes, not hours, and we run every service ourselves, no subcontractors, no surprises.
+            ProAvia Travel & Tours is a premium, female-owned Namibian company based in Walvis Bay, Erongo. Accredited by ATTA, NIPDB, and the Namibia Tourism Board, we handle airport transfers, tours, flight ticketing, visa and immigration services, and shuttle services. We answer within minutes, not hours, and we run every service ourselves, no subcontractors, no surprises.
           </p>
           <Link
             className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mt-6 text-gold hover:text-gold/70 transition-colors duration-300"
