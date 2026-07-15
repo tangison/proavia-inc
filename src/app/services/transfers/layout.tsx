@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Sanctuary-to-Sanctuary logistics. Premium, private airport transfers in Walvis Bay, Swakopmund, and Windhoek, Namibia. Available 24/7.",
     url: "https://proaviainc.com/services/transfers",
-    images: ["/images/vehicles/vw-tiguan-transfer-fleet.webp"],
+    images: ["/images/vehicles/proavia-fleet-vw-tiguan-windhoek.webp"],
   },
 };
 

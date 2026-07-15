@@ -8,24 +8,24 @@ import RelatedServices from "@/components/proavia/related-services";
 
 const rooms = [
   {
-    image: "/images/accommodation/premium-hotel-bedroom-suite.webp",
-    title: "Modern Suites",
-    description: "Contemporary living spaces with premium furnishings and ocean-influenced design.",
+    image: "/images/experiences/client-safari-lodge-interior.webp",
+    title: "Luxury Interiors",
+    description: "Curated Namibian lodges and suites with warm, natural materials and views of the surrounding landscape.",
   },
   {
-    image: "/images/accommodation/modern-apartment-living-room.webp",
-    title: "Living Areas",
-    description: "Spacious lounge areas with smart entertainment systems and curated décor.",
+    image: "/images/experiences/client-luxury-tent-bed-view.webp",
+    title: "Scenic Accommodation",
+    description: "Tented suites and premium rooms positioned for ocean, desert and savannah views across Namibia.",
   },
   {
-    image: "/images/accommodation/modern-self-catering-kitchen.webp",
-    title: "Gourmet Kitchens",
-    description: "Fully equipped modern kitchens with premium appliances and everything you need to cook your own meals.",
+    image: "/images/experiences/client-lodge-sundowner-deck.webp",
+    title: "Comfort and Privacy",
+    description: "Sundowner decks, firepit lounges and outdoor spaces designed for quiet evenings after a day on the road.",
   },
   {
-    image: "/images/accommodation/luxury-hotel-bathroom-rainfall-shower.webp",
-    title: "Luxury Bathrooms",
-    description: "Designer bathrooms with premium fixtures, rainfall showers, and heated towel rails.",
+    image: "/images/experiences/client-infinity-pool-meditation-desert.webp",
+    title: "Coastal and Desert Retreats",
+    description: "From Walvis Bay apartments to desert-edge retreats, each property is selected for its setting and comfort.",
   },
 ];
 
@@ -65,12 +65,12 @@ Details: ${formData.message || "None"}`;
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
-                alt="Luxury modern living room with ocean and city skyline view in a premium coastal apartment"
+                alt="Luxury Namibian tented suite with a freestanding bathtub overlooking the desert landscape"
                 width={1920}
                 height={640}
                 className="object-cover w-full h-full"
                 sizes="100vw"
-                src="/images/accommodation/premium-ocean-view-apartment-hero.webp"
+                src="/images/experiences/client-luxury-tent-bathtub-desert.webp"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />

@@ -19,10 +19,14 @@ export const IMAGES = {
     namibDesertPinkSeating: "/images/destinations/destination-namib-desert-pink-seating.webp",
   },
   vehicles: {
-    // Replaced weak/old fleet photos with clean real photography (no ProAvia branding on these — only genuine user-supplied photos may carry branding).
-    transferFleet: "/images/vehicles/vw-tiguan-transfer-fleet.webp",
-    carHireFleet: "/images/vehicles/vw-polo-car-hire-fleet.webp",
-    shuttleFleet: "/images/vehicles/toyota-quantum-shuttle-fleet.webp",
+    // Genuine ProAvia-branded fleet photographs supplied by the user.
+    // These are real Namibian vehicles in real Namibian settings (Windhoek, coast, desert, airport).
+    transferFleet: "/images/vehicles/proavia-fleet-vw-tiguan-windhoek.webp",
+    carHireFleet: "/images/vehicles/proavia-fleet-vw-polo-coastal.webp",
+    shuttleFleet: "/images/vehicles/proavia-fleet-toyota-minivan-airport.webp",
+    fleetHero: "/images/vehicles/proavia-fleet-three-vehicles-lot.webp",
+    fleetDesert: "/images/vehicles/proavia-fleet-multi-vehicles-desert.webp",
+    tiguanDesert: "/images/vehicles/proavia-fleet-vw-tiguan-desert.webp",
     volkswagenSossusvlei: "/images/vehicles/fleet-volkswagen-in-sosslvei.webp",
     volkswagenVehicle: "/images/vehicles/fleet-volskwagen-vehicle.webp",
   },
@@ -77,12 +81,11 @@ export const IMAGES = {
   },
   airports: {
     walvisBayExterior: "/images/airports/proavia-airport-walvis-bay-exterior.webp",
+    hoseaKutakoExterior: "/images/airports/hosea-kutako-international-airport-windhoek.webp",
     airlinkPlane: "/images/airports/proavia-airport-airlink-plane.webp",
   },
   transfers: {
     luggageLoading: "/images/transfers/proavia-transfer-luggage-loading.webp",
-    meetAndGreet: "/images/transfers/airport-meet-and-greet.webp",
-    airportPickup: "/images/transfers/airport-pickup-minivan.webp",
     luggageTrunk: "/images/transfers/proavia-transfer-luggage-trunk-ready.webp",
     shuttleOperation: "/images/transfers/proavia-transfer-shuttle-operation.webp",
     vansParked: "/images/transfers/proavia-transfer-vans-parked.webp",

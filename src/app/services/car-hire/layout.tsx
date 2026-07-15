@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Unrestricted freedom. Hire a 4x4 or sedan from ProAvia in Walvis Bay or Windhoek with unlimited kilometres to explore Namibia at your own pace.",
     url: "https://proaviainc.com/services/car-hire",
-    images: ["/images/vehicles/vw-polo-car-hire-fleet.webp"],
+    images: ["/images/vehicles/proavia-fleet-vw-polo-coastal.webp"],
   },
 };
 

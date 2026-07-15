@@ -51,7 +51,7 @@ Details: ${formData.message || "None"}`;
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="White Volkswagen Polo parked in front of a modern glass building" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/vw-polo-car-hire-fleet.webp" priority />
+              <Image alt="White ProAvia-branded Volkswagen Polo parked at a Namibian coastal pier at sunset" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/vehicles/proavia-fleet-vw-polo-coastal.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>

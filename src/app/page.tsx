@@ -15,8 +15,8 @@ const heroImages = [
 const serviceCards = [
   {
     href: "/services/transfers",
-    image: "/images/vehicles/vw-tiguan-transfer-fleet.webp",
-    imageAlt: "White Volkswagen Tiguan parked in an urban setting",
+    image: "/images/vehicles/proavia-fleet-vw-tiguan-windhoek.webp",
+    imageAlt: "White ProAvia-branded Volkswagen Tiguan parked at a Windhoek tyre service centre",
     tag: "transfers",
     tagIcon: Car,
     title: "Airport & City",
@@ -37,8 +37,8 @@ const serviceCards = [
   },
   {
     href: "/services/car-hire",
-    image: "/images/vehicles/vw-polo-car-hire-fleet.webp",
-    imageAlt: "White Volkswagen Polo parked in front of a modern glass building",
+    image: "/images/vehicles/proavia-fleet-vw-polo-coastal.webp",
+    imageAlt: "White ProAvia-branded Volkswagen Polo parked at a Namibian coastal pier at sunset",
     tag: "car hire",
     tagIcon: Car,
     title: "Car",
@@ -48,8 +48,8 @@ const serviceCards = [
   },
   {
     href: "/accommodation",
-    image: "/images/accommodation/premium-ocean-view-apartment-hero.webp",
-    imageAlt: "Luxury modern living room with ocean and city skyline view in a premium coastal apartment",
+    image: "/images/experiences/client-luxury-tent-bathtub-desert.webp",
+    imageAlt: "Luxury Namibian tented suite with a freestanding bathtub overlooking the desert",
     tag: "accommodation",
     tagIcon: Star,
     title: "Luxury",
@@ -81,8 +81,8 @@ const serviceCards = [
   },
   {
     href: "/services/airport-assistance",
-    image: "/images/transfers/airport-meet-and-greet.webp",
-    imageAlt: "Two professionals meeting in a modern airport terminal",
+    image: "/images/airports/hosea-kutako-international-airport-windhoek.webp",
+    imageAlt: "Hosea Kutako International Airport exterior with Welcome to Windhoek signage in Namibia",
     tag: "airport assistance",
     tagIcon: ShieldCheck,
     title: "Airport",

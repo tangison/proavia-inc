@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Scheduled and on-demand shuttles between Walvis Bay, Swakopmund, and Windhoek. Reliable, shared, and affordable transport.",
     url: "https://proaviainc.com/services/shuttles",
-    images: ["/images/vehicles/toyota-quantum-shuttle-fleet.webp"],
+    images: ["/images/vehicles/proavia-fleet-toyota-minivan-airport.webp"],
   },
 };
 
