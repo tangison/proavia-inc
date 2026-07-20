@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Visa and Immigration Services | ProAvia Travel & Tours",
   description:
-    "Visa and immigration application support for all nationalities. We manage documentation, submission, and follow-up on your behalf.",
+    "Visa and immigration services for all nationalities. We handle inbound Namibian visas and outbound international visas worldwide, including Schengen, US, UK, and Australian visas.",
   alternates: {
     canonical: "https://proaviainc.com/services/visa-handling",
   },
   openGraph: {
     title: "Visa and Immigration Services | ProAvia Travel & Tours",
     description:
-      "Visa and immigration application support for all nationalities. We manage documentation, submission, and follow-up on your behalf.",
+      "Visa and immigration services for all nationalities. We handle inbound Namibian visas and outbound international visas worldwide, including Schengen, US, UK, and Australian visas.",
     url: "https://proaviainc.com/services/visa-handling",
     images: ["/images/airports/proavia-airport-walvis-bay-exterior.webp"],
   },

@@ -48,8 +48,8 @@ const serviceCards = [
   },
   {
     href: "/accommodation",
-    image: "/images/experiences/client-luxury-tent-bathtub-desert.webp",
-    imageAlt: "Luxury Namibian tented suite with a freestanding bathtub overlooking the desert",
+    image: "/images/accommodation/proavia-accommodation-living-room-dining-hero.webp",
+    imageAlt: "Spacious open-plan living room with dining area in a ProAvia accommodation property",
     tag: "accommodation",
     tagIcon: Star,
     title: "Luxury",

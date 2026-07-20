@@ -24,7 +24,7 @@ const features = [
   {
     icon: Globe,
     title: "All Nationalities",
-    description: "We assist travellers from across the globe, including those requiring Namibian visas. No matter your passport, we know the process.",
+    description: "We assist travellers from across the globe with both inbound Namibian visas and outbound international visas. Whether you need a Schengen, US, UK, or Australian visa, we know the process.",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function VisaHandlingPage() {
               Tell us your nationality and where you&apos;re going, and we&apos;ll figure out exactly what you need. We identify the right visa category, compile your documents, check everything before submission, and submit on your behalf where the embassy allows it. If there&apos;s a problem, we catch it before it becomes a rejected application.
             </p>
             <p>
-              We handle visas for travellers coming into Namibia as well as Namibian residents travelling abroad. Whether it&apos;s a tourist visa, business visa, or transit visa, we&apos;ve done it before and we know the process. You&apos;ll get status updates on WhatsApp so you&apos;re never left wondering where things stand.
+              We handle visas for travellers coming into Namibia as well as Namibian residents travelling abroad to any destination worldwide. Whether you need a Schengen visa for Europe, a US visa, a UK visa, an Australian visa, or a visa for any other country, we manage the full process. Tourist visas, business visas, transit visas, and work permits. You&apos;ll get status updates on WhatsApp so you&apos;re never left wondering where things stand.
             </p>
           </div>
         </div>

@@ -8,24 +8,24 @@ import RelatedServices from "@/components/proavia/related-services";
 
 const rooms = [
   {
-    image: "/images/experiences/client-safari-lodge-interior.webp",
-    title: "Luxury Interiors",
-    description: "Curated Namibian lodges and suites with warm, natural materials and views of the surrounding landscape.",
+    image: "/images/accommodation/proavia-accommodation-living-room-tv.webp",
+    title: "Living Spaces",
+    description: "Open-plan living rooms with comfortable seating, smart entertainment, and natural light throughout.",
   },
   {
-    image: "/images/experiences/client-luxury-tent-bed-view.webp",
-    title: "Scenic Accommodation",
-    description: "Tented suites and premium rooms positioned for ocean, desert and savannah views across Namibia.",
+    image: "/images/accommodation/proavia-accommodation-bedroom.webp",
+    title: "Bedrooms",
+    description: "Well-appointed bedrooms with quality bedding, ample storage, and a quiet night's sleep guaranteed.",
   },
   {
-    image: "/images/experiences/client-lodge-sundowner-deck.webp",
-    title: "Comfort and Privacy",
-    description: "Sundowner decks, firepit lounges and outdoor spaces designed for quiet evenings after a day on the road.",
+    image: "/images/accommodation/proavia-accommodation-kitchen.webp",
+    title: "Self-Catering Kitchens",
+    description: "Fully equipped kitchens with modern appliances, cookware, and everything you need to prepare your own meals.",
   },
   {
-    image: "/images/experiences/client-infinity-pool-meditation-desert.webp",
-    title: "Coastal and Desert Retreats",
-    description: "From Walvis Bay apartments to desert-edge retreats, each property is selected for its setting and comfort.",
+    image: "/images/accommodation/proavia-accommodation-bathroom.webp",
+    title: "Bathrooms",
+    description: "Clean, modern bathrooms with quality fixtures, hot water, and fresh towels provided on every stay.",
   },
 ];
 
@@ -65,12 +65,12 @@ Details: ${formData.message || "None"}`;
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
               <Image
-                alt="Luxury Namibian tented suite with a freestanding bathtub overlooking the desert landscape"
+                alt="Spacious open-plan living room with dining area in a ProAvia accommodation property"
                 width={1920}
                 height={640}
                 className="object-cover w-full h-full"
                 sizes="100vw"
-                src="/images/experiences/client-luxury-tent-bathtub-desert.webp"
+                src="/images/accommodation/proavia-accommodation-living-room-dining-hero.webp"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
@@ -120,6 +120,56 @@ Details: ${formData.message || "None"}`;
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* More Spaces */}
+      <section className="pb-20 md:pb-28 px-6 md:px-12 lg:px-24">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="mb-10">
+            <h2 className="editorial-headline text-3xl md:text-4xl text-ink mb-2">
+              More{" "}
+              <span className="italic text-gold" style={{ fontFamily: "var(--font-instrument-serif), serif" }}>
+                spaces
+              </span>
+            </h2>
+            <p className="text-ink/50 text-sm">Every property has its own character. Here are a few more corners of the places we manage.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="double-bezel-outer proavia-card">
+              <div className="double-bezel-inner overflow-hidden">
+                <div className="relative aspect-[4/3]">
+                  <Image alt="Lobby and entryway with modern wall paneling and natural light" width={400} height={300} className="object-cover w-full h-full" sizes="(max-width: 768px) 100vw, 33vw" src="/images/accommodation/proavia-accommodation-lobby-entryway.webp" loading="lazy" />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-serif text-ink">Lobby and Entry</h3>
+                  <p className="text-ink/40 text-xs mt-1">Welcoming entrance spaces with modern finishes.</p>
+                </div>
+              </div>
+            </div>
+            <div className="double-bezel-outer proavia-card">
+              <div className="double-bezel-inner overflow-hidden">
+                <div className="relative aspect-[4/3]">
+                  <Image alt="Second bedroom with comfortable bedding and natural light" width={400} height={300} className="object-cover w-full h-full" sizes="(max-width: 768px) 100vw, 33vw" src="/images/accommodation/proavia-accommodation-bedroom-2.webp" loading="lazy" />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-serif text-ink">Additional Bedrooms</h3>
+                  <p className="text-ink/40 text-xs mt-1">Family rooms and second bedrooms for larger groups.</p>
+                </div>
+              </div>
+            </div>
+            <div className="double-bezel-outer proavia-card">
+              <div className="double-bezel-inner overflow-hidden">
+                <div className="relative aspect-[4/3]">
+                  <Image alt="Second living room with comfortable seating and warm tones" width={400} height={300} className="object-cover w-full h-full" sizes="(max-width: 768px) 100vw, 33vw" src="/images/accommodation/proavia-accommodation-living-room-2.webp" loading="lazy" />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-serif text-ink">Living Areas</h3>
+                  <p className="text-ink/40 text-xs mt-1">Multiple seating areas for relaxing after a day of travel.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

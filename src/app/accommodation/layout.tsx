@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Hand-picked residential properties in Walvis Bay and Swakopmund. Fully equipped, well-located, and ready for your stay.",
     url: "https://proaviainc.com/accommodation",
-    images: ["/images/accommodation/proavia-service-hotel-accommodation.webp"],
+    images: ["/images/accommodation/proavia-accommodation-living-room-dining-hero.webp"],
   },
 };
 
