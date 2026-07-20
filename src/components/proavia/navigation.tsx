@@ -30,7 +30,7 @@ const tourLinks = [
 ];
 
 const navLinks = [
-  { href: "/accommodation", label: "Accommodation", image: "/images/accommodation/proavia-accommodation-living-room-dining-hero.webp", tagline: "Curated residential properties" },
+  { href: "/accommodation", label: "Accommodation", image: "/images/experiences/client-lodge-sundowner-deck.webp", tagline: "Curated residential properties" },
   { href: "/about", label: "About", image: "/images/destinations/destination-walvis-bay-salt-shore.webp", tagline: "A proud Namibian company" },
   { href: "/gallery", label: "Gallery", image: "/images/experiences/client-dunes-women-group-colourful.webp", tagline: "Real photos from real trips" },
   { href: "/insights", label: "Insights", image: "/images/experiences/client-desert-dinner-sunset-women.webp", tagline: "Stories from the road" },
@@ -48,7 +48,7 @@ const searchableItems = [
 const heroImageMap: Record<string, string> = {
   services: "/images/experiences/client-sossusvlei-guide-tourists-dune.webp",
   tours: "/images/experiences/client-sandwich-harbour-dunes-aerial.webp",
-  accommodation: "/images/accommodation/proavia-accommodation-living-room-dining-hero.webp",
+  accommodation: "/images/experiences/client-lodge-sundowner-deck.webp",
   about: "/images/destinations/destination-walvis-bay-salt-shore.webp",
   gallery: "/images/experiences/client-dunes-women-group-colourful.webp",
   insights: "/images/experiences/client-desert-dinner-sunset-women.webp",

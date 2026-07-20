@@ -48,8 +48,8 @@ const serviceCards = [
   },
   {
     href: "/accommodation",
-    image: "/images/accommodation/proavia-accommodation-living-room-dining-hero.webp",
-    imageAlt: "Spacious open-plan living room with dining area in a ProAvia accommodation property",
+    image: "/images/experiences/client-lodge-sundowner-deck.webp",
+    imageAlt: "Luxury Namibian lodge sundowner deck overlooking the desert at sunset",
     tag: "accommodation",
     tagIcon: Star,
     title: "Luxury",
