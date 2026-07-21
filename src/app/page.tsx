@@ -119,6 +119,9 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
+    // Immediately reveal the hero (above the fold, no need to wait for scroll)
+    reveal("hero-label");
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -139,9 +142,10 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 md:pt-36 lg:pt-40 px-6 md:px-12 lg:px-24 flex flex-col justify-center lg:min-h-[100dvh]">
-        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-end">
-          <div className="lg:col-span-7">
+      <section className="pt-24 md:pt-32 lg:pt-40 px-6 md:px-12 lg:px-24 lg:min-h-[100dvh] lg:flex lg:flex-col lg:justify-center">
+        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-12 items-center lg:items-end">
+          {/* Text column: on desktop left (col-span-7). On mobile appears AFTER image (order-2). */}
+          <div className="lg:col-span-7 order-2 lg:order-1">
             <div className="mb-6" data-reveal-section id="hero-label">
               <span
                 className={`text-[10px] uppercase tracking-[0.4em] font-bold block text-gold mb-6 transition-all duration-700 ${revealed.has("hero-label") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
@@ -186,7 +190,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 order-1 lg:order-2">
             <div className="double-bezel-outer aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] w-full max-w-[500px] mx-auto lg:max-w-none">
               <div className="double-bezel-inner overflow-hidden relative group h-full">
                 {heroImages.map((img, i) => (
