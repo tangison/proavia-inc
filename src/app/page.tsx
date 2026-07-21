@@ -139,8 +139,8 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-[100dvh] pt-36 md:pt-40 px-6 md:px-12 lg:px-24 flex flex-col justify-center">
-        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-end">
+      <section className="pt-28 md:pt-36 lg:pt-40 px-6 md:px-12 lg:px-24 flex flex-col justify-center lg:min-h-[100dvh]">
+        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-end">
           <div className="lg:col-span-7">
             <div className="mb-6" data-reveal-section id="hero-label">
               <span
@@ -187,7 +187,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="lg:col-span-5">
-            <div className="double-bezel-outer aspect-[4/5] w-full">
+            <div className="double-bezel-outer aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] w-full max-w-[500px] mx-auto lg:max-w-none">
               <div className="double-bezel-inner overflow-hidden relative group h-full">
                 {heroImages.map((img, i) => (
                   <div
@@ -196,10 +196,10 @@ export default function HomePage() {
                   >
                     <Image
                       alt={img.alt}
-                      width={1920}
-                      height={1080}
+                      width={800}
+                      height={1000}
                       className="object-cover w-full h-full grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s]"
-                      sizes="100vw"
+                      sizes="(max-width: 1024px) 100vw, 40vw"
                       src={img.src}
                       priority={i === 0}
                     />
@@ -274,7 +274,7 @@ export default function HomePage() {
                 <div className="double-bezel-outer h-full proavia-card">
                   <div className="double-bezel-inner overflow-hidden relative">
                     <div className="relative aspect-[4/3]">
-                      <Image alt={card.imageAlt} width={400} height={300} className="object-cover w-full h-full" sizes="100vw" src={card.image} />
+                      <Image alt={card.imageAlt} width={400} height={300} className="object-cover w-full h-full" sizes="(max-width: 768px) 100vw, 25vw" src={card.image} />
                       <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
                       <div className="absolute bottom-4 left-4">
                         <span className="inline-flex items-center gap-1.5 bg-gold/90 text-ink text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-lg">
