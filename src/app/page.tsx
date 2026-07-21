@@ -119,9 +119,6 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    // Immediately reveal the hero (above the fold, no need to wait for scroll)
-    reveal("hero-label");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -142,19 +139,18 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 md:pt-32 lg:pt-40 px-6 md:px-12 lg:px-24 lg:min-h-[100dvh] lg:flex lg:flex-col lg:justify-center">
-        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-12 items-center lg:items-end">
-          {/* Text column: on desktop left (col-span-7). On mobile appears AFTER image (order-2). */}
-          <div className="lg:col-span-7 order-2 lg:order-1">
+      <section className="min-h-[100dvh] pt-36 md:pt-40 px-6 md:px-12 lg:px-24 flex flex-col justify-center">
+        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-end">
+          <div className="lg:col-span-7">
             <div className="mb-6" data-reveal-section id="hero-label">
               <span
-                className={`text-[10px] uppercase tracking-[0.4em] font-bold block text-gold mb-6 transition-all duration-700 ${revealed.has("hero-label") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+                className="text-[10px] uppercase tracking-[0.4em] font-bold block text-gold mb-6"
               >
                 NAMIBIA, DONE RIGHT
               </span>
             </div>
             <h1
-              className={`editorial-headline text-6xl md:text-8xl lg:text-9xl text-ink mb-6 transition-all duration-700 delay-100 ${revealed.has("hero-label") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+              className="editorial-headline text-6xl md:text-8xl lg:text-9xl text-ink mb-6"
             >
               Unrivaled
               <br />
@@ -163,12 +159,12 @@ export default function HomePage() {
               </span>
             </h1>
             <p
-              className={`text-lg md:text-xl text-ink/50 max-w-[500px] leading-relaxed transition-all duration-700 delay-200 ${revealed.has("hero-label") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+              className="text-lg md:text-xl text-ink/50 max-w-[500px] leading-relaxed"
             >
               From the dunes of Sandwich Harbour to the streets of Windhoek. We orchestrate the logistics, so you can focus on the journey.
             </p>
             <div
-              className={`mt-10 flex flex-wrap gap-4 items-center transition-all duration-700 delay-300 ${revealed.has("hero-label") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}`}
+              className="mt-10 flex flex-wrap gap-4 items-center"
             >
               <Link
                 className="group relative px-7 py-4 bg-gold text-ink rounded-full btn-magnetic font-bold tracking-tight text-sm flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
@@ -190,8 +186,8 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="lg:col-span-5 order-1 lg:order-2">
-            <div className="double-bezel-outer aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] w-full max-w-[500px] mx-auto lg:max-w-none">
+          <div className="lg:col-span-5">
+            <div className="double-bezel-outer aspect-[4/5] w-full">
               <div className="double-bezel-inner overflow-hidden relative group h-full">
                 {heroImages.map((img, i) => (
                   <div
@@ -200,10 +196,10 @@ export default function HomePage() {
                   >
                     <Image
                       alt={img.alt}
-                      width={800}
-                      height={1000}
+                      width={1920}
+                      height={1080}
                       className="object-cover w-full h-full grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2s]"
-                      sizes="(max-width: 1024px) 100vw, 40vw"
+                      sizes="100vw"
                       src={img.src}
                       priority={i === 0}
                     />
@@ -278,7 +274,7 @@ export default function HomePage() {
                 <div className="double-bezel-outer h-full proavia-card">
                   <div className="double-bezel-inner overflow-hidden relative">
                     <div className="relative aspect-[4/3]">
-                      <Image alt={card.imageAlt} width={400} height={300} className="object-cover w-full h-full" sizes="(max-width: 768px) 100vw, 25vw" src={card.image} />
+                      <Image alt={card.imageAlt} width={400} height={300} className="object-cover w-full h-full" sizes="100vw" src={card.image} />
                       <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent pointer-events-none" />
                       <div className="absolute bottom-4 left-4">
                         <span className="inline-flex items-center gap-1.5 bg-gold/90 text-ink text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-lg">
