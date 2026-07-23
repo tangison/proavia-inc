@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "VIP meet-and-greet, check-in support, and luggage handling at Namibian airports. Available 24/7 for all travellers.",
     url: "https://proaviainc.com/services/airport-assistance",
-    images: ["/images/airports/hosea-kutako-international-airport-windhoek.webp"],
+    images: ["/images/airports/walvis-bay-airport-exterior-departures.webp"],
   },
 };
 

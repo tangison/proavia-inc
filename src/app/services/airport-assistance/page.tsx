@@ -38,7 +38,7 @@ export default function AirportAssistancePage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Hosea Kutako International Airport exterior with Welcome to Windhoek signage in Namibia" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/hosea-kutako-international-airport-windhoek.webp" priority />
+              <Image alt="Walvis Bay International Airport exterior with DEPARTURES and ARRIVALS signage, palm trees, and blue sky" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/walvis-bay-airport-exterior-departures.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>

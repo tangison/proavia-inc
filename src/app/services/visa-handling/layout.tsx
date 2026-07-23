@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Visa and immigration services for all nationalities. We handle inbound Namibian visas and outbound international visas worldwide, including Schengen, US, UK, and Australian visas.",
     url: "https://proaviainc.com/services/visa-handling",
-    images: ["/images/airports/proavia-airport-walvis-bay-exterior.webp"],
+    images: ["/images/airports/proavia-travel-docs-passport-boarding-pass.webp"],
   },
 };
 

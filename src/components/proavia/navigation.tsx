@@ -12,9 +12,9 @@ const serviceLinks = [
   { href: "/services/transfers", label: "Airport Transfers", image: "/images/vehicles/proavia-fleet-vw-tiguan-windhoek.webp", tagline: "Private, door-to-door transfers" },
   { href: "/services/tours", label: "Tours & Expeditions", image: "/images/experiences/client-sandwich-harbour-dunes-aerial.webp", tagline: "Expert-guided adventures" },
   { href: "/services/car-hire", label: "Car Hire", image: "/images/vehicles/proavia-fleet-vw-polo-coastal.webp", tagline: "Unlimited km, 4x4 available" },
-  { href: "/services/flight-ticketing", label: "Flight Ticketing", image: "/images/airports/proavia-airport-airlink-plane.webp", tagline: "Domestic & regional bookings" },
-  { href: "/services/visa-handling", label: "Visa and Immigration", image: "/images/airports/proavia-airport-walvis-bay-exterior.webp", tagline: "Application & documentation" },
-  { href: "/services/airport-assistance", label: "Airport Assistance", image: "/images/airports/hosea-kutako-international-airport-windhoek.webp", tagline: "VIP meet & greet" },
+  { href: "/services/flight-ticketing", label: "Flight Ticketing", image: "/images/airports/walvis-bay-airport-travelers-queue.webp", tagline: "Domestic & regional bookings" },
+  { href: "/services/visa-handling", label: "Visa and Immigration", image: "/images/airports/proavia-travel-docs-passport-boarding-pass.webp", tagline: "Application & documentation" },
+  { href: "/services/airport-assistance", label: "Airport Assistance", image: "/images/airports/walvis-bay-airport-exterior-departures.webp", tagline: "VIP meet & greet" },
   { href: "/services/shuttles", label: "Shuttle Services", image: "/images/vehicles/proavia-fleet-toyota-minivan-airport.webp", tagline: "Scheduled & on-demand" },
 ];
 

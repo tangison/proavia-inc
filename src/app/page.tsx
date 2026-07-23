@@ -59,8 +59,8 @@ const serviceCards = [
   },
   {
     href: "/services/flight-ticketing",
-    image: "/images/airports/proavia-airport-airlink-plane.webp",
-    imageAlt: "Flight Ticketing",
+    image: "/images/airports/walvis-bay-airport-travelers-queue.webp",
+    imageAlt: "Walvis Bay International Airport terminal with travelers waiting outside",
     tag: "flight ticketing",
     tagIcon: Plane,
     title: "Flight Ticketing",
@@ -81,8 +81,8 @@ const serviceCards = [
   },
   {
     href: "/services/airport-assistance",
-    image: "/images/airports/hosea-kutako-international-airport-windhoek.webp",
-    imageAlt: "Hosea Kutako International Airport exterior with Welcome to Windhoek signage in Namibia",
+    image: "/images/airports/walvis-bay-airport-exterior-departures.webp",
+    imageAlt: "Walvis Bay International Airport exterior with DEPARTURES and ARRIVALS signage",
     tag: "airport assistance",
     tagIcon: ShieldCheck,
     title: "Airport",
@@ -108,6 +108,16 @@ export default function HomePage() {
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
 
   useEffect(() => {
+    // Preload all carousel images immediately.
+    // Next.js Image forces loading="lazy" on non-priority images,
+    // which prevents slides 2-4 from loading inside opacity:0 parents.
+    // This JS preloader bypasses that by creating Image objects that
+    // force the browser to download all 4 images on mount.
+    heroImages.forEach((img) => {
+      const preload = new window.Image();
+      preload.src = img.src;
+    });
+
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
     }, 5000);

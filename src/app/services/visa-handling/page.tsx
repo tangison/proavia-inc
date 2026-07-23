@@ -38,7 +38,7 @@ export default function VisaHandlingPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="double-bezel-outer">
             <div className="double-bezel-inner overflow-hidden relative aspect-[21/9] md:aspect-[3/1]">
-              <Image alt="Walvis Bay International Airport, where ProAvia assists with visa and immigration services" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-airport-walvis-bay-exterior.webp" priority />
+              <Image alt="Namibian passport, boarding pass, and ProAvia branded mug with an airplane on the tarmac" width={1920} height={640} className="object-cover w-full h-full" sizes="100vw" src="/images/airports/proavia-travel-docs-passport-boarding-pass.webp" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-ink/10 to-transparent pointer-events-none" />
             </div>
           </div>

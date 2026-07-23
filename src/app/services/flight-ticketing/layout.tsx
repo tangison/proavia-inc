@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Domestic and regional flight bookings handled end-to-end. We secure your seats across Namibia and Southern Africa via WhatsApp.",
     url: "https://proaviainc.com/services/flight-ticketing",
-    images: ["/images/airports/proavia-airport-airlink-plane.webp"],
+    images: ["/images/airports/walvis-bay-airport-travelers-queue.webp"],
   },
 };
 
